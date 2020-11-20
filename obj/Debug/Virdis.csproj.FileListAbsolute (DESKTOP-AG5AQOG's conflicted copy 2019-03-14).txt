@@ -1,0 +1,733 @@
+G:\Mis Proyectos (Martes, Jueves, Sabado)\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\Solum.exe.config
+G:\Mis Proyectos (Martes, Jueves, Sabado)\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Interop.COINUSBLib.dll
+G:\Mis Proyectos (Martes, Jueves, Sabado)\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\AxInterop.COINUSBLib.dll
+G:\Mis Proyectos (Martes, Jueves, Sabado)\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Virdis.csproj.ResolveComReference.cache
+G:\Mis Proyectos (Martes, Jueves, Sabado)\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.exe
+G:\Mis Proyectos (Martes, Jueves, Sabado)\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.pdb
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\app.config
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\Varios\Solum 2.0 POR User Manual.pdf
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\Varios\ARIALN.TTF
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\Resources\ABCRC_Logo_Blk.tif
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\Virdis.exe.config
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\Virdis.exe
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\Virdis.pdb
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\en\Virdis.resources.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.Shared.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\Newtonsoft.Json.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\SirLib.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\SirLib.Hid.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\System.Data.SqlLocalDb.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\System.Net.Http.Formatting.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\System.Web.Services.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\stdole.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\FlashControlV71.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\ShockwaveFlashObjects.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\Newtonsoft.Json.xml
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\SirLib.pdb
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\SirLib.Hid.pdb
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\System.Data.SqlLocalDb.xml
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\System.Net.Http.Formatting.xml
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\en\SirLib.resources.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\es\SirLib.resources.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\en-GB\System.Data.SqlLocalDb.resources.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\Interop.COINUSBLib.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\bin\Debug\AxInterop.COINUSBLib.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Virdis.csproj.Virdis.exe.config
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Interop.COINUSBLib.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\AxInterop.COINUSBLib.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Virdis.csproj.ResolveComReference.cache
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.AlertForm.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.BagPosition.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.CashierQdCustomer.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Conveyors.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Forms.Modes.Modes.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingAdjustments.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Customers.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.CustomersRetypePass.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.CardTypes.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.eRBill_CheckList_ListView.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.eRBill_CheckList.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.CashierGetDates.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.CustomerOrdersPayNow.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.CustomerOrders.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.AttendanceDetails.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Attendance.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.CreateTrainingDb.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Employees.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Expenses.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Entries.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.CashTrays.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.CustomerScreen.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Fees.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.CashDenominations.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.ExpenseTypes.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Float.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Inventory.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Products.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.ReportsMain.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Login2.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.KeyPad.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.PermissionsAsign.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.ReportsAssign.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Returns.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingLookup.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.FormKeypad.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingMultiProductStagedContainers.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingMultiProductStagedContainersModify.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingMultiProductStagedContainersTagNumber.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.PaymentMethods.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.PaymentMethodAvailableByDepot.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.QdBags.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Cashier.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.CashierCash.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.CategoryButtons.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Agencies.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Categories.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Containers.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.QuantityButtons.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Main.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Messages.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Properties.Resources.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Settings.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.StandardDozen.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.WorkStations.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingHome.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingShipments.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingStagedContainers.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingShipmentsScanner.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingShipmentsWarehouseMode.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Sales.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingShipmentsInventory.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.SupplyInventory.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.SupplyInventoryReceive.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Solum.Main.en.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Virdis.csproj.GenerateResource.Cache
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\en\Virdis.resources.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Virdis.exe
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\Virdis\Virdis\obj\Debug\Virdis.pdb
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\app.config
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\Varios\Solum 2.0 POR User Manual.pdf
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\Varios\ARIALN.TTF
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\Resources\ABCRC_Logo_Blk.tif
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\Virdis.exe.config
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\Virdis.exe
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\Virdis.pdb
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\en\Virdis.resources.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\Newtonsoft.Json.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\SirLib.Hid.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\System.Data.SqlLocalDb.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\System.Net.Http.Formatting.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\stdole.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\FlashControlV71.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\ShockwaveFlashObjects.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\Newtonsoft.Json.xml
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\SirLib.pdb
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\SirLib.Hid.pdb
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\System.Data.SqlLocalDb.xml
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\System.Net.Http.Formatting.xml
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\en\SirLib.resources.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\es\SirLib.resources.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\en-GB\System.Data.SqlLocalDb.resources.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\Interop.COINUSBLib.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\bin\Debug\AxInterop.COINUSBLib.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Interop.COINUSBLib.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\AxInterop.COINUSBLib.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Virdis.csproj.ResolveComReference.cache
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.AlertForm.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.BagPosition.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CashierQdCustomer.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Conveyors.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Forms.Modes.Modes.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingAdjustments.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Customers.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CustomersRetypePass.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CardTypes.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.eRBill_CheckList_ListView.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.eRBill_CheckList.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CashierGetDates.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CustomerOrdersPayNow.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CustomerOrders.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.AttendanceDetails.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Attendance.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CreateTrainingDb.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Employees.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Expenses.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Entries.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CashTrays.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CustomerScreen.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Fees.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CashDenominations.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ExpenseTypes.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Float.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Inventory.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Products.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ReportsMain.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Login2.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.KeyPad.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.PermissionsAsign.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ReportsAssign.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Returns.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingLookup.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.FormKeypad.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingMultiProductStagedContainers.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingMultiProductStagedContainersModify.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingMultiProductStagedContainersTagNumber.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.PaymentMethods.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.PaymentMethodAvailableByDepot.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.QdBags.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Cashier.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CashierCash.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CategoryButtons.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Agencies.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Categories.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Containers.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.QuantityButtons.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Main.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Messages.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Properties.Resources.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Settings.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.StandardDozen.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.WorkStations.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingHome.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingShipments.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingStagedContainers.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingShipmentsScanner.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingShipmentsWarehouseMode.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Sales.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingShipmentsInventory.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.SupplyInventory.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.SupplyInventoryReceive.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Main.en.resources
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Virdis.csproj.GenerateResource.Cache
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\en\Virdis.resources.dll
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Virdis.exe
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Virdis.pdb
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Virdis.csprojAssemblyReference.cache
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Virdis.exe.config
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Virdis.csproj.CoreCompileInputs.cache
+D:\Mis Proyectos\VS15\VC#\Kevin\Virdis\Virdis\obj\Debug\Virdis.csproj.CopyComplete
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.BatchParser.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Resources\abcrcLogo.jpg
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\app.config
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Varios\Solum 2.0 POR User Manual.pdf
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Varios\ARIALN.TTF
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.XE.Core.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.XEvent.Linq.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Resources\ABCRC_Logo_Blk.tif
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Virdis.exe.config
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Virdis.exe
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Virdis.pdb
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\en\Virdis.resources.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.Shared.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.AzureStorageEnum.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.BatchParserClient.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.ConnectionInfoExtended.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Diagnostics.Strace.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Dmf.Common.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Dmf.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.Collector.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.CollectorEnum.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.RegisteredServers.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.SqlParser.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.Utility.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.UtilityEnum.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.XEvent.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.XEventDbScoped.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.XEventDbScopedEnum.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.XEventEnum.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.PolicyEnum.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.RegSvrEnum.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Smo.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.SqlTDiagm.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.SqlWmiManagement.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.SString.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.WmiEnum.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Newtonsoft.Json.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\SirLib.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\SirLib.Hid.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\System.Data.SqlLocalDb.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\System.Net.Http.Formatting.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\stdole.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\FlashControlV71.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\ShockwaveFlashObjects.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.AzureStorageEnum.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.ConnectionInfo.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.ConnectionInfoExtended.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Dmf.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Dmf.Common.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.Collector.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.CollectorEnum.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.RegisteredServers.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.Utility.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.UtilityEnum.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.XEvent.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.XEventDbScoped.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.XEventDbScopedEnum.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Management.XEventEnum.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.PolicyEnum.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.RegSvrEnum.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Smo.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.SmoExtended.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.SqlEnum.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.SqlWmiManagement.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.Types.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Microsoft.SqlServer.WmiEnum.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Newtonsoft.Json.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\SirLib.pdb
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\SirLib.dll.config
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\SirLib.Hid.pdb
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\System.Data.SqlLocalDb.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\System.Net.Http.Formatting.xml
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\en\SirLib.resources.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\es\SirLib.resources.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\en-GB\System.Data.SqlLocalDb.resources.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\Interop.COINUSBLib.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\bin\Debug\AxInterop.COINUSBLib.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Virdis.exe.config
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Interop.COINUSBLib.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\AxInterop.COINUSBLib.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Virdis.csproj.ResolveComReference.cache
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.AlertForm.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.BagPosition.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CashierQdCustomer.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Conveyors.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Forms.Modes.Modes.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingAdjustments.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Customers.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CustomersRetypePass.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CardTypes.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.eRBill_CheckList_ListView.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.eRBill_CheckList.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CashierGetDates.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CustomerOrdersPayNow.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CustomerOrders.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.AttendanceDetails.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Attendance.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CreateTrainingDb.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Employees.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Expenses.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Entries.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CashTrays.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CustomerScreen.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Fees.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CashDenominations.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ExpenseTypes.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Float.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Inventory.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Products.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ReportsMain.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Login2.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.KeyPad.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.PermissionsAsign.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ReportsAssign.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Returns.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingLookup.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.FormKeypad.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingMultiProductStagedContainers.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingMultiProductStagedContainersModify.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingMultiProductStagedContainersTagNumber.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.PaymentMethods.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.PaymentMethodAvailableByDepot.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.QdBags.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Cashier.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CashierCash.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.CategoryButtons.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Agencies.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Categories.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Containers.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.QuantityButtons.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Main.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Messages.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Properties.Resources.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Settings.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.StandardDozen.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.WorkStations.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingHome.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingShipments.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingStagedContainers.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingShipmentsScanner.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingShipmentsWarehouseMode.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Sales.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.ShippingShipmentsInventory.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.SupplyInventory.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.SupplyInventoryReceive.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Solum.Main.en.resources
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Virdis.csproj.GenerateResource.cache
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Virdis.csproj.CoreCompileInputs.cache
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\en\Virdis.resources.dll
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Virdis.csproj.CopyComplete
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Virdis.exe
+D:\Mis Proyectos\VS17\VC#\Kevin\Virdis\Virdis\obj\Debug\Virdis.pdb
+F:\Dropbox\Work\ideaz\Source code\Backup\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.exe
+F:\Dropbox\Work\ideaz\Source code\Backup\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.pdb
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.BatchParser.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.XE.Core.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.XEvent.Linq.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Resources\abcrcLogo.jpg
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\app.config
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Varios\Solum 2.0 POR User Manual.pdf
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Varios\ARIALN.TTF
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Resources\ABCRC_Logo_Blk.tif
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Virdis.exe.config
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Virdis.exe
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Virdis.pdb
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Diagnostics.Strace.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Dmf.Common.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.RegSvrEnum.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Smo.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.SqlTDiagm.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\stdole.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\Interop.COINUSBLib.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\AxInterop.COINUSBLib.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.exe.config
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Interop.COINUSBLib.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\AxInterop.COINUSBLib.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.csproj.ResolveComReference.cache
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.AlertForm.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.BagPosition.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CashierQdCustomer.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Conveyors.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Forms.Modes.Modes.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingAdjustments.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Customers.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CustomersRetypePass.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CardTypes.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.eRBill_CheckList_ListView.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.eRBill_CheckList.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CashierGetDates.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CustomerOrdersPayNow.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CustomerOrders.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.AttendanceDetails.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Attendance.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CreateTrainingDb.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Employees.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Expenses.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Entries.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CashTrays.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CustomerScreen.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Fees.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CashDenominations.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ExpenseTypes.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Float.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Inventory.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Products.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ReportsMain.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Login2.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.KeyPad.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.PermissionsAsign.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ReportsAssign.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Returns.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingLookup.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.FormKeypad.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingMultiProductStagedContainers.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingMultiProductStagedContainersModify.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingMultiProductStagedContainersTagNumber.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.PaymentMethods.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.PaymentMethodAvailableByDepot.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.QdBags.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Cashier.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CashierCash.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CategoryButtons.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Agencies.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Categories.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Containers.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.QuantityButtons.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Main.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Messages.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Properties.Resources.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Settings.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.StandardDozen.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.WorkStations.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingHome.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingShipments.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingStagedContainers.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingShipmentsScanner.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingShipmentsWarehouseMode.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Sales.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingShipmentsInventory.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.SupplyInventory.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.SupplyInventoryReceive.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.csproj.GenerateResource.cache
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.csproj.CoreCompileInputs.cache
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.csproj.CopyComplete
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.exe
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.pdb
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Test.resources
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.csprojAssemblyReference.cache
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.csprojAssemblyReference.cache
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.exe.config
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.csproj.ResolveComReference.cache
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Test.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.AlertForm.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.BagPosition.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CashierQdCustomer.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Conveyors.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Forms.Modes.Modes.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingAdjustments.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Customers.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CustomersRetypePass.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CardTypes.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.eRBill_CheckList_ListView.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.eRBill_CheckList.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CashierGetDates.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CustomerOrdersPayNow.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CustomerOrders.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.AttendanceDetails.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Attendance.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CreateTrainingDb.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Employees.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Expenses.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Entries.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CashTrays.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CustomerScreen.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Fees.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CashDenominations.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ExpenseTypes.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Float.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Inventory.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Products.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ReportsMain.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Login2.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.KeyPad.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.PermissionsAsign.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ReportsAssign.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Returns.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingLookup.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.FormKeypad.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingMultiProductStagedContainers.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingMultiProductStagedContainersModify.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingMultiProductStagedContainersTagNumber.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.PaymentMethods.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.PaymentMethodAvailableByDepot.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.QdBags.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Cashier.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CashierCash.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CategoryButtons.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Agencies.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Categories.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Containers.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.QuantityButtons.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Main.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Messages.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Properties.Resources.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Settings.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.StandardDozen.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.WorkStations.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingHome.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingShipments.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingStagedContainers.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingShipmentsScanner.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingShipmentsWarehouseMode.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Sales.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingShipmentsInventory.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.SupplyInventory.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.SupplyInventoryReceive.resources
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.csproj.GenerateResource.cache
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.csproj.CoreCompileInputs.cache
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.exe
+D:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.pdb
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.csprojAssemblyReference.cache
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.exe.config
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Interop.COINUSBLib.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\AxInterop.COINUSBLib.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.csproj.ResolveComReference.cache
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Test.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.AlertForm.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.BagPosition.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CashierQdCustomer.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Conveyors.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Forms.Modes.Modes.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingAdjustments.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Customers.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CustomersRetypePass.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CardTypes.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.eRBill_CheckList_ListView.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.eRBill_CheckList.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CashierGetDates.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CustomerOrdersPayNow.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CustomerOrders.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.AttendanceDetails.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Attendance.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CreateTrainingDb.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Employees.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Expenses.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Entries.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CashTrays.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CustomerScreen.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Fees.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CashDenominations.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ExpenseTypes.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Float.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Inventory.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Products.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ReportsMain.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Login2.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.KeyPad.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.PermissionsAsign.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ReportsAssign.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Returns.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingLookup.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.FormKeypad.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingMultiProductStagedContainers.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingMultiProductStagedContainersModify.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingMultiProductStagedContainersTagNumber.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.PaymentMethods.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.PaymentMethodAvailableByDepot.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.QdBags.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Cashier.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CashierCash.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.CategoryButtons.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Agencies.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Categories.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Containers.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.QuantityButtons.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Main.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Messages.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Properties.Resources.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Settings.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.StandardDozen.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.WorkStations.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingHome.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingShipments.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingStagedContainers.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingShipmentsScanner.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingShipmentsWarehouseMode.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.Sales.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.ShippingShipmentsInventory.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.SupplyInventory.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Solum.SupplyInventoryReceive.resources
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.csproj.GenerateResource.cache
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.csproj.CoreCompileInputs.cache
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.BatchParser.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Resources\abcrcLogo.jpg
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\app.config
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Varios\Solum 2.0 POR User Manual.pdf
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Varios\ARIALN.TTF
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.XE.Core.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.XEvent.Linq.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Resources\ABCRC_Logo_Blk.tif
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Virdis.exe.config
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Virdis.exe
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Virdis.pdb
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\CrystalDecisions.ReportSource.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\CrystalDecisions.Shared.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Smo.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.ConnectionInfo.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.SmoExtended.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\CrystalDecisions.Windows.Forms.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\stdole.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Management.Sdk.Sfc.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.SqlEnum.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Dmf.Common.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Diagnostics.STrace.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.ServiceBrokerEnum.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.SqlClrProvider.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.RegSvrEnum.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\FlashControlV71.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.SqlTDiagM.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\ShockwaveFlashObjects.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Interop.COINUSBLib.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\AxInterop.COINUSBLib.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.csproj.CopyComplete
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.exe
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\obj\Debug\Virdis.pdb
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\System.Net.Http.Formatting.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.AzureStorageEnum.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.BatchParserClient.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.ConnectionInfoExtended.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Dmf.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Management.Collector.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Management.CollectorEnum.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Management.RegisteredServers.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Management.SqlParser.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Management.Utility.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Management.UtilityEnum.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Management.XEvent.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Management.XEventDbScoped.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Management.XEventDbScopedEnum.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Management.XEventEnum.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.PolicyEnum.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.SString.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.SqlWmiManagement.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.Types.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Microsoft.SqlServer.WmiEnum.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Newtonsoft.Json.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\Newtonsoft.Json.pdb
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\System.Data.SqlLocalDb.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\en-GB\System.Data.SqlLocalDb.resources.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\System.Net.Http.Extensions.dll
+G:\Development Working Copy\Virdis_3_1_02_Source_2019_02_28\Virdis_3_1_02_Source\Virdis\bin\Debug\System.Net.Http.Primitives.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\CrystalDecisions.Windows.Forms.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\FlashControlV71.dll
+F:\Dropbox\Work\ideaz\Source code\Working\Virdis_3_1_02_Source\Virdis\bin\Debug\ShockwaveFlashObjects.dll

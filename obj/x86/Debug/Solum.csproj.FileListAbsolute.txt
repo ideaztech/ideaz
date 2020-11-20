@@ -1,0 +1,396 @@
+G:\Mis proyectos (Miercoles, Sabado)\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Solum.exe.config
+G:\Mis proyectos (Miercoles, Sabado)\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Interop.COINUSBLib.dll
+G:\Mis proyectos (Miercoles, Sabado)\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\AxInterop.COINUSBLib.dll
+G:\Mis proyectos (Miercoles, Sabado)\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.csproj.ResolveComReference.cache
+G:\Mis proyectos (Miercoles, Sabado)\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.exe
+G:\Mis proyectos (Miercoles, Sabado)\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.pdb
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\bin\x86\Debug\Solum.exe.config
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Interop.COINUSBLib.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Interop.WMPLib.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\AxInterop.COINUSBLib.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\AxInterop.WMPLib.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.csproj.ResolveComReference.cache
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.exe
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.csprojResolveAssemblyReference.cache
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.CashierQdCustomer.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.ShippingAdjustments.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Customers.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.CustomersRetypePass.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.CardTypes.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Form3.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.eRBill_CheckList_ListView.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.eRBill_CheckList.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.CashierGetDates.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Form1.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.CustomerOrdersPayNow.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.CustomerOrders.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.AttendanceDetails.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Attendance.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.CreateTrainingDb.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Employees.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Expenses.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Entries.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.CashTrays.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.CustomerScreen.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Fees.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.CashDenominations.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.ExpenseTypes.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Float.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Inventory.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Products.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.ReportsMain.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Login2.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.KeyPad.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.PermissionsAsign.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.ReportsAssign.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Returns.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.ShippingLookup.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.FormKeypad.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.PaymentMethods.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.PaymentMethodAvailableByDepot.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.QdBags.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Cashier.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.CashierCash.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.CategoryButtons.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Agencies.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Categories.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Containers.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.QuantityButtons.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Main.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Messages.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Properties.Resources.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Settings.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.StandardDozen.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.WorkStations.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.ShippingHome.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.ShippingShipments.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.ShippingStagedContainers.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.ShippingShipmentsScanner.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.ShippingShipmentsWarehouseMode.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Sales.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.ShippingShipmentsInventory.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.SupplyInventory.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.SupplyInventoryReceive.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.Main.en.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum_OOPS\Solum\obj\x86\Debug\Solum.csproj.GenerateResource.Cache
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\System.Data.SqlLocalDb.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Varios\Solum 2.0 POR User Manual.pdf
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Varios\ARIALN.TTF
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Resources\ABCRC_Logo_Blk.tif
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Solum.exe.config
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Solum.exe
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Solum.pdb
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\en\Solum.resources.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\BarcodeLib.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Newtonsoft.Json.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLib.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLib.Hid.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLibCore.Client.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLibCore.ClientForms.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLibCore.Data.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLibCore.Utilities.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\System.Net.Http.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\System.Net.Http.Extensions.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\System.Net.Http.Primitives.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\System.Net.Http.WebRequest.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\ChilkatDotNet2.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Newtonsoft.Json.xml
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLib.pdb
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLib.Hid.pdb
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLibCore.Client.pdb
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLibCore.ClientForms.pdb
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLibCore.Data.pdb
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLibCore.Utilities.pdb
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLibCore.Utilities.xml
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\System.Net.Http.xml
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\System.Net.Http.Extensions.xml
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\System.Net.Http.Primitives.xml
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\System.Net.Http.WebRequest.xml
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\en\SirLib.resources.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\es\SirLib.resources.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\en\SirLibCore.ClientForms.resources.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\es\SirLibCore.ClientForms.resources.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Interop.COINUSBLib.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Interop.WMPLib.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\AxInterop.COINUSBLib.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\AxInterop.WMPLib.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.csprojResolveAssemblyReference.cache
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Interop.COINUSBLib.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Interop.WMPLib.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\AxInterop.COINUSBLib.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\AxInterop.WMPLib.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.csproj.ResolveComReference.cache
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.AlertForm.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CashierQdCustomer.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Forms.Modes.Modes.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ShippingAdjustments.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Customers.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CustomersRetypePass.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CardTypes.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Form3.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.eRBill_CheckList_ListView.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.eRBill_CheckList.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CashierGetDates.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Form1.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CustomerOrdersPayNow.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CustomerOrders.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.AttendanceDetails.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Attendance.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CreateTrainingDb.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Employees.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Expenses.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Entries.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CashTrays.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CustomerScreen.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Fees.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CashDenominations.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ExpenseTypes.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Float.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Inventory.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Products.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ReportsMain.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Login2.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.KeyPad.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.PermissionsAsign.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ReportsAssign.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Returns.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ShippingLookup.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.FormKeypad.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.PaymentMethods.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.PaymentMethodAvailableByDepot.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.QdBags.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Cashier.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CashierCash.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CategoryButtons.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Agencies.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Categories.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Containers.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.QuantityButtons.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Main.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Messages.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Properties.Resources.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Settings.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.StandardDozen.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.WorkStations.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ShippingHome.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ShippingShipments.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ShippingStagedContainers.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ShippingShipmentsScanner.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ShippingShipmentsWarehouseMode.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Sales.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ShippingShipmentsInventory.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.SupplyInventory.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.SupplyInventoryReceive.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Main.en.resources
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.csproj.GenerateResource.Cache
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\en\Solum.resources.dll
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.exe
+D:\Mis Proyectos\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.pdb
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Varios\Solum 2.0 POR User Manual.pdf
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Varios\ARIALN.TTF
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Resources\ABCRC_Logo_Blk.tif
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Solum.exe.config
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Solum.exe
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Solum.pdb
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\en\Solum.resources.dll
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Newtonsoft.Json.dll
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLib.dll
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLib.Hid.dll
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLibCore.Data.dll
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLibCore.Utilities.dll
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\System.Net.Http.Formatting.dll
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\ChilkatDotNet2.dll
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Newtonsoft.Json.xml
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLib.pdb
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLib.Hid.pdb
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLibCore.Data.pdb
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLibCore.Utilities.pdb
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\SirLibCore.Utilities.xml
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\System.Net.Http.Formatting.xml
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\en\SirLib.resources.dll
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\es\SirLib.resources.dll
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\Interop.COINUSBLib.dll
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\bin\x86\Debug\AxInterop.COINUSBLib.dll
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.csproj.Solum.exe.config
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Interop.COINUSBLib.dll
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\AxInterop.COINUSBLib.dll
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.csproj.ResolveComReference.cache
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.AlertForm.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CashierQdCustomer.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Forms.Modes.Modes.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ShippingAdjustments.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Customers.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CustomersRetypePass.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CardTypes.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.eRBill_CheckList_ListView.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.eRBill_CheckList.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CashierGetDates.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CustomerOrdersPayNow.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CustomerOrders.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.AttendanceDetails.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Attendance.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CreateTrainingDb.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Employees.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Expenses.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Entries.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CashTrays.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CustomerScreen.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Fees.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CashDenominations.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ExpenseTypes.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Float.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Inventory.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Products.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ReportsMain.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Login2.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.KeyPad.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.PermissionsAsign.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ReportsAssign.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Returns.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ShippingLookup.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.FormKeypad.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.PaymentMethods.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.PaymentMethodAvailableByDepot.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.QdBags.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Cashier.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CashierCash.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.CategoryButtons.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Agencies.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Categories.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Containers.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.QuantityButtons.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Main.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Messages.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Properties.Resources.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Settings.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.StandardDozen.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.WorkStations.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ShippingHome.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ShippingShipments.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ShippingStagedContainers.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ShippingShipmentsScanner.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ShippingShipmentsWarehouseMode.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Sales.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.ShippingShipmentsInventory.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.SupplyInventory.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.SupplyInventoryReceive.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.Main.en.resources
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.csproj.GenerateResource.Cache
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\en\Solum.resources.dll
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.exe
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.pdb
+D:\Mis Proyectos\Visual Studio 2013\Visual C#\Kevin\Solum\Solum\obj\x86\Debug\Solum.csprojResolveAssemblyReference.cache
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\Varios\Solum 2.0 POR User Manual.pdf
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\Varios\ARIALN.TTF
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\Resources\ABCRC_Logo_Blk.tif
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\Solum.exe.config
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\Solum.exe
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\Solum.pdb
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\en\Solum.resources.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\CrystalDecisions.ReportSource.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\CrystalDecisions.Shared.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\Newtonsoft.Json.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\SirLib.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\System.Data.SqlLocalDb.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\System.Net.Http.Formatting.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\System.Web.Services.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\CrystalDecisions.Windows.Forms.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\stdole.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\FlashControlV71.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\ShockwaveFlashObjects.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\Newtonsoft.Json.xml
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\SirLib.pdb
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\System.Data.SqlLocalDb.xml
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\System.Net.Http.Formatting.xml
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\en\SirLib.resources.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\es\SirLib.resources.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\en-GB\System.Data.SqlLocalDb.resources.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\Interop.COINUSBLib.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\AxInterop.COINUSBLib.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.csprojResolveAssemblyReference.cache
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.csproj.Solum.exe.config
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Interop.COINUSBLib.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\AxInterop.COINUSBLib.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.csproj.ResolveComReference.cache
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.AlertForm.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.BagPosition.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.CashierQdCustomer.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Conveyors.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Forms.Modes.Modes.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.ShippingAdjustments.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Customers.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.CustomersRetypePass.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.CardTypes.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.eRBill_CheckList_ListView.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.eRBill_CheckList.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.CashierGetDates.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.CustomerOrdersPayNow.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.CustomerOrders.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.AttendanceDetails.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Attendance.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.CreateTrainingDb.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Employees.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Expenses.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Entries.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.CashTrays.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.CustomerScreen.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Fees.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.CashDenominations.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.ExpenseTypes.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Float.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Inventory.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Products.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.ReportsMain.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Login2.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.KeyPad.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.PermissionsAsign.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.ReportsAssign.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Returns.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.ShippingLookup.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.FormKeypad.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.ShippingMultiProductStagedContainers.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.ShippingMultiProductStagedContainersModify.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.ShippingMultiProductStagedContainersTagNumber.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.PaymentMethods.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.PaymentMethodAvailableByDepot.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.QdBags.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Cashier.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.CashierCash.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.CategoryButtons.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Agencies.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Categories.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Containers.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.QuantityButtons.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Main.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Messages.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Properties.Resources.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Settings.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.StandardDozen.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.WorkStations.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.ShippingHome.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.ShippingShipments.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.ShippingStagedContainers.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.ShippingShipmentsScanner.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.ShippingShipmentsWarehouseMode.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Sales.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.ShippingShipmentsInventory.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.SupplyInventory.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.SupplyInventoryReceive.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.Main.en.resources
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.csproj.GenerateResource.Cache
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\en\Solum.resources.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.exe
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.pdb

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetBol2" targetNamespace="http://tempuri.org/DataSetBol2.xsd" xmlns:mstns="http://tempuri.org/DataSetBol2.xsd" xmlns="http://tempuri.org/DataSetBol2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetBol2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetBol2" msprop:Generator_UserDSName="DataSetBol2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="BOL" msprop:Generator_TableClassName="BOLDataTable" msprop:Generator_TableVarName="tableBOL" msprop:Generator_RowChangedName="BOLRowChanged" msprop:Generator_TablePropName="BOL" msprop:Generator_RowDeletingName="BOLRowDeleting" msprop:Generator_RowChangingName="BOLRowChanging" msprop:Generator_RowEvHandlerName="BOLRowChangeEventHandler" msprop:Generator_RowDeletedName="BOLRowDeleted" msprop:Generator_RowClassName="BOLRow" msprop:Generator_UserTableName="BOL" msprop:Generator_RowEvArgName="BOLRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="rBillNumber" msprop:Generator_ColumnVarNameInTable="columnrBillNumber" msprop:Generator_ColumnPropNameInRow="rBillNumber" msprop:Generator_ColumnPropNameInTable="rBillNumberColumn" msprop:Generator_UserColumnName="rBillNumber" type="xs:string" />
+              <xs:element name="ProName" msprop:Generator_ColumnVarNameInTable="columnProName" msprop:Generator_ColumnPropNameInRow="ProName" msprop:Generator_ColumnPropNameInTable="ProNameColumn" msprop:Generator_UserColumnName="ProName" type="xs:string" minOccurs="0" />
+              <xs:element name="ProCode" msprop:Generator_ColumnVarNameInTable="columnProCode" msprop:Generator_ColumnPropNameInRow="ProCode" msprop:Generator_ColumnPropNameInTable="ProCodeColumn" msprop:Generator_UserColumnName="ProCode" type="xs:string" minOccurs="0" />
+              <xs:element name="Dozens" msprop:Generator_ColumnVarNameInTable="columnDozens" msprop:Generator_ColumnPropNameInRow="Dozens" msprop:Generator_ColumnPropNameInTable="DozensColumn" msprop:Generator_UserColumnName="Dozens" type="xs:int" minOccurs="0" />
+              <xs:element name="WhiteBags" msprop:Generator_ColumnVarNameInTable="columnWhiteBags" msprop:Generator_ColumnPropNameInRow="WhiteBags" msprop:Generator_ColumnPropNameInTable="WhiteBagsColumn" msprop:Generator_UserColumnName="WhiteBags" type="xs:int" minOccurs="0" />
+              <xs:element name="BluBags" msprop:Generator_ColumnVarNameInTable="columnBluBags" msprop:Generator_ColumnPropNameInRow="BluBags" msprop:Generator_ColumnPropNameInTable="BluBagsColumn" msprop:Generator_UserColumnName="BluBags" type="xs:int" minOccurs="0" />
+              <xs:element name="OneWayBags" msprop:Generator_ColumnVarNameInTable="columnOneWayBags" msprop:Generator_ColumnPropNameInRow="OneWayBags" msprop:Generator_ColumnPropNameInTable="OneWayBagsColumn" msprop:Generator_UserColumnName="OneWayBags" type="xs:int" minOccurs="0" />
+              <xs:element name="ABCRCPallets" msprop:Generator_ColumnVarNameInTable="columnABCRCPallets" msprop:Generator_ColumnPropNameInRow="ABCRCPallets" msprop:Generator_ColumnPropNameInTable="ABCRCPalletsColumn" msprop:Generator_UserColumnName="ABCRCPallets" type="xs:int" minOccurs="0" />
+              <xs:element name="ExtraContainerDozens" msprop:Generator_ColumnVarNameInTable="columnExtraContainerDozens" msprop:Generator_ColumnPropNameInRow="ExtraContainerDozens" msprop:Generator_ColumnPropNameInTable="ExtraContainerDozensColumn" msprop:Generator_UserColumnName="ExtraContainerDozens" type="xs:int" minOccurs="0" />
+              <xs:element name="ExtraContainerWhiteBags" msprop:Generator_ColumnVarNameInTable="columnExtraContainerWhiteBags" msprop:Generator_ColumnPropNameInRow="ExtraContainerWhiteBags" msprop:Generator_ColumnPropNameInTable="ExtraContainerWhiteBagsColumn" msprop:Generator_UserColumnName="ExtraContainerWhiteBags" type="xs:int" minOccurs="0" />
+              <xs:element name="ExtraContainerBluBags" msprop:Generator_ColumnVarNameInTable="columnExtraContainerBluBags" msprop:Generator_ColumnPropNameInRow="ExtraContainerBluBags" msprop:Generator_ColumnPropNameInTable="ExtraContainerBluBagsColumn" msprop:Generator_UserColumnName="ExtraContainerBluBags" type="xs:int" minOccurs="0" />
+              <xs:element name="ExtraContainerOneWayBags" msprop:Generator_ColumnVarNameInTable="columnExtraContainerOneWayBags" msprop:Generator_ColumnPropNameInRow="ExtraContainerOneWayBags" msprop:Generator_ColumnPropNameInTable="ExtraContainerOneWayBagsColumn" msprop:Generator_UserColumnName="ExtraContainerOneWayBags" type="xs:int" minOccurs="0" />
+              <xs:element name="ExtraContainerABCRCPallets" msprop:Generator_ColumnVarNameInTable="columnExtraContainerABCRCPallets" msprop:Generator_ColumnPropNameInRow="ExtraContainerABCRCPallets" msprop:Generator_ColumnPropNameInTable="ExtraContainerABCRCPalletsColumn" msprop:Generator_UserColumnName="ExtraContainerABCRCPallets" type="xs:int" minOccurs="0" />
+              <xs:element name="EmptyContainerDozens" msprop:Generator_ColumnVarNameInTable="columnEmptyContainerDozens" msprop:Generator_ColumnPropNameInRow="EmptyContainerDozens" msprop:Generator_ColumnPropNameInTable="EmptyContainerDozensColumn" msprop:Generator_UserColumnName="EmptyContainerDozens" type="xs:int" minOccurs="0" />
+              <xs:element name="EmptyContainerWhiteBags" msprop:Generator_ColumnVarNameInTable="columnEmptyContainerWhiteBags" msprop:Generator_ColumnPropNameInRow="EmptyContainerWhiteBags" msprop:Generator_ColumnPropNameInTable="EmptyContainerWhiteBagsColumn" msprop:Generator_UserColumnName="EmptyContainerWhiteBags" type="xs:int" minOccurs="0" />
+              <xs:element name="EmptyContainerBluBags" msprop:Generator_ColumnVarNameInTable="columnEmptyContainerBluBags" msprop:Generator_ColumnPropNameInRow="EmptyContainerBluBags" msprop:Generator_ColumnPropNameInTable="EmptyContainerBluBagsColumn" msprop:Generator_UserColumnName="EmptyContainerBluBags" type="xs:int" minOccurs="0" />
+              <xs:element name="EmptyContainerOneWayBags" msprop:Generator_ColumnVarNameInTable="columnEmptyContainerOneWayBags" msprop:Generator_ColumnPropNameInRow="EmptyContainerOneWayBags" msprop:Generator_ColumnPropNameInTable="EmptyContainerOneWayBagsColumn" msprop:Generator_UserColumnName="EmptyContainerOneWayBags" type="xs:int" minOccurs="0" />
+              <xs:element name="EmptyContainerABCRCPallets" msprop:Generator_ColumnVarNameInTable="columnEmptyContainerABCRCPallets" msprop:Generator_ColumnPropNameInRow="EmptyContainerABCRCPallets" msprop:Generator_ColumnPropNameInTable="EmptyContainerABCRCPalletsColumn" msprop:Generator_UserColumnName="EmptyContainerABCRCPallets" type="xs:int" minOccurs="0" />
+              <xs:element name="Units" msprop:Generator_ColumnVarNameInTable="columnUnits" msprop:Generator_ColumnPropNameInRow="Units" msprop:Generator_ColumnPropNameInTable="UnitsColumn" msprop:Generator_UserColumnName="Units" type="xs:int" minOccurs="0" />
+              <xs:element name="ExtraContainerUnits" msprop:Generator_ColumnVarNameInTable="columnExtraContainerUnits" msprop:Generator_ColumnPropNameInRow="ExtraContainerUnits" msprop:Generator_ColumnPropNameInTable="ExtraContainerUnitsColumn" msprop:Generator_UserColumnName="ExtraContainerUnits" type="xs:int" minOccurs="0" />
+              <xs:element name="EmptyContainerUnits" msprop:Generator_ColumnVarNameInTable="columnEmptyContainerUnits" msprop:Generator_ColumnPropNameInRow="EmptyContainerUnits" msprop:Generator_ColumnPropNameInTable="EmptyContainerUnitsColumn" msprop:Generator_UserColumnName="EmptyContainerUnits" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Bol2Key1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:BOL" />
+      <xs:field xpath="mstns:rBillNumber" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

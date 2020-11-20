@@ -1,0 +1,10 @@
+﻿1_BusinessName
+2_StoreNumber
+3_Address
+4_City
+5_State
+6_PhoneNumber
+7_Message
+8_LegalName
+9_DateFrom
+10_DateTo

@@ -1,0 +1,1578 @@
+﻿
+		//Additional Methods
+		/**************
+		OOOOJJJJOOOOO
+		--comment all [IsNew] references for
+		***************/
+		--Qds_Drop
+		--Qds_Bags
+		--Sol_Orders
+		--Sol_OrdersDetails
+		--Sol_Customers
+
+
+
+		/******************************************************************************/
+		--Sol_OrdersDetails
+		/******************************************************************************/
+
+        #region Additional Methods
+
+        #endregion
+
+		/******************************************************************************/
+		--Vir_Conveyor
+		/******************************************************************************/
+
+		/******************************************************************************/
+		--Vir_ConveyorLink
+		/******************************************************************************/
+        #region Additional Methods
+
+        /// <summary>
+        /// Selects all records from the Vir_ConveyorLink table by a foreign key.
+        /// </summary>
+        public virtual Vir_ConveyorLink _SelectByBagPositionIDConveyorID(int bagPositionID, int conveyorID)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@BagPositionID", bagPositionID)
+                , new SqlParameter("@ConveyorID", conveyorID)
+            };
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "Vir_ConveyorLink_SelectAllByBagPositionIDConveyorID", parameters))
+            {
+                if (dataReader.Read())
+                {
+                    return MakeVir_ConveyorLink(dataReader);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+        #endregion
+
+
+		/******************************************************************************/
+		--Vir_StagingMethod
+		/******************************************************************************/
+
+
+		/******************************************************************************
+		--Sol_WorkStations
+		******************************************************************************/
+        #region Additional Methods
+
+        /// <summary>
+        /// Selects a single record from the sol_WorkStations table.
+        /// </summary>
+        public virtual Sol_WorkStation SelectByName(string name)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@Name", name)
+            };
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_WorkStations_SelectByName", parameters))
+            {
+                if (dataReader.Read())
+                {
+                    return MakeSol_WorkStation(dataReader);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+        #endregion
+
+
+		/**************
+		--Sol_CategoryButtons
+		***************/
+		in Insert and Update
+		comment:
+				//new SqlParameter("@ForeColorArgb", sol_CategoryButton.ForeColorArgb),
+				//new SqlParameter("@BackColorArgb", sol_CategoryButton.BackColorArgb)
+
+		replace:
+
+		/// <summary>
+		/// Creates a new instance of the sol_CategoryButtons class and populates it with data from the specified SqlDataReader.
+		/// </summary>
+		protected virtual Sol_CategoryButton MakeSol_CategoryButton(SqlDataReader dataReader)
+		{
+			Sol_CategoryButton sol_CategoryButton = new Sol_CategoryButton();
+			sol_CategoryButton.CategoryButtonID = SqlClientUtility.GetInt32(dataReader, "CategoryButtonID", 0);
+			sol_CategoryButton.WorkStationID = SqlClientUtility.GetInt32(dataReader, "WorkStationID", -1);
+			sol_CategoryButton.ControlType = SqlClientUtility.GetByte(dataReader, "ControlType", 0x00);
+			sol_CategoryButton.Description = SqlClientUtility.GetString(dataReader, "Description", String.Empty);
+			sol_CategoryButton.DefaultQuantity = SqlClientUtility.GetInt32(dataReader, "DefaultQuantity", 0);
+			sol_CategoryButton.CategoryID = SqlClientUtility.GetInt32(dataReader, "CategoryID", 0);
+			sol_CategoryButton.LocationX = SqlClientUtility.GetInt32(dataReader, "LocationX", 0);
+			sol_CategoryButton.LocationY = SqlClientUtility.GetInt32(dataReader, "LocationY", 0);
+			sol_CategoryButton.Width = SqlClientUtility.GetInt32(dataReader, "Width", 0);
+			sol_CategoryButton.Height = SqlClientUtility.GetInt32(dataReader, "Height", 0);
+			sol_CategoryButton.Font = SqlClientUtility.GetString(dataReader, "Font", String.Empty);
+			sol_CategoryButton.FontStyle = SqlClientUtility.GetString(dataReader, "FontStyle", String.Empty);
+			sol_CategoryButton.ForeColor = SqlClientUtility.GetString(dataReader, "ForeColor", String.Empty);
+			sol_CategoryButton.BackColor = SqlClientUtility.GetString(dataReader, "BackColor", String.Empty);
+			sol_CategoryButton.ImageIndex = SqlClientUtility.GetInt32(dataReader, "ImageIndex", 0);
+			sol_CategoryButton.ImagePath = SqlClientUtility.GetString(dataReader, "ImagePath", String.Empty);
+			sol_CategoryButton.SubContainerMaxCount = SqlClientUtility.GetInt32(dataReader, "SubContainerMaxCount", 0);
+			sol_CategoryButton.SubContainerCounter = SqlClientUtility.GetInt32(dataReader, "SubContainerCounter", 0);
+			sol_CategoryButton.ImageSize = SqlClientUtility.GetByte(dataReader, "ImageSize", 0x00);
+			sol_CategoryButton.SubContainerCountDown = SqlClientUtility.GetBoolean(dataReader, "SubContainerCountDown", false);
+			sol_CategoryButton.MaxCountPerLine = SqlClientUtility.GetInt32(dataReader, "MaxCountPerLine", 0);
+            try
+            {
+                sol_CategoryButton.ForeColorArgb = SqlClientUtility.GetInt32(dataReader, "ForeColorArgb", 0);
+                sol_CategoryButton.BackColorArgb = SqlClientUtility.GetInt32(dataReader, "BackColorArgb", 0);
+            }
+            catch { }
+
+
+			return sol_CategoryButton;
+		}
+
+        #region Additional Methods
+
+        /// <summary>
+        /// Saves a record to the sol_CategoryButtons table.
+        /// </summary>
+        public virtual void Insert2(Sol_CategoryButton sol_CategoryButton)
+        {
+            ValidationUtility.ValidateArgument("sol_CategoryButton", sol_CategoryButton);
+
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@WorkStationID", sol_CategoryButton.WorkStationID),
+				new SqlParameter("@ControlType", sol_CategoryButton.ControlType),
+				new SqlParameter("@Description", sol_CategoryButton.Description),
+				new SqlParameter("@DefaultQuantity", sol_CategoryButton.DefaultQuantity),
+				new SqlParameter("@CategoryID", sol_CategoryButton.CategoryID),
+				new SqlParameter("@LocationX", sol_CategoryButton.LocationX),
+				new SqlParameter("@LocationY", sol_CategoryButton.LocationY),
+				new SqlParameter("@Width", sol_CategoryButton.Width),
+				new SqlParameter("@Height", sol_CategoryButton.Height),
+				new SqlParameter("@Font", sol_CategoryButton.Font),
+				new SqlParameter("@FontStyle", sol_CategoryButton.FontStyle),
+				new SqlParameter("@ForeColor", sol_CategoryButton.ForeColor),
+				new SqlParameter("@BackColor", sol_CategoryButton.BackColor),
+				new SqlParameter("@ImageIndex", sol_CategoryButton.ImageIndex),
+				new SqlParameter("@ImagePath", sol_CategoryButton.ImagePath),
+				new SqlParameter("@SubContainerMaxCount", sol_CategoryButton.SubContainerMaxCount),
+				new SqlParameter("@SubContainerCounter", sol_CategoryButton.SubContainerCounter),
+				new SqlParameter("@ImageSize", sol_CategoryButton.ImageSize),
+				new SqlParameter("@SubContainerCountDown", sol_CategoryButton.SubContainerCountDown),
+				new SqlParameter("@MaxCountPerLine", sol_CategoryButton.MaxCountPerLine),
+				new SqlParameter("@ForeColorArgb", sol_CategoryButton.ForeColorArgb),
+				new SqlParameter("@BackColorArgb", sol_CategoryButton.BackColorArgb)
+			};
+
+            sol_CategoryButton.CategoryButtonID = (int)SqlClientUtility.ExecuteScalar(connectionStringName, CommandType.StoredProcedure, "sol_CategoryButtons_Insert2", parameters);
+        }
+
+        /// <summary>
+        /// Updates a record in the sol_CategoryButtons table.
+        /// </summary>
+        public virtual void Update2(Sol_CategoryButton sol_CategoryButton)
+        {
+            ValidationUtility.ValidateArgument("sol_CategoryButton", sol_CategoryButton);
+
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@CategoryButtonID", sol_CategoryButton.CategoryButtonID),
+				new SqlParameter("@WorkStationID", sol_CategoryButton.WorkStationID),
+				new SqlParameter("@ControlType", sol_CategoryButton.ControlType),
+				new SqlParameter("@Description", sol_CategoryButton.Description),
+				new SqlParameter("@DefaultQuantity", sol_CategoryButton.DefaultQuantity),
+				new SqlParameter("@CategoryID", sol_CategoryButton.CategoryID),
+				new SqlParameter("@LocationX", sol_CategoryButton.LocationX),
+				new SqlParameter("@LocationY", sol_CategoryButton.LocationY),
+				new SqlParameter("@Width", sol_CategoryButton.Width),
+				new SqlParameter("@Height", sol_CategoryButton.Height),
+				new SqlParameter("@Font", sol_CategoryButton.Font),
+				new SqlParameter("@FontStyle", sol_CategoryButton.FontStyle),
+				new SqlParameter("@ForeColor", sol_CategoryButton.ForeColor),
+				new SqlParameter("@BackColor", sol_CategoryButton.BackColor),
+				new SqlParameter("@ImageIndex", sol_CategoryButton.ImageIndex),
+				new SqlParameter("@ImagePath", sol_CategoryButton.ImagePath),
+				new SqlParameter("@SubContainerMaxCount", sol_CategoryButton.SubContainerMaxCount),
+				new SqlParameter("@SubContainerCounter", sol_CategoryButton.SubContainerCounter),
+				new SqlParameter("@ImageSize", sol_CategoryButton.ImageSize),
+				new SqlParameter("@SubContainerCountDown", sol_CategoryButton.SubContainerCountDown),
+				new SqlParameter("@MaxCountPerLine", sol_CategoryButton.MaxCountPerLine),
+				new SqlParameter("@ForeColorArgb", sol_CategoryButton.ForeColorArgb),
+				new SqlParameter("@BackColorArgb", sol_CategoryButton.BackColorArgb)
+			};
+
+            SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "sol_CategoryButtons_Update2", parameters);
+        }
+
+        /// <summary>
+        /// Selects all records from the sol_CategoryButtons table by a foreign key.
+        /// </summary>
+        public virtual List<Sol_CategoryButton> _SelectAllByButtonType(/*int workStationID,*/ byte buttonType)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				//new SqlParameter("@WorkStationID", workStationID),
+				new SqlParameter("@ButtonType", buttonType)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_CategoryButtons_SelectAllByButtonType", parameters))
+            {
+                List<Sol_CategoryButton> sol_CategoryButtonList = new List<Sol_CategoryButton>();
+                while (dataReader.Read())
+                {
+                    Sol_CategoryButton sol_CategoryButton = MakeSol_CategoryButton(dataReader);
+                    sol_CategoryButtonList.Add(sol_CategoryButton);
+                }
+
+                return sol_CategoryButtonList;
+            }
+        }
+
+        /// <summary>
+        /// Selects all records from the sol_CategoryButtons table by a foreign key.
+        /// </summary>
+        public virtual List<Sol_CategoryButton> _SelectAllByPaging(/*int workStationID, byte buttonType, */int pageNumber, int pageSize, ref int lastPage)
+        {
+            SqlParameter outputParameter = new SqlParameter("@LastPage", SqlDbType.Int)
+            {
+                Direction = ParameterDirection.Output
+            };
+
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				//new SqlParameter("@WorkStationID", workStationID),
+				//new SqlParameter("@ButtonType", buttonType), 
+				new SqlParameter("@PageNumber", pageNumber), 
+				new SqlParameter("@PageSize", pageSize),
+                outputParameter
+            };
+
+            List<Sol_CategoryButton> sol_CategoryButtonList = new List<Sol_CategoryButton>();
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_CategoryButtons_SelectAllByPaging", parameters))
+            {
+                while (dataReader.Read())
+                {
+                    Sol_CategoryButton sol_CategoryButton = MakeSol_CategoryButton(dataReader);
+                    sol_CategoryButtonList.Add(sol_CategoryButton);
+                }
+
+                //lastPage = (int)parameters("@LastPage").Value;
+
+                //return sol_CategoryButtonList;
+            }
+
+            lastPage = (int)outputParameter.Value;
+
+            return sol_CategoryButtonList;
+
+        }
+
+        #endregion
+
+
+
+		/**************
+		--Qds_Drop
+		***************/
+
+		In public virtual void Update(Qds_Drop qds_Drop)
+		Comment this out
+		        //,
+                //new SqlParameter("@IsNew", qds_Drop.IsNew)
+
+        #region Additional Methods
+
+		/// <summary>
+		/// Selects all records from the Qds_Drop table by a foreign key.
+		/// </summary>
+		public virtual List<Qds_Drop> _SelectAllByOrderID_OrderType(int orderID, string orderType)
+		{
+			SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@OrderID", orderID),
+				new SqlParameter("@OrderType", orderType)
+			};
+
+			using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "Qds_Drop_SelectAllByOrderID_OrderType", parameters))
+			{
+				List<Qds_Drop> qds_DropList = new List<Qds_Drop>();
+				while (dataReader.Read())
+				{
+					Qds_Drop qds_Drop = MakeQds_Drop(dataReader);
+					qds_DropList.Add(qds_Drop);
+				}
+
+				return qds_DropList;
+			}
+		}
+
+        /// <summary>
+        /// Selects all records from the Qds_Drop table.
+        /// </summary>
+        public virtual List<Qds_Drop> SelectAllByOrderTpe(string orderType)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@OrderType", orderType)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "Qds_Drop_SelectAllByOrderType", parameters))
+            {
+                List<Qds_Drop> qds_DropList = new List<Qds_Drop>();
+                while (dataReader.Read())
+                {
+                    Qds_Drop qds_Drop = MakeQds_Drop(dataReader);
+                    qds_DropList.Add(qds_Drop);
+                }
+
+                return qds_DropList;
+            }
+        }
+
+
+        /// <summary>
+        /// Selects all records from the Qds_Drop table.
+        /// </summary>
+        public virtual List<Qds_Drop> SelectAllInProcess()
+        {
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "Qds_Drop_SelectAllInProcess"))
+            {
+                List<Qds_Drop> qds_DropList = new List<Qds_Drop>();
+                while (dataReader.Read())
+                {
+                    Qds_Drop qds_Drop = MakeQds_Drop(dataReader);
+                    qds_DropList.Add(qds_Drop);
+                }
+
+                return qds_DropList;
+            }
+        }
+
+        /// <summary>
+        /// Selects a single record from the Qds_Drop table.
+        /// </summary>
+        public virtual bool IsReady(int dropID)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@DropID", dropID)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "Qds_Drop_IsReady", parameters))
+            {
+                if (dataReader.Read())
+                {
+                    return SqlClientUtility.GetBoolean(dataReader, "Ready", false);
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+
+        #endregion
+
+		/**************
+		--Qds_Bag
+		***************/
+		In public virtual void Update(Qds_Bag qds_Bag)
+		Comment this out
+                //,
+                //new SqlParameter("@IsNew", qds_Bag.IsNew)
+		
+        //*************
+		//--Sol_Settings
+        //*************
+
+		Change byte[] to Object in Sol_Setting and Sol_Setting_Sp classes!
+
+
+
+        //*************
+        //--Sol_OrderCardLink
+        //*************
+        #region Additional Methods
+
+        /// <summary>
+        /// Selects a single record from the Sol_OrderCardLink table.
+        /// </summary>
+        public virtual Sol_OrderCardLink SelectByCardNumber(string cardNumber)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@CardNumber", cardNumber)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "Sol_OrderCardLink_SelectByCardNumber", parameters))
+            {
+                if (dataReader.Read())
+                {
+                    return MakeSol_OrderCardLink(dataReader);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Deletes a record from the Sol_OrderCardLink table by its primary key.
+        /// </summary>
+        public virtual void DeleteByCardNumber(string cardNumber)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@CardNumber", cardNumber)
+			};
+
+            SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "Sol_OrderCardLink_DeleteByCardNumber", parameters);
+        }
+
+        /// <summary>
+        /// Selects all records from the Sol_OrderCardLink table by a foreign key.
+        /// </summary>
+        public virtual List<Sol_OrderCardLink> SelectAllByCardNumber(string cardNumber)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@CardNumber", cardNumber)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "Sol_OrderCardLink_SelectByCardNumber", parameters))
+            {
+                List<Sol_OrderCardLink> sol_OrderCardLinkList = new List<Sol_OrderCardLink>();
+                while (dataReader.Read())
+                {
+                    Sol_OrderCardLink sol_OrderCardLink = MakeSol_OrderCardLink(dataReader);
+                    sol_OrderCardLinkList.Add(sol_OrderCardLink);
+                }
+
+                return sol_OrderCardLinkList;
+            }
+        }
+
+
+        #endregion
+
+
+        //*************
+        //--Sol_AutoNumbers
+        //*************
+        #region Additional Methods
+
+        /// <summary>
+        /// Updates a record in the Sol_AutoNumbers table.
+        /// </summary>
+        public virtual int UpdateTagNumber(int agencyID, int folioID)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@AgencyID", agencyID),
+				new SqlParameter("@FolioID", folioID)
+			};
+
+            return (int)SqlClientUtility.ExecuteScalar(connectionStringName, CommandType.StoredProcedure, "Sol_AutoNumbers_UpdateTagNumber", parameters);
+        }
+
+        /// <summary>
+        /// Updates a record in the Sol_AutoNumbers table.
+        /// </summary>
+        public virtual int UpdateRBillNumber(int agencyID, int folioID)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@AgencyID", agencyID),
+				new SqlParameter("@FolioID", folioID)
+			};
+
+            return (int)SqlClientUtility.ExecuteScalar(connectionStringName, CommandType.StoredProcedure, "Sol_AutoNumbers_UpdateRBillNumber", parameters);
+        }
+
+        #endregion
+
+
+        //*************
+        //--Sac_ClientNames
+        //*************
+        #region Additional Methods
+
+		/// <summary>
+		/// Selects a single record from the Sac_ClientNames table.
+		/// </summary>
+		public virtual Sac_ClientName SelectByCashTrayID(int cashTrayID)
+		{
+			SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@CashTrayID", cashTrayID)
+			};
+
+			using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "Sac_ClientNames_SelectByCashTrayID", parameters))
+			{
+				if (dataReader.Read())
+				{
+					return MakeSac_ClientName(dataReader);
+				}
+				else
+				{
+					return null;
+				}
+			}
+		}
+
+		#endregion
+
+        //*************
+        //--Sac_Money
+        //*************
+        #region Additional Methods
+
+        /// <summary>
+        /// Selects all records from the Sac_Money table by a foreign key.
+        /// </summary>
+        public virtual List<Sac_Money> _SelectAllByTypeID(string countryCode, int typeID)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@CountryCode", countryCode),
+				new SqlParameter("@TypeID", typeID)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "Sac_Money_SelectAllByTypeID", parameters))
+            {
+                List<Sac_Money> sac_MoneyList = new List<Sac_Money>();
+                while (dataReader.Read())
+                {
+                    Sac_Money sac_Money = MakeSac_Money(dataReader);
+                    sac_MoneyList.Add(sac_Money);
+                }
+
+                return sac_MoneyList;
+            }
+        }
+
+		#endregion
+
+        //*************
+        //--Sac_MoneyInventory
+        //*************
+        #region Additional Methods
+
+        /// <summary>
+        /// Selects all records from the Sac_MoneyInventory table by a foreign key.
+        /// </summary>
+        public virtual List<Sac_MoneyInventory> _SelectAllByClientID(string clientID)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@ClientID", clientID)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "Sac_MoneyInventory_SelectAllByClientID", parameters))
+            {
+                List<Sac_MoneyInventory> sac_MoneyInventoryList = new List<Sac_MoneyInventory>();
+                while (dataReader.Read())
+                {
+                    Sac_MoneyInventory sac_MoneyInventory = MakeSac_MoneyInventory(dataReader);
+                    sac_MoneyInventoryList.Add(sac_MoneyInventory);
+                }
+
+                return sac_MoneyInventoryList;
+            }
+        }
+
+
+        //NOT USING IT RIGHT NOW
+        /// <summary>
+        /// Selects all records from the Sac_MoneyInventory table by a foreign key.
+        /// </summary>
+        //public virtual List<Sac_MoneyInventory> _SelectByClientIDTypeID(string clientID, int typeID)
+        //{
+        //    SqlParameter[] parameters = new SqlParameter[]
+        //    {
+        //        new SqlParameter("@ClientID", clientID),
+        //        new SqlParameter("@TypeID", typeID)
+        //    };
+
+        //    using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "Sac_MoneyInventory_SelectByClientIDTypeID", parameters))
+        //    {
+        //        List<Sac_MoneyInventory> sac_MoneyInventoryList = new List<Sac_MoneyInventory>();
+        //        while (dataReader.Read())
+        //        {
+        //            Sac_MoneyInventory sac_MoneyInventory = MakeSac_MoneyInventory(dataReader);
+        //            sac_MoneyInventoryList.Add(sac_MoneyInventory);
+        //        }
+
+        //        return sac_MoneyInventoryList;
+        //    }
+        //}
+
+
+        #endregion
+
+
+        //*************
+        //--Sol_Customers
+        //*************
+		In public virtual void Update(Sol_Customer sol_Customer)
+		Comment this out
+		        //,
+                //new SqlParameter("@IsNew", sol_Customer.IsNew)
+
+
+        #region Additional Methods
+
+        /// <summary>
+        /// Selects a single record from the sol_Customers table.
+        /// </summary>
+        public virtual Sol_Customer SelectByCardNumber(string cardNumber)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@CardNumber", cardNumber)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Customers_SelectByCardNumber", parameters))
+            {
+                if (dataReader.Read())
+                {
+                    return MakeSol_Customer(dataReader);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Get customer balance
+        /// </summary>
+        public virtual decimal GetCustomerBalance(int customerID, string dateTo)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@CustomerID", customerID),
+				new SqlParameter("@DateTo", dateTo)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "Sol_Customers_Balance", parameters))
+            {
+                if (dataReader.Read())
+                {
+                    return SqlClientUtility.GetDecimal(dataReader, "Balance", Decimal.Zero);
+                }
+                else
+                {
+                    return 0m;
+                }
+            }
+        }
+
+        #endregion
+
+        //*************
+        //--Sol_Employees
+        //*************
+
+        #region Additional Methods
+
+        /// <summary>
+        /// Selects all records from the Sol_Employees table (lookup).
+        /// </summary>
+        public virtual List<Sol_Employee> SelectAllLookup()
+        {
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "Sol_Employees_SelectAllLookup"))
+            {
+                List<Sol_Employee> sol_EmployeeList = new List<Sol_Employee>();
+                while (dataReader.Read())
+                {
+                    Sol_Employee sol_Employee = MakeSol_Employee(dataReader);
+                    sol_EmployeeList.Add(sol_Employee);
+                }
+
+                return sol_EmployeeList;
+            }
+        }
+		@endregion
+
+        //*************
+        //--Sol_Orders
+        //*************
+		In public virtual void Update(Sol_Order sol_Order)
+		Comment this out
+                //,
+                //new SqlParameter("@IsNew", sol_Order.IsNew)
+
+		//REPLACE these procedures 
+
+		/// <summary>
+		/// Saves a record to the sol_Orders table.
+		/// </summary>
+		public virtual void Insert(Sol_Order sol_Order)
+		{
+			ValidationUtility.ValidateArgument("sol_Order", sol_Order);
+
+			SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@OrderType", sol_Order.OrderType),
+				new SqlParameter("@WorkStationID", sol_Order.WorkStationID),
+				new SqlParameter("@ComputerName", sol_Order.ComputerName),
+				new SqlParameter("@UserID", sol_Order.UserID),
+				new SqlParameter("@UserName", sol_Order.UserName),
+				new SqlParameter("@Date", sol_Order.Date),
+				new SqlParameter("@CashTrayID", sol_Order.CashTrayID),
+				new SqlParameter("@CustomerID", sol_Order.CustomerID),
+				new SqlParameter("@Name", sol_Order.Name),
+				new SqlParameter("@Address1", sol_Order.Address1),
+				new SqlParameter("@Address2", sol_Order.Address2),
+				new SqlParameter("@City", sol_Order.City),
+				new SqlParameter("@Province", sol_Order.Province),
+				new SqlParameter("@Country", sol_Order.Country),
+				new SqlParameter("@PostalCode", sol_Order.PostalCode),
+				new SqlParameter("@TotalAmount", sol_Order.TotalAmount),
+				new SqlParameter("@DateClosed", sol_Order.DateClosed),
+				new SqlParameter("@FeeID", sol_Order.FeeID),
+				new SqlParameter("@FeeAmount", sol_Order.FeeAmount),
+				new SqlParameter("@Status", sol_Order.Status),
+				new SqlParameter("@DatePaid", sol_Order.DatePaid),
+				new SqlParameter("@Tax1Amount", sol_Order.Tax1Amount),
+				new SqlParameter("@Tax2Amount", sol_Order.Tax2Amount),
+				new SqlParameter("@Reference", sol_Order.Reference),
+				new SqlParameter("@PaymentTypeID", sol_Order.PaymentTypeID),
+				//new SqlParameter("@SecurityCode", sol_Order.SecurityCode)
+				new SqlParameter("@Comments", sol_Order.Comments),
+				new SqlParameter("@IsNew", sol_Order.IsNew)
+			};
+
+			sol_Order.OrderID = (int) SqlClientUtility.ExecuteScalar(connectionStringName, CommandType.StoredProcedure, "sol_Orders_Insert", parameters);
+		}
+
+		/// <summary>
+		/// Selects all records from the sol_Orders table by a foreign key.
+		/// </summary>
+        public virtual List<Sol_Order> _SelectAllByCustomerID(string orderType, int customerID)
+		{
+			SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@OrderType", orderType),
+				new SqlParameter("@CustomerID", customerID)
+			};
+
+			using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Orders_SelectAllByCustomerID", parameters))
+			{
+				List<Sol_Order> sol_OrderList = new List<Sol_Order>();
+				while (dataReader.Read())
+				{
+					Sol_Order sol_Order = MakeSol_Order(dataReader);
+					sol_OrderList.Add(sol_Order);
+				}
+
+				return sol_OrderList;
+			}
+		}
+
+
+        #region Aditional Methods
+
+        /// <summary>
+        /// Selects all records from the sol_Orders table by a foreign key.
+        /// </summary>
+        public virtual List<Sol_Order> _SelectAllBy(string orderType, string status, int customerID, string dateFrom, string dateTo)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@OrderType", orderType),
+				new SqlParameter("@Status", status),
+				new SqlParameter("@CustomerID", customerID),
+   				new SqlParameter("@DateFrom", dateFrom),
+				new SqlParameter("@DateTo", dateTo)
+
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Orders_SelectAllBy", parameters))
+            {
+                List<Sol_Order> sol_OrderList = new List<Sol_Order>();
+                while (dataReader.Read())
+                {
+                    Sol_Order sol_Order = MakeSol_Order(dataReader);
+                    sol_OrderList.Add(sol_Order);
+                }
+
+                return sol_OrderList;
+            }
+        }
+
+        /// <summary>
+        /// Selects all records from the sol_Orders table by a foreign key.
+        /// </summary>
+        public virtual void _UpdateCustomerID(int orderID, string orderType, int customerID)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@OrderID", orderID),
+				new SqlParameter("@OrderType", orderType),
+				new SqlParameter("@CustomerID", customerID)
+			};
+
+            SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "sol_Orders_UpdateCustomerID", parameters);
+        }
+
+        /// <summary>
+        /// Selects a single record from the sol_Orders table.
+        /// </summary>
+        public virtual Sol_Order SelectWithSecCode(int orderID, string securityCode)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@OrderID", orderID),
+				new SqlParameter("@SecurityCode", securityCode)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Orders_SelectWithSecCode", parameters))
+            {
+                if (dataReader.Read())
+                {
+                    return MakeSol_Order(dataReader);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+
+        /// <summary>
+        /// Updates a record in the sol_Orders table.
+        /// </summary>
+        public virtual void UpdateDates(int orderID, string orderType, string date, string dateField)
+        {
+
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@OrderID", orderID),
+				new SqlParameter("@OrderType", orderType),
+				new SqlParameter("@Date", date),
+				new SqlParameter("@DateField", dateField)
+			};
+
+            SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "sol_Orders_UpdateDates", parameters);
+        }
+
+
+        public virtual List<Sol_Order> SelectAllByCustomerUnpaid(string orderType, int customerID, bool unPaid)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@OrderType", orderType),
+				new SqlParameter("@CustomerID", customerID),
+				new SqlParameter("@UnPaid", unPaid)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Orders_SelectAllByCustomerUnPaid", parameters))
+            {
+                List<Sol_Order> sol_OrderList = new List<Sol_Order>();
+                while (dataReader.Read())
+                {
+                    Sol_Order sol_Order = MakeSol_Order(dataReader);
+                    sol_OrderList.Add(sol_Order);
+                }
+
+                return sol_OrderList;
+            }
+        }
+
+
+        /// <summary>
+        /// Selects all records from the sol_Orders table by a foreign key.
+        /// </summary>
+        public virtual List<Sol_Order> _SelectAllByStatus(string orderType, string status, int customerID, string dateFrom, string dateTo)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@OrderType", orderType),
+				new SqlParameter("@Status", status),
+				new SqlParameter("@CustomerID", customerID),
+   				new SqlParameter("@DateFrom", dateFrom),
+				new SqlParameter("@DateTo", dateTo)
+
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Orders_SelectAllByStatus", parameters))
+            {
+                List<Sol_Order> sol_OrderList = new List<Sol_Order>();
+                while (dataReader.Read())
+                {
+                    Sol_Order sol_Order = MakeSol_Order(dataReader);
+                    sol_OrderList.Add(sol_Order);
+                }
+
+                return sol_OrderList;
+            }
+        }
+
+
+        /// <summary>
+        /// Selects all records from the sol_Orders table by a foreign key.
+        /// </summary>
+        public virtual Sol_Order _SelectByOrderID(int orderID)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@OrderID", orderID)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Orders_SelectByOrderID", parameters))
+            {
+                if (dataReader.Read())
+                {
+                    return MakeSol_Order(dataReader);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+
+        /// <summary>
+        /// Updates a record in the sol_Orders table.
+        /// </summary>
+        public virtual void UpdateStatus(int orderID, string orderType, string status)
+        {
+
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@OrderID", orderID),
+				new SqlParameter("@OrderType", orderType),
+				new SqlParameter("@Status", status)
+			};
+
+            SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "sol_Orders_UpdateStatus", parameters);
+        }
+
+        /// <summary>
+        /// Selects a single record from the sol_Orders table.
+        /// </summary>
+        public virtual void CheckIntegrity(
+            int orderID, string orderType,
+            ref decimal @TotalAmount,
+            ref decimal @DetailTotalAmount
+            )
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@OrderID", orderID),
+				new SqlParameter("@OrderType", orderType)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Orders_CheckIntegrity", parameters))
+            {
+                if (dataReader.Read())
+                {
+                    @TotalAmount = SqlClientUtility.GetDecimal(dataReader, "TotalAmount", Decimal.Zero);
+                    @DetailTotalAmount = SqlClientUtility.GetDecimal(dataReader, "DetailTotalAmount", Decimal.Zero);
+
+                    //return MakeSol_Order(dataReader);
+                }
+                else
+                {
+                    @TotalAmount = Decimal.Zero;
+                    @DetailTotalAmount = Decimal.Zero;
+
+                    //return null;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Updates a record in the sol_Orders table.
+        /// </summary>
+        public virtual void UpdateFees(int orderID, string orderType, int feeID, decimal feeAmount)
+        {
+
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@OrderID", orderID),
+				new SqlParameter("@OrderType", orderType),
+				new SqlParameter("@FeeID", feeID),
+				new SqlParameter("@FeeAmount", feeAmount)
+			};
+
+            SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "sol_Orders_UpdateFees", parameters);
+        }
+
+
+        /// <summary>
+        /// Updates a record in the sol_Orders table.
+        /// </summary>
+        public virtual void UpdateTaxes(int orderID, string orderType, decimal tax1Amount, decimal tax2Amount)
+        {
+
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@OrderID", orderID),
+				new SqlParameter("@OrderType", orderType),
+				new SqlParameter("@Tax1Amount", tax1Amount),
+				new SqlParameter("@Tax2Amount", tax2Amount)
+			};
+
+            SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "sol_Orders_UpdateTaxes", parameters);
+        }
+        #endregion
+
+        //*************
+        //--Sol_OrdersDetail
+        //*************
+		In public virtual void Update(Sol_OrderDetail sol_OrderDetail)
+		Comment this out
+                //,
+                //new SqlParameter("@IsNew", sol_OrderDetail.IsNew)
+
+
+        //*************
+        //--sol_Stage
+        //*************
+
+        #region Additional Methods
+
+		/// <summary>
+		/// Selects all records from the sol_Stage table by a foreign key.
+		/// </summary>
+		public virtual List<Sol_Stage> _SelectAllByShipmentID(int shipmentID)
+		{
+			SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@ShipmentID", shipmentID)
+			};
+
+			using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Stage_SelectAllByShipmentID", parameters))
+			{
+				List<Sol_Stage> sol_StageList = new List<Sol_Stage>();
+				while (dataReader.Read())
+				{
+					Sol_Stage sol_Stage = MakeSol_Stage(dataReader);
+					sol_StageList.Add(sol_Stage);
+				}
+
+				return sol_StageList;
+			}
+		}
+
+        /// <summary>
+        /// Deletes a record from the sol_Stage table by a foreign key.
+        /// </summary>
+        public virtual void _DeleteAllByShipmentIdTagNumber(int shipmentID, string tagNumber)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@ShipmentID", shipmentID),
+				new SqlParameter("@TagNumber", tagNumber)
+			};
+
+            SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "sol_Stage_DeleteAllByShipmentIdTagNumber", parameters);
+        }
+
+
+
+        /// <summary>
+        /// Selects all records from the sol_Stage table by a foreign key.
+        /// </summary>
+        public virtual Sol_Stage _SelectByShipmentIdContainerId(int shipmentId, int containerId)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@ShipmentID", shipmentId),
+				new SqlParameter("@ContainerID", containerId)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Stage_SelectByShipmentIdContainerId", parameters))
+            {
+                if (dataReader.Read())
+                {
+                    return MakeSol_Stage(dataReader);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+
+        /// <summary>
+        /// Selects all records from the sol_Stage table by a foreign key.
+        /// </summary>
+        public virtual List<Sol_Stage> _SelectAllByAgency(string status, int agency)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@Status", status),
+				new SqlParameter("@Agency", agency)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Stage_SelectAllByAgency", parameters))
+            {
+                List<Sol_Stage> sol_StageList = new List<Sol_Stage>();
+                while (dataReader.Read())
+                {
+                    Sol_Stage sol_Stage = MakeSol_Stage(dataReader);
+                    sol_StageList.Add(sol_Stage);
+                }
+
+                return sol_StageList;
+            }
+        }
+
+        /// <summary>
+        /// Selects all records from the sol_Stage table by a foreign key.
+        /// </summary>
+        public virtual List<Sol_Stage> _SelectAllByAgencyClosed(string status, int agency)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@Status", status),
+                new SqlParameter("@Agency", agency)
+            };
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Stage_SelectAllByAgencyClosed", parameters))
+            {
+                List<Sol_Stage> sol_StageList = new List<Sol_Stage>();
+                while (dataReader.Read())
+                {
+                    Sol_Stage sol_Stage = MakeSol_Stage(dataReader);
+                    sol_StageList.Add(sol_Stage);
+                }
+
+                return sol_StageList;
+            }
+        }
+
+
+        /// <summary>
+        /// Selects all records from the sol_Stage table by a foreign key.
+        /// </summary>
+        public virtual List<Sol_Stage> _SelectAllByStatus(string status)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@Status", status)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Stage_SelectAllByStatus", parameters))
+            {
+                List<Sol_Stage> sol_StageList = new List<Sol_Stage>();
+                while (dataReader.Read())
+                {
+                    Sol_Stage sol_Stage = MakeSol_Stage(dataReader);
+                    sol_StageList.Add(sol_Stage);
+                }
+
+                return sol_StageList;
+            }
+        }
+
+        /// <summary>
+        /// Selects all records from the sol_Stage table by a foreign key.
+        /// </summary>
+        public virtual Sol_Stage _SelectByTagNumberStatus(string tagNumber, string status)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@TagNumber", tagNumber),
+				new SqlParameter("@Status", status)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Stage_SelectByTagNumberStatus", parameters))
+            {
+                if (dataReader.Read())
+                {
+                    return MakeSol_Stage(dataReader);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Updates a record in the sol_Stage table.
+        /// </summary>
+        public virtual void UpdateStatus(int shipmentId, string tagNumber, string statusOld, string status)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@ShipmentID", shipmentId),
+				new SqlParameter("@TagNumber", tagNumber),
+				new SqlParameter("@StatusOld", statusOld),
+				new SqlParameter("@Status", status)
+			};
+
+            SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "sol_Stage_UpdateStatus", parameters);
+        }
+
+
+        /// <summary>
+        /// Updates a record in the sol_Stage table.
+        /// </summary>
+        public virtual void UpdateStatusByShipmentId(int shipmentId, string status)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@ShipmentID", shipmentId),
+				new SqlParameter("@Status", status)
+			};
+
+            SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "sol_Stage_UpdateStatusByShipmentId", parameters);
+        }
+
+		#endregion
+
+		//***************
+        //--Sol_Shipment
+		//***************
+
+        //Additional Stored Procedures
+
+        #region Additional Methods
+
+        /// <summary>
+        /// Updates a record in the sol_Shipment table.
+        /// </summary>
+        public virtual void UpdateERBillTransmitted(int shipmentId, bool eRBillTransmitted)
+        {
+
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@ShipmentID", shipmentId),
+				new SqlParameter("@eRBillTransmitted", eRBillTransmitted)
+			};
+
+            SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "sol_Shipment_UpdateERBillTransmitted", parameters);
+        }
+
+        /// <summary>
+        /// Updates a record in the sol_Shipment table.
+        /// </summary>
+        public virtual void UpdateERBill(Sol_Shipment sol_Shipment)
+        {
+            ValidationUtility.ValidateArgument("sol_Shipment", sol_Shipment);
+
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@ShipmentID", sol_Shipment.ShipmentID),
+				new SqlParameter("@CarrierID", sol_Shipment.CarrierID),
+				new SqlParameter("@PlantID", sol_Shipment.PlantID),
+				new SqlParameter("@TrailerNumber", sol_Shipment.TrailerNumber),
+				new SqlParameter("@ProBillNumber", sol_Shipment.ProBillNumber),
+				new SqlParameter("@ShippedDate", sol_Shipment.ShippedDate),
+				new SqlParameter("@SealNumber", sol_Shipment.SealNumber),
+				new SqlParameter("@LoadReference", sol_Shipment.LoadReference),
+				new SqlParameter("@eRBillTransmitted", sol_Shipment.ERBillTransmitted)
+			};
+
+            SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "sol_Shipment_UpdateERBill", parameters);
+        }
+
+        /// <summary>
+        /// Updates a record in the sol_Shipment table.
+        /// </summary>
+        public virtual void UpdateStatus(int shipmentId, string status)
+        {
+
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@ShipmentID", shipmentId),
+				new SqlParameter("@Status", status)
+			};
+
+            SqlClientUtility.ExecuteNonQuery(connectionStringName, CommandType.StoredProcedure, "sol_Shipment_UpdateStatus", parameters);
+        }
+
+
+        /// <summary>
+        /// Selects all records from the sol_Shipment table.
+        /// </summary>
+        public virtual List<Sol_Shipment> SelectAllByStatus(string status, bool newestOnTop)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@Status", status),
+				new SqlParameter("@NewestOnTop", newestOnTop)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Shipment_SelectAllByStatus", parameters))
+            {
+                List<Sol_Shipment> sol_ShipmentList = new List<Sol_Shipment>();
+                while (dataReader.Read())
+                {
+                    Sol_Shipment sol_Shipment = MakeSol_Shipment(dataReader);
+                    sol_ShipmentList.Add(sol_Shipment);
+                }
+
+                return sol_ShipmentList;
+            }
+        }
+
+        /// <summary>
+        /// Selects a single record from the sol_Shipment table.
+        /// </summary>
+        public virtual Sol_Shipment SelectByRBillNumber(string  rBillNumber)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@RBillNumber", rBillNumber)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Shipment_SelectByRBillNumber", parameters))
+            {
+                if (dataReader.Read())
+                {
+                    return MakeSol_Shipment(dataReader);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Selects all records from the sol_Shipment table.
+        /// </summary>
+        public virtual List<Sol_Shipment> SelectAllBetweenDatesByStatus(string dateFrom, string dateTo, string status, bool newestOnTop)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@DateFrom", dateFrom),
+				new SqlParameter("@DateTo", dateTo),
+				new SqlParameter("@Status", status),
+				new SqlParameter("@NewestOnTop", newestOnTop)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Shipment_SelectAllBetweenDatesByStatus", parameters))
+            {
+                List<Sol_Shipment> sol_ShipmentList = new List<Sol_Shipment>();
+                while (dataReader.Read())
+                {
+                    Sol_Shipment sol_Shipment = MakeSol_Shipment(dataReader);
+                    sol_ShipmentList.Add(sol_Shipment);
+                }
+
+                return sol_ShipmentList;
+            }
+        }
+
+        // comment out the original routine
+        /// <summary>
+        /// Selects all records from the sol_Shipment table.
+        /// </summary>
+        public virtual List<Sol_Shipment> SelectAll(bool newestOnTop)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@NewestOnTop", newestOnTop)
+			};
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Shipment_SelectAll", parameters))
+            {
+                List<Sol_Shipment> sol_ShipmentList = new List<Sol_Shipment>();
+                while (dataReader.Read())
+                {
+                    Sol_Shipment sol_Shipment = MakeSol_Shipment(dataReader);
+                    sol_ShipmentList.Add(sol_Shipment);
+                }
+
+                return sol_ShipmentList;
+            }
+        }
+
+		#endregion
+        
+        //*************
+        //--Sol_Products
+        //*************
+        //in public virtual void Insert(Sol_Product sol_Product)
+        //change:
+        //   new SqlParameter("@ProImage", sol_Product.ProImage),
+        //for:
+   		//   new SqlParameter("@ProImage", new byte[0]),
+        
+        
+        #region Additional Procedures
+
+        /// <summary>
+        /// Selects a single record from the sol_Products table by ProductCode
+        /// </summary>
+        public virtual Sol_Product SelectProductCode(string productCode)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@ProductCode", productCode)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Products_SelectProductCode", parameters))
+            {
+                if (dataReader.Read())
+                {
+                    return MakeSol_Product(dataReader);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+
+		#endregion
+
+        //*************
+        //--Sol_Entries
+        //*************
+        /// <summary>
+        /// Selects a single record from the sol_Entries table.
+        /// </summary>
+        public virtual decimal GetValueOfFloat(int cashTrayID, int closingEntryID)
+        {
+            /*
+            @CashTrayID int,            --not required when providing Closing EntryID
+            @ClosingEntryID int = NULL  --optional if you want to know the calculated value of a previous close
+             
+            */
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@CashTrayID", cashTrayID),
+				new SqlParameter("@ClosingEntryID", closingEntryID)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Entries_GetValueOfFloat", parameters))
+            {
+                if (dataReader.Read())
+                {
+                    return SqlClientUtility.GetDecimal(dataReader, "CurrentFloat", Decimal.Zero);
+                }
+                else
+                {
+                    return 0m;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Selects a single record from the sol_Entries table.
+        /// </summary>
+        public virtual decimal GetLastClosingValue(int cashTrayID)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+            {
+                new SqlParameter("@CashTrayID", cashTrayID)
+            };
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Entries_GetLastClosingValue", parameters))
+            {
+                if (dataReader.Read())
+                {
+                    return SqlClientUtility.GetDecimal(dataReader, "Amount", Decimal.Zero);
+                }
+                else
+                {
+                    return 0m;
+                    //}
+                }
+            }
+        }
+
+
+        /// <summary>
+        /// Selects all records from the sol_Entries table by a foreign key.
+        /// </summary>
+        public virtual List<Sol_Entrie> SelectAllByTypeDateTray(string entryType, DateTime date, int cashTrayID)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@EntryType", entryType),
+				new SqlParameter("@Date", date),
+				new SqlParameter("@CashTrayID", cashTrayID)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Entries_SelectAllByTypeDateTray", parameters))
+            {
+                List<Sol_Entrie> sol_EntrieList = new List<Sol_Entrie>();
+                while (dataReader.Read())
+                {
+                    Sol_Entrie sol_Entrie = MakeSol_Entrie(dataReader);
+                    sol_EntrieList.Add(sol_Entrie);
+                }
+
+                return sol_EntrieList;
+            }
+        }
+
+        /// <summary>
+        /// Selects a single record from the sol_Entries table.
+        /// </summary>
+        public virtual Sol_Entrie SelectLastType(string entryType, int cashTrayID)
+        {
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+                new SqlParameter("@EntryType", entryType),
+                new SqlParameter("@CashTrayID", cashTrayID)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "sol_Entries_SelectLastType", parameters))
+            {
+                if (dataReader.Read())
+                {
+                    return MakeSol_Entrie(dataReader);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+        }
+
+        //*************
+        //--Sol_EmployeesLog
+        //*************
+        /// <summary>
+        /// Selects last pucnh in and out from the Sol_EmployeesLog table.
+        /// </summary>
+        public virtual Sol_EmployeesLog LastPunch(string userId)
+        {
+
+            SqlParameter[] parameters = new SqlParameter[]
+			{
+				new SqlParameter("@UserId", userId)
+			};
+
+            using (SqlDataReader dataReader = SqlClientUtility.ExecuteReader(connectionStringName, CommandType.StoredProcedure, "Sol_EmployeesLog_LastPunch", parameters))
+            {
+                if (dataReader.Read())
+                {
+                    return MakeSol_EmployeesLog(dataReader);
+                }
+                else
+                {
+                    return null;
+                }
+            }
+
+        }
+
+        

@@ -1,0 +1,234 @@
+<?xml version="1.0"?>
+<configuration>
+  
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+            <section name="Solum.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false"/>
+        </sectionGroup>
+    </configSections>
+  
+    <connectionStrings>
+        <clear />
+        <add name="Solum.Properties.Settings.WsirConnectionString" connectionString="Data Source=RUBITO-PC\SQLEXPRESS;Initial Catalog=Solum;Integrated Security=True"
+            providerName="System.Data.SqlClient" />
+        <add name="Solum.Properties.Settings.WsirDbConnectionString"
+            connectionString="Data Source=RUBITO-PC\SQLEXPRESS;Initial Catalog=Solum;Integrated Security=True"
+            providerName="System.Data.SqlClient" />
+    </connectionStrings>
+
+  <system.web>
+    <membership>
+      <providers>
+        <remove name="AspNetSqlMembershipProvider"/>
+        <add name="AspNetSqlMembershipProvider" type="System.Web.Security.SqlMembershipProvider, System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" connectionStringName="Solum.Properties.Settings.WsirConnectionString" enablePasswordRetrieval="false" enablePasswordReset="true" requiresQuestionAndAnswer="true" applicationName="/" requiresUniqueEmail="false" passwordFormat="Hashed" maxInvalidPasswordAttempts="10" minRequiredPasswordLength="4" minRequiredNonalphanumericCharacters="0" passwordAttemptWindow="10" passwordStrengthRegularExpression=""/>
+      </providers>
+    </membership>
+
+    <roleManager enabled="true">
+      <providers>
+        <remove name="AspNetSqlRoleProvider"/>
+        <add name="AspNetSqlRoleProvider" connectionStringName="Solum.Properties.Settings.WsirConnectionString" applicationName="/" type="System.Web.Security.SqlRoleProvider"/>
+        <remove name="AspNetWindowsTokenRoleProvider"/>
+        <add name="AspNetWindowsTokenRoleProvider" applicationName="/" type="System.Web.Security.WindowsTokenRoleProvider"/>
+      </providers>
+    </roleManager>
+  </system.web>
+
+  <userSettings>
+        <Solum.Properties.Settings>
+              <setting name="LoginUsuarioNombre" serializeAs="String">
+                    <value />
+              </setting>
+              <setting name="SplashSilenciar" serializeAs="String">
+                    <value>False</value>
+              </setting>
+              <setting name="SQLServidorConectado" serializeAs="String">
+                    <value>False</value>
+              </setting>
+              <setting name="SQLServidorNombre" serializeAs="String">
+                    <value />
+              </setting>
+              <setting name="SQLBaseDeDatos" serializeAs="String">
+                    <value>Solum</value>
+              </setting>
+              <setting name="VersionPaqueteServicioWsir" serializeAs="String">
+                    <value />
+              </setting>
+              <setting name="VersionPaqueteServicioBaseDatos" serializeAs="String">
+                    <value />
+              </setting>
+              <setting name="LoginUsuarioRecuerdame" serializeAs="String">
+                    <value>False</value>
+              </setting>
+              <setting name="UsuarioNombre" serializeAs="String">
+                    <value />
+              </setting>
+              <setting name="UsuarioRol" serializeAs="String">
+                    <value />
+              </setting>
+              <setting name="SQLAutentificacion" serializeAs="String">
+                    <value>0</value>
+              </setting>
+              <setting name="SQLUsuarioNombre" serializeAs="String">
+                    <value />
+              </setting>
+              <setting name="SQLUsuarioClave" serializeAs="String">
+                    <value />
+              </setting>
+              <setting name="SQLRecuerdame" serializeAs="String">
+                    <value>False</value>
+              </setting>
+              <setting name="Lenguaje" serializeAs="String">
+                    <value />
+              </setting>
+              <setting name="SplashEsconder" serializeAs="String">
+                    <value>False</value>
+              </setting>
+              <setting name="FechaActual" serializeAs="String">
+                    <value />
+              </setting>
+              <setting name="LenguajeLocalize" serializeAs="String">
+                    <value>False</value>
+              </setting>
+              <setting name="TouchOriented" serializeAs="String">
+                    <value>True</value>
+              </setting>
+              <setting name="BaseDeDatosPrincipal" serializeAs="String">
+                    <value>Solum</value>
+              </setting>
+              <setting name="PermisoUsarAplicacion" serializeAs="String">
+                    <value>False</value>
+              </setting>
+              <setting name="SettingsWsWorkStationName" serializeAs="String">
+                    <value />
+              </setting>
+              <setting name="SettingsWsReportPrinter" serializeAs="String">
+                    <value />
+              </setting>
+              <setting name="SettingsWsReceiptPrinter" serializeAs="String">
+                    <value />
+              </setting>
+              <setting name="SettingsWsReportPrintPreview" serializeAs="String">
+                    <value>True</value>
+              </setting>
+              <setting name="SettingsWsReceiptLinesAfterPrinting" serializeAs="String">
+                    <value>0</value>
+              </setting>
+              <setting name="SettingsWsReceiptPrintPreview" serializeAs="String">
+                    <value>True</value>
+              </setting>
+              <setting name="SettingsWsLabelPrinter" serializeAs="String">
+                    <value />
+              </setting>
+              <setting name="SettingsWsLabelCommands" serializeAs="String">
+                    <value />
+              </setting>
+              <setting name="SettingsWsTicketOpenDrawer" serializeAs="String">
+                    <value />
+              </setting>
+              <setting name="SettingsWsTicketCutPaper" serializeAs="String">
+                    <value />
+              </setting>
+              <setting name="SettingsAdFullScreenMode" serializeAs="String">
+                    <value>False</value>
+              </setting>
+              <setting name="SettingsAdHideTaskBar" serializeAs="String">
+                    <value>False</value>
+              </setting>
+              <setting name="SettingsAdCustomerScreenEnable" serializeAs="String">
+                    <value>False</value>
+              </setting>
+              <setting name="SettingsAdCustomerScreenRefresh" serializeAs="String">
+                    <value>5</value>
+              </setting>
+              <setting name="SettingsAdCustomerScreenImagesFolder" serializeAs="String">
+                    <value />
+              </setting>
+              <setting name="SettingsAdCustomerScreenImageInterval" serializeAs="String">
+                    <value>15</value>
+              </setting>
+              <setting name="SettingsAdCustomerScreenAutomaticLoading" serializeAs="String">
+                    <value>False</value>
+              </setting>
+              <setting name="SettingsDefaultCashTray" serializeAs="String">
+                    <value>0</value>
+              </setting>
+              <setting name="SettingsCurrentCashTray" serializeAs="String">
+                    <value>0</value>
+              </setting>
+              <setting name="CheckUpdatesOnStart" serializeAs="String">
+                    <value>True</value>
+              </setting>
+              <setting name="SettingsWsTicketOpenDrawerSendTwice" serializeAs="String">
+                    <value>False</value>
+              </setting>
+              <setting name="SettingsSecurityApprovalUnPay" serializeAs="String">
+                    <value>True</value>
+              </setting>
+              <setting name="SettingsSecurityEnableUnPay" serializeAs="String">
+                    <value>True</value>
+              </setting>
+              <setting name="SettingReturnsNumericPadSelectProductFirst" serializeAs="String">
+                    <value>False</value>
+              </setting>
+              <setting name="AttendanceEmployeesListRefresh" serializeAs="String">
+                    <value>5</value>
+              </setting>
+              <setting name="SettingsCustomerScreenMonitor" serializeAs="String">
+                    <value>0</value>
+              </setting>
+              <setting name="CoinDispenserTFlexCommunicationChannel" serializeAs="String">
+                    <value>0</value>
+              </setting>
+              <setting name="CoinDispenserTFlexSetProtocol" serializeAs="String">
+                    <value>2</value>
+              </setting>
+              <setting name="CoinDispenserTFlexSetCommBaud" serializeAs="String">
+                    <value>0</value>
+              </setting>
+              <setting name="CoinDispenserTFlexSetCommPort" serializeAs="String">
+                    <value>1</value>
+              </setting>
+              <setting name="CoinDispenserEnabled" serializeAs="String">
+                    <value>False</value>
+              </setting>
+              <setting name="CoinDispenserDevice" serializeAs="String">
+                    <value>0</value>
+              </setting>
+              <setting name="ReportsTextBoxFileNameText" serializeAs="String">
+                    <value />
+              </setting>
+        </Solum.Properties.Settings>
+    </userSettings>
+<!--
+<startup><supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/></startup>
+To reference a net 2.0 mixed mode
+-->
+<startup useLegacyV2RuntimeActivationPolicy="true">
+  <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
+</startup>
+
+  <system.serviceModel>
+    <bindings>
+      <wsHttpBinding>
+        <binding name="WSHttpBinding_IWsHttpsAbcrcService">
+          <security mode="TransportWithMessageCredential">
+            <transport clientCredentialType="None"/>
+            <message clientCredentialType="UserName"/>
+          </security>
+        </binding>
+      </wsHttpBinding>
+    </bindings>
+    <client>
+      <endpoint address="https://abcrcerbill.com/WcfAbcrcService/WsHttpsAbcrcService.svc" binding="wsHttpBinding" bindingConfiguration="WSHttpBinding_IWsHttpsAbcrcService" contract="WsHttpsAbcrcServiceReference.IWsHttpsAbcrcService" name="WSHttpBinding_IWsHttpsAbcrcService"/>
+    </client>
+  </system.serviceModel>
+	<runtime>
+		<assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+			<dependentAssembly>
+				<assemblyIdentity name="System.Web.Services" publicKeyToken="B03F5F7F11D50A3A" culture="neutral"/>
+				<bindingRedirect oldVersion="0.0.0.0-4.0.0.0" newVersion="4.0.0.0"/>
+			</dependentAssembly>
+		</assemblyBinding>
+	</runtime>
+</configuration>

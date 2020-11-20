@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Dropbox\\Work\\ideaz\\Source code\\Working\\Solum\\Solum.csproj": {}
+  },
+  "projects": {
+    "D:\\Dropbox\\Work\\ideaz\\Source code\\Working\\Solum\\Solum.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Dropbox\\Work\\ideaz\\Source code\\Working\\Solum\\Solum.csproj",
+        "projectName": "Solum",
+        "projectPath": "D:\\Dropbox\\Work\\ideaz\\Source code\\Working\\Solum\\Solum.csproj",
+        "packagesPath": "C:\\Users\\tyler\\.nuget\\packages\\",
+        "outputPath": "D:\\Dropbox\\Work\\ideaz\\Source code\\Working\\Solum\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tyler\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net451"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net451": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net451": {
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.SqlServer.SqlManagementObjects": {
+              "target": "Package",
+              "version": "[140.17283.0, )"
+            },
+            "System.Data.SqlLocalDb": {
+              "target": "Package",
+              "version": "[1.15.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

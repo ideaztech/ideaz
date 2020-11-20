@@ -1,0 +1,3763 @@
+﻿
+/****************************************************************************/
+/****************************************************************************/
+/******                  Aditional Stored Procedures                   ******/
+/****************************************************************************/
+
+/******************************************************************************
+--Sol_WorkStations
+******************************************************************************/
+/****** Object:  StoredProcedure [dbo].[sol_WorkStations_SelectByName]    Script Date: 09/05/2016 11:28:21 a. m. ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[sol_WorkStations_SelectByName]
+(
+	@Name nvarchar(50)
+)
+
+AS
+
+SET NOCOUNT ON
+
+SELECT *
+FROM [sol_WorkStations]
+WHERE [Name] = @Name
+
+GO
+
+/******************************************************************************
+--Sol_OrdersDetail
+******************************************************************************/
+/****** Object:  StoredProcedure [dbo].[sol_OrdersDetail_Update]    Script Date: 10/19/2015 2:25:44 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sol_OrdersDetail_Update]
+(
+	@DetailID int,
+	@OrderID int,
+	@OrderType char(1),
+	@Date datetime,
+	@CategoryID int,
+	@ProductID int,
+	@Description varchar(100),
+	@Quantity int,
+	@Price money,
+	@Amount money,
+	@Status char(1),
+	@CategoryButtonID int,
+	@BagID int,
+	@ConveyorID int,
+	@StageID int
+)
+
+AS
+DECLARE @OLDOrderID int,
+	@OLDOrderType char(1),
+	@OLDDate datetime,
+	@OLDCategoryID int,
+	@OLDProductID int,
+	@OLDDescription varchar(100),
+	@OLDQuantity int,
+	@OLDPrice money,
+	@OLDAmount money,
+	@OLDStatus char(1),
+	@OLDCategoryButtonID int,
+	@OLDBagID int,	
+	@OldConveyorID int,
+	@OldStageID int,
+	@SQL nvarchar(2000),
+	@FoundChange bit = 0
+
+SET NOCOUNT ON
+
+SELECT @OLDOrderID = [OrderID],
+	@OLDOrderType = [OrderType],
+	@OLDDate = ISNULL([Date],''),
+	@OLDCategoryID = [CategoryID],
+	@OLDProductID = ISNULL([ProductID],0),
+	@OLDDescription = [Description],
+	@OLDQuantity = [Quantity],
+	@OLDPrice = [Price],
+	@OLDAmount = [Amount],
+	@OLDStatus = ISNULL([Status],''),
+	@OLDCategoryButtonID = ISNULL([CategoryButtonID],0),
+	@OLDBagID = [BagID],
+	@OldConveyorID = [ConveyorID],
+	@OldStageID = [StageID]
+
+FROM dbo.sol_OrdersDetail WHERE [DetailID] = @DetailID
+
+SET @SQL = 'UPDATE dbo.sol_OrdersDetail WITH (ROWLOCK) SET '
+
+If @OLDOrderID != @OrderID 
+	BEGIN
+		SET @SQL = @SQL + 'OrderID = ' + CONVERT(nvarchar(50), @OrderID)
+		SET @FoundChange = 1
+	END
+If @OLDOrderType != @OrderType
+	BEGIN
+		If @FoundChange = 1 SET @SQL = @SQL + ','
+		SET @SQL = @SQL + 'OrderType = ''' + CONVERT(nvarchar(50), @OrderType) + ''''
+		SET @FoundChange = 1
+	END
+If @OLDDate != ISNULL(@Date, '')
+	BEGIN
+		If @FoundChange = 1 SET @SQL = @SQL + ','
+		SET @SQL = @SQL + '[Date] = ''' + CONVERT(nvarchar(50), @Date,120) + ''''
+		SET @FoundChange = 1
+	END
+If @OLDCategoryID != @CategoryID
+	BEGIN
+		If @FoundChange = 1 SET @SQL = @SQL + ','
+		SET @SQL = @SQL + 'CategoryID = ' + CONVERT(nvarchar(50), @CategoryID)
+		SET @FoundChange = 1
+	END
+If @OLDProductID != ISNULL(@ProductID, 0)
+	BEGIN
+		If @FoundChange = 1 SET @SQL = @SQL + ','
+		SET @SQL = @SQL + 'ProductID = ' + CONVERT(nvarchar(50), @ProductID)
+		SET @FoundChange = 1
+	END
+If @OLDDescription != ISNULL(@Description, '')
+	BEGIN
+		If @FoundChange = 1 SET @SQL = @SQL + ','
+		SET @SQL = @SQL + 'Description = ''' + @Description + ''''
+		SET @FoundChange = 1
+	END
+If @OLDQuantity != @Quantity
+	BEGIN
+		If @FoundChange = 1 SET @SQL = @SQL + ','
+		SET @SQL = @SQL + 'Quantity = ' + CONVERT(nvarchar(50), @Quantity)
+		SET @FoundChange = 1
+	END
+If @OLDPrice != @Price
+	BEGIN
+		If @FoundChange = 1 SET @SQL = @SQL + ','
+		SET @SQL = @SQL + 'Price = ' + CONVERT(nvarchar(50), @Price)
+		SET @FoundChange = 1
+	END
+If @OLDAmount != @Amount
+	BEGIN
+		If @FoundChange = 1 SET @SQL = @SQL + ','
+		SET @SQL = @SQL + 'Amount = ' + CONVERT(nvarchar(50), @Amount)
+		SET @FoundChange = 1
+	END
+If @OLDStatus != ISNULL(@Status, '')
+	BEGIN
+		If @FoundChange = 1 SET @SQL = @SQL + ','
+		SET @SQL = @SQL + 'Status = ''' + CONVERT(nvarchar(50), @Status) + ''''
+		SET @FoundChange = 1
+	END
+If @OLDCategoryButtonID != ISNULL(@CategoryButtonID, 0)
+	BEGIN
+		If @FoundChange = 1 SET @SQL = @SQL + ','
+		SET @SQL = @SQL + 'CategoryButtonID = ' + CONVERT(nvarchar(50), @CategoryButtonID)
+		SET @FoundChange = 1
+	END
+If @OLDBagID != @BagID
+	BEGIN
+		If @FoundChange = 1 SET @SQL = @SQL + ','
+		SET @SQL = @SQL + 'BagID = ' + CONVERT(nvarchar(50), @BagID)
+		SET @FoundChange = 1
+	END
+If @OldConveyorID != @ConveyorID
+	BEGIN
+		If @FoundChange = 1 SET @SQL = @SQL + ','
+		SET @SQL = @SQL + 'BagID = ' + CONVERT(nvarchar(50), @ConveyorID)
+		SET @FoundChange = 1
+	END
+If @OldStageID != @StageID
+	BEGIN
+		If @FoundChange = 1 SET @SQL = @SQL + ','
+		SET @SQL = @SQL + 'BagID = ' + CONVERT(nvarchar(50), @StageID)
+		SET @FoundChange = 1
+	END
+
+
+If @FoundChange = 1 
+	BEGIN
+		SET @SQL = @SQL + ' WHERE [DetailID] = ' + Convert(nvarchar(50), @DetailID)
+		EXEC(@SQL)
+	END
+GO
+
+/****** Object:  StoredProcedure [dbo].[Sol_OrdersDetail_NewToSync]    Script Date: 10/10/2015 8:47:29 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Sol_OrdersDetail_NewToSync]
+
+AS
+
+SELECT      dbo.sol_OrdersDetail.DetailID, dbo.sol_OrdersDetail.OrderID, dbo.sol_OrdersDetail.Description, dbo.sol_OrdersDetail.Quantity, 
+                        dbo.sol_OrdersDetail.Price, dbo.sol_OrdersDetail.Amount, dbo.sol_OrdersDetail.Status, dbo.sol_OrdersDetail.BagID, 
+						dbo.sol_OrdersDetail.ConveyorID, dbo.sol_OrdersDetail.StageID, 
+                        dbo.Qds_Settings.SetValue AS DepotID
+FROM          dbo.sol_Orders INNER JOIN
+                        dbo.sol_OrdersDetail ON dbo.sol_Orders.OrderID = dbo.sol_OrdersDetail.OrderID CROSS JOIN
+                        dbo.Qds_Settings
+WHERE      (dbo.Qds_Settings.Name = N'QuickDrop_DepotID') AND (dbo.sol_Orders.IsNew IS NULL OR dbo.sol_Orders.IsNew = 0) AND (dbo.sol_OrdersDetail.IsNew = 1)
+
+GO
+
+
+
+/******************************************************************************
+--Qds_Drop
+******************************************************************************/
+/****** Object:  StoredProcedure [dbo].[Qds_Drop_IsReady]    Script Date: 12/12/2013 11:04:04 AM ******/
+SET ANSI_NULLS ON
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Qds_Drop_IsReady]
+(
+	@DropID int
+)
+
+AS
+
+SET NOCOUNT ON
+
+DECLARE @Count int
+DECLARE @Flag bit
+
+SELECT @Count = COUNT(*)
+  FROM [dbo].[Qds_Drop] 
+  where [DropID] = @DropID AND
+  [NumberOfBags] > 
+  (
+	  SELECT COUNT(*)
+	  FROM [dbo].[Qds_Bag]
+	  WHERE [DropID] = [dbo].[Qds_Drop].[DropID]
+	  AND [DateCounted] > '1753-01-01 12:00:00'
+  )
+
+if(@Count>0)
+	SET @Flag = 0
+else
+	SET @Flag = 1
+
+SELECT @Flag as Ready
+GO
+
+/******************************************************************************
+--Sol_OrderCardLink
+******************************************************************************/
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[Sol_OrderCardLink_SelectByCardNumber]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure [dbo].[Sol_OrderCardLink_SelectByCardNumber]
+GO
+
+CREATE PROCEDURE [dbo].[Sol_OrderCardLink_SelectByCardNumber]
+(
+	@CardNumber nvarchar(50)
+)
+
+AS
+
+SET NOCOUNT ON
+
+SELECT [CardNumber],
+	[OrderID]
+FROM [Sol_OrderCardLink]
+WHERE [CardNumber] = @CardNumber
+GO
+
+/******************************************************************************
+******************************************************************************/
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[Sol_OrderCardLink_DeleteByCardNumber]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure [dbo].[Sol_OrderCardLink_DeleteByCardNumber]
+GO
+
+CREATE PROCEDURE [dbo].[Sol_OrderCardLink_DeleteByCardNumber]
+(
+	@CardNumber nvarchar(50)
+)
+
+AS
+
+SET NOCOUNT ON
+
+DELETE FROM [Sol_OrderCardLink] WITH (ROWLOCK)
+WHERE [CardNumber] = @CardNumber
+GO
+
+
+/******************************************************************************
+--Sol_OrderCardLog
+******************************************************************************/
+CHANGE [Sol_OrderCardLog_Update] 
+SET [LogID] = @LogID,
+to
+SET --[LogID] = @LogID,
+
+
+
+/******************************************************************************
+--Sol_AutoNumbers
+******************************************************************************/
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[Sol_AutoNumbers_UpdateTagNumber]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure [dbo].[Sol_AutoNumbers_UpdateTagNumber]
+GO
+
+CREATE PROCEDURE [dbo].[Sol_AutoNumbers_UpdateTagNumber]
+(
+	@AgencyID int,
+	@FolioID int
+)
+
+AS
+
+SET NOCOUNT ON
+
+DECLARE @NextId int
+SELECT @NextId = MAX([TagNumber])+1 FROM [Sol_AutoNumbers] WHERE [AgencyID] = @AgencyID AND [FolioID] = @FolioID
+
+WHILE (SELECT COUNT(*) FROM [sol_Stage] WHERE [TagNumber] = CAST(@NextId  AS nvarchar(50))) >0
+BEGIN
+	UPDATE [Sol_AutoNumbers] WITH (ROWLOCK)
+	SET [TagNumber] = @NextId
+	WHERE [AgencyID] = @AgencyID AND [FolioID] = @FolioID
+	SELECT @NextId = [TagNumber]+1 FROM [Sol_AutoNumbers] WHERE [AgencyID] = @AgencyID AND [FolioID] = @FolioID
+END
+
+UPDATE [Sol_AutoNumbers] WITH (ROWLOCK)
+SET [TagNumber] = @NextId
+WHERE [AgencyID] = @AgencyID AND [FolioID] = @FolioID
+
+SELECT @NextId
+
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[Sol_AutoNumbers_UpdateRBillNumber]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure [dbo].[Sol_AutoNumbers_UpdateRBillNumber]
+GO
+
+CREATE PROCEDURE [dbo].[Sol_AutoNumbers_UpdateRBillNumber]
+(
+	@AgencyID int,
+	@FolioID int
+)
+
+AS
+
+SET NOCOUNT ON
+
+DECLARE @NextId int
+SELECT @NextId = MAX([RBillNumber])+1 FROM [Sol_AutoNumbers] WHERE [AgencyID] = @AgencyID AND [FolioID] = @FolioID
+
+WHILE (SELECT COUNT(*) FROM [sol_Shipment] WHERE [RBillNumber] = CAST(@NextId  AS nvarchar(50))) >0
+BEGIN
+	UPDATE [Sol_AutoNumbers] WITH (ROWLOCK)
+	SET [RBillNumber] = @NextId
+	WHERE [AgencyID] = @AgencyID AND [FolioID] =  @FolioID
+	SELECT @NextId = [RBillNumber]+1 FROM [Sol_AutoNumbers] WHERE [AgencyID] = @AgencyID AND [FolioID] = @FolioID
+END
+
+UPDATE [Sol_AutoNumbers] WITH (ROWLOCK)
+SET [RBillNumber] = @NextId
+WHERE [AgencyID] = @AgencyID AND [FolioID] = @FolioID
+
+SELECT @NextId
+GO
+
+/******************************************************************************
+--Sac_ClientNames
+******************************************************************************/
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[Sac_ClientNames_SelectByCashTrayID]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure [dbo].[Sac_ClientNames_SelectByCashTrayID]
+GO
+
+CREATE PROCEDURE [dbo].[Sac_ClientNames_SelectByCashTrayID]
+(
+	@CashTrayID int
+)
+
+AS
+
+SELECT [ClientID],
+	[CashTrayID],
+	[CoinAmountInventory]
+FROM [Sac_ClientNames]
+WHERE [CashTrayID] = @CashTrayID
+GO
+
+/****************************************************************************/
+ --Sac_Money
+/****************************************************************************/
+CREATE PROCEDURE [dbo].[Sac_Money_SelectAllByTypeID]
+(
+	@CountryCode nchar(2),
+	@TypeID int
+)
+
+AS
+
+SET NOCOUNT ON
+	DECLARE @sql NVARCHAR(3000)
+	--IF(@TypeID = 0) SET @TypeID = NULL 
+	SET @sql = 
+	'SELECT [MoneyID], '+
+	'	[Name], '+
+	'	[TypeID], '+
+	'	[DollarValue], '+
+	'	[CountryCode] '+
+	'FROM [Sac_Money] '+
+	'WHERE [CountryCode] = '''+@CountryCode+''' ';
+	IF(@TypeID != -1)
+	BEGIN
+		SET @sql = @sql +
+		'AND [TypeID] = '+CAST(@TypeID  AS VARCHAR);
+		IF(@TypeID = 0)
+			SET @sql = @sql +
+			'OR [TypeID] = 2 ';	-- rolls
+	END
+
+	SET @sql = @sql +
+	'ORDER BY [DollarValue] DESC ';
+
+EXEC(@sql)
+GO
+
+
+/****************************************************************************/
+--Sac_MoneyInventory
+/****************************************************************************/
+--DON'T USE IT FOR NOW
+/****** Object:  StoredProcedure [dbo].[Sac_MoneyInventory_SelectByClientIDTypeID]    Script Date: 20/06/2013 12:04:26 p. m. ******/
+--SET ANSI_NULLS ON
+--GO
+--SET QUOTED_IDENTIFIER ON
+--GO
+
+--CREATE PROCEDURE [dbo].[Sac_MoneyInventory_SelectByClientIDTypeID]
+--(
+--	@ClientID nvarchar(50),
+--	@TypeID int
+
+--)
+
+--AS
+
+--SET NOCOUNT ON
+--	DECLARE @sql NVARCHAR(3000)
+
+--	--IF(@ClientID = '') SET @ClientID = NULL 
+--	--IF(@TypeID = 0) SET @TypeID = NULL 
+
+--	SET @sql = 
+
+--	'SELECT mi.[ClientID] '+
+--	'      ,mi.[MoneyID] '+
+--	'      ,mi.[Address] '+
+--	'      ,mi.[Inventory] '+
+--	'      ,mi.[MaxNumBills] '+
+--	'      ,mi.[CashID] '+
+--	'      ,m.[MoneyID] '+
+--	'      ,m.[TypeID] '+
+--	'FROM [Sac_MoneyInventory] as mi  '+
+--	'INNER JOIN [Sac_Money] as m ON m.MoneyID = mi.MoneyID ';
+--	if(@TypeID != -1)
+--		SET @sql = @sql +
+--		'AND m.TypeID = '+CAST(@TypeID  AS VARCHAR);
+
+
+--	SET @sql = @sql +
+--	'WHERE mi.[ClientID] =  '''+@ClientID+''' ';
+
+--EXEC(@sql)
+--GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[Sac_MoneyInventory_SelectAllByClientID]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure [dbo].[Sac_MoneyInventory_SelectAllByClientID]
+GO
+
+CREATE PROCEDURE [dbo].[Sac_MoneyInventory_SelectAllByClientID]
+(
+	@ClientID nvarchar(50)
+)
+
+AS
+
+SET NOCOUNT ON
+
+SELECT [ClientID],
+	[MoneyID],
+	[Address],
+	[Inventory],
+	[MaxNumBills],
+	[FullQuantity]
+FROM [Sac_MoneyInventory]
+WHERE [ClientID] = @ClientID
+GO
+
+/****************************************************************************/
+ --Sol_Orders
+/****************************************************************************/
+/************************************
+Replace sol_Orders_SelectAllByCustomerID with this:
+************************************/
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[sol_Orders_SelectAllByCustomerID]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure [dbo].[sol_Orders_SelectAllByCustomerID]
+GO
+
+CREATE PROCEDURE [dbo].[sol_Orders_SelectAllByCustomerID]
+(
+	@OrderType char(1),
+	@CustomerID int
+)
+
+AS
+
+SET NOCOUNT ON
+
+SELECT [OrderID],
+	[OrderType],
+	[WorkStationID],
+	[ComputerName],
+	[UserID],
+	[UserName],
+	[Date],
+	[CashTrayID],
+	[CustomerID],
+	[Name],
+	[Address1],
+	[Address2],
+	[City],
+	[Province],
+	[Country],
+	[PostalCode],
+	[TotalAmount],
+	[DateClosed],
+	[FeeID],
+	[FeeAmount],
+	[Status],
+	[DatePaid],
+	[Tax1Amount],
+	[Tax2Amount],
+	[Reference],
+	[PaymentTypeID],
+	[SecurityCode]
+FROM [sol_Orders]
+WHERE [OrderType] = @OrderType
+AND [CustomerID] = @CustomerID
+AND [Status] <> 'D' 
+GO
+
+/************************************
+Replace Insert with this:
+************************************/
+/****** Object:  StoredProcedure [dbo].[sol_Orders_Insert]    Script Date: 10/06/2013 10:44:27 a. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sol_Orders_Insert]
+(
+	@OrderType char(1),
+	@WorkStationID int,
+	@ComputerName varchar(50),
+	@UserID uniqueidentifier,
+	@UserName varchar(50),
+	@Date datetime,
+	@CashTrayID int,
+	@CustomerID int,
+	@Name varchar(50),
+	@Address1 varchar(250),
+	@Address2 varchar(250),
+	@City varchar(100),
+	@Province varchar(100),
+	@Country varchar(50),
+	@PostalCode varchar(50),
+	@TotalAmount money,
+	@DateClosed datetime,
+	@DatePaid datetime,
+	@FeeID int,
+	@FeeAmount money,
+	@Tax1Amount money,
+	@Tax2Amount money,
+	@Status char(1),
+	@Reference varchar(100),
+	@PaymentTypeID  tinyint
+	--	@SecurityCode nvarchar(12)
+)
+
+AS
+
+SET NOCOUNT ON
+
+INSERT INTO [sol_Orders]
+(
+	[OrderType],
+	[WorkStationID],
+	[ComputerName],
+	[UserID],
+	[UserName],
+	[Date],
+	[CashTrayID],
+	[CustomerID],
+	[Name],
+	[Address1],
+	[Address2],
+	[City],
+	[Province],
+	[Country],
+	[PostalCode],
+	[TotalAmount],
+	[DateClosed],
+	[DatePaid],
+	[FeeID],
+	[FeeAmount],
+	[Tax1Amount],
+	[Tax2Amount],
+	[Status],
+	[Reference],
+	[PaymentTypeID],
+	[SecurityCode]
+
+)
+VALUES
+(
+	@OrderType,
+	@WorkStationID,
+	@ComputerName,
+	@UserID,
+	@UserName,
+	GetDate(), --@Date,			-- use sql server date
+	@CashTrayID,
+	@CustomerID,
+	@Name,
+	@Address1,
+	@Address2,
+	@City,
+	@Province,
+	@Country,
+	@PostalCode,
+	@TotalAmount,
+	@DateClosed,
+	@DatePaid,
+	@FeeID,
+	@FeeAmount,
+	@Tax1Amount,
+	@Tax2Amount,
+	@Status,
+	@Reference,
+	@PaymentTypeID, 
+	select right('000'+right(-convert(int, convert(varbinary(max), newid())),3),3)
+)
+
+SELECT CAST(scope_identity() AS int) 
+GO
+
+/************************************
+Additional sp
+************************************/
+
+CREATE PROCEDURE [dbo].[sol_Orders_SelectWithSecCode]
+(
+	@OrderID int,
+	@SecurityCode nvarchar(12)
+)
+
+AS
+
+SET NOCOUNT ON
+SELECT [OrderID],
+	[OrderType],
+	[WorkStationID],
+	[ComputerName],
+	[UserID],
+	[UserName],
+	[Date],
+	[CashTrayID],
+	[CustomerID],
+	[Name],
+	[Address1],
+	[Address2],
+	[City],
+	[Province],
+	[Country],
+	[PostalCode],
+	[TotalAmount],
+	[DateClosed],
+	[FeeID],
+	[FeeAmount],
+	[Status],
+	[DatePaid],
+	[Tax1Amount],
+	[Tax2Amount],
+	[Reference],
+	[PaymentTypeID],
+	[SecurityCode]
+FROM [sol_Orders]
+WHERE [OrderID] = @OrderID
+	AND [SecurityCode] = @SecurityCode
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_Orders_UpdateDates]    Script Date: 05/17/2012 10:17:33 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sol_Orders_UpdateDates]
+(
+	@OrderID int,
+	@OrderType char(1),
+	@Date varchar(23),
+	@DateField varchar(25)	
+)
+
+AS
+
+SET NOCOUNT ON
+	DECLARE @sql NVARCHAR(3000)
+	
+	IF(@Date = '') SET @Date = NULL 
+
+	SET @sql = 'UPDATE [sol_Orders] WITH (ROWLOCK) ';
+
+	if(@Date IS NULL)
+	BEGIN
+		SET @sql = @sql +
+		'SET ['+@DateField+'] = '''+CONVERT(varchar(23), GetDate(), 120)+''' ';	
+		
+	END
+	ELSE
+	BEGIN
+		SET @sql = @sql +
+		'SET ['+@DateField+'] = '''+@Date+''' ';
+	END
+
+	SET @sql = @sql +
+	'WHERE [OrderID] = '+CAST(@OrderID  AS VARCHAR)+ '	AND [OrderType] = '''+@OrderType+''' ';
+
+EXEC(@sql)
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_Orders_SelectAllByCustomerUnPaid]    Script Date: 03/18/2012 16:20:10 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sol_Orders_SelectAllByCustomerUnPaid]
+(
+	@OrderType char(1),
+	@CustomerID int,
+	@UnPaid bit	-- 1 = true = Unpaid, 0 = false = all
+
+)
+
+AS
+
+SET NOCOUNT ON
+
+	DECLARE @sql NVARCHAR(3000)
+	
+	SET @sql = 
+
+	'SELECT [OrderID], '+
+	'	[OrderType], '+
+	'	[WorkStationID], '+
+	'	[ComputerName], '+
+	'	[UserID], '+
+	'	[UserName], '+
+	'	[Date], '+
+	'	[CashTrayID], '+
+	'	[CustomerID], '+
+	'	[Name], '+
+	'	[Address1], '+
+	'	[Address2], '+
+	'	[City], '+
+	'	[Province], '+
+	'	[Country], '+
+	'	[PostalCode], '+
+	'	[TotalAmount], '+
+	'	[DateClosed], '+
+	'	[DatePaid], '+
+	'	[FeeID], '+
+	'	[FeeAmount], '+
+	'	[Tax1Amount], '+
+	'	[Tax2Amount], '+
+	'	[Status], '+
+	'	[Reference], '+
+	'	[PaymentTypeID], '+
+	'	[SecurityCode] '+
+	'FROM [sol_Orders] '+
+	'WHERE [OrderType] = '''+CAST(@OrderType  AS VARCHAR)+''' '+
+	'AND [CustomerID] = '+CAST(@CustomerID  AS VARCHAR)+' '+
+	'AND [Status] <> ''D'' ';
+
+	IF(@UnPaid = null) 
+	SET @UnPaid = 0
+	if(@UnPaid =1)
+			SET @sql = @sql + 
+			'AND [Status] = ''O'' '+
+			'AND [DatePaid] < [DATE] ';
+			
+	EXEC(@sql)
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_Orders_SelectAllByStatus]    Script Date: 1/13/2014 5:12:37 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sol_Orders_SelectAllByStatus]
+(
+	@OrderType char(1),
+	@Status char (1),
+	@CustomerID int
+)
+
+AS
+
+SET NOCOUNT ON
+	DECLARE @sql NVARCHAR(3000)
+	IF(@CustomerID <1) SET @CustomerID = NULL
+	
+	SET @sql = 
+	'SELECT * '+
+	'FROM [sol_Orders] '+
+	'WHERE [Status] = '''+@Status +''' '+
+	'AND [DateClosed] >= [Date] ';
+	IF(@CustomerID IS NOT NULL)
+		SET @sql = @sql + 
+			'AND [CustomerID] = '+CAST(@CustomerID  AS VARCHAR)+' ';
+
+	SET @sql = @sql + 
+		'AND ([OrderType] = '''+@OrderType+''' ';
+
+	IF(@OrderType = 'R')
+	BEGIN
+		SET @sql = @sql + 
+		'OR [OrderType] = ''S'') ';
+	END
+	ELSE
+		SET @sql = @sql + ') ';
+
+	EXEC(@sql)
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_Orders_SelectByOrderID]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Orders_SelectByOrderID]
+(
+	@OrderID int
+)
+
+AS
+
+SET NOCOUNT ON
+
+SELECT [OrderID],
+	[OrderType],
+	[WorkStationID],
+	[ComputerName],
+	[UserID],
+	[UserName],
+	[Date],
+	[CashTrayID],
+	[CustomerID],
+	[Name],
+	[Address1],
+	[Address2],
+	[City],
+	[Province],
+	[Country],
+	[PostalCode],
+	[TotalAmount],
+	[DateClosed],
+	[DatePaid],
+	[FeeID],
+	[FeeAmount],
+	[Tax1Amount],
+	[Tax2Amount],
+	[Status],
+	[Reference],
+	[PaymentTypeID], 
+	[SecurityCode] 
+FROM [sol_Orders]
+WHERE [OrderID] = @OrderID
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_Orders_SelectAllLookup]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Orders_SelectAllLookup]
+(
+	@UserName varchar(50),
+	@OrderType char(1),
+	@Status char(1)
+)
+
+AS
+
+BEGIN
+	SET NOCOUNT ON
+	DECLARE @sql NVARCHAR(3000)
+	
+	SET @sql = 
+	'SELECT [OrderID],'+
+	'(convert(varchar(20), [orderid])+'' - ''+ [UserName]+'' - ''+[ComputerName]+ '' - ''+ [Status]) as displayMember '+
+	'FROM [sol_Orders] '+
+	'WHERE ';
+	
+	if(@UserName = '')
+	set @UserName = NULL
+	IF(@UserName IS NOT NULL)
+	BEGIN
+		SET @sql = @sql + 
+		'[UserName] = '''+@UserName+''' AND ';
+	END
+		
+	SET @sql = @sql + 
+	'[OrderType] = '''+@OrderType+''' ';
+	
+	if(@Status = '')
+	set @Status = NULL
+	IF(@Status IS NOT NULL)
+	BEGIN
+		SET @sql = @sql + 
+		'AND [Status] = '''+@Status+''' ';
+	END
+
+	SET @sql = @sql + 
+	'Order By [OrderID] desc';
+	
+
+	EXEC(@sql)
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_Orders_SelectAllByDates]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Orders_SelectAllByDates]
+(
+   @DateFrom varchar(23),
+   @DateTo varchar(23),
+   @Status char (1)
+)
+
+AS
+
+SET NOCOUNT ON
+DECLARE @sql NVARCHAR(3000)
+
+   IF(@DateFrom = '') SET @DateFrom = NULL 
+   IF(@DateFrom IS NULL ) SET @DateFrom = '1950-01-01 00:00:00'
+   IF(@DateTo = '') SET @DateTo = NULL 
+   IF(@DateTo IS NULL) SET @DateTo = '3000-01-01 00:00:00'
+
+SET @sql = 
+'SELECT [OrderID],
+	[OrderType],
+	[WorkStationID],
+	[ComputerName],
+	[UserID],
+	[UserName],
+	[Date],
+	[CashTrayID],
+	[CustomerID],
+	[Name],
+	[Address1],
+	[Address2],
+	[City],
+	[Province],
+	[Country],
+	[PostalCode],
+	[TotalAmount],
+	[DateClosed],
+	[DatePaid],
+	[FeeID],
+	[FeeAmount],
+	[Tax1Amount],
+	[Tax2Amount],
+	[Status],
+	[Reference],
+	[PaymentTypeID], 
+	[SecurityCode] 
+FROM [sol_Orders]
+WHERE OrderType != ''A''
+AND  [Date] between '''+@DateFrom+''' and '''+@DateTo+''' ';
+
+if(@Status != '')
+BEGIN
+	SET @sql = @sql + 'AND [Status] = '''+@Status+''' ';
+END
+EXEC(@sql)
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_Orders_UpdateStatus]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Orders_UpdateStatus]
+(
+	@OrderID int,
+	@OrderType char(1),
+	@Status char(1)
+)
+
+AS
+
+SET NOCOUNT ON
+DECLARE @sql NVARCHAR(3000)
+BEGIN
+	UPDATE [sol_OrdersDetail] WITH (ROWLOCK)
+	SET [Status] = @Status
+	WHERE [OrderID] = @OrderID	AND [OrderType] = @OrderType
+
+	SET @sql = 
+	'UPDATE [sol_Orders] WITH (ROWLOCK) '+
+	'SET ';
+	
+	if(@Status = 'A')
+	BEGIN
+		SET @sql = @sql + 
+		'[CustomerID] = 0, '+
+		'[Name] = '''', '+
+		'[Address1] = '''', '+
+		'[Address2] = '''', '+
+		'[City] = '''', '+
+		'[Province] = '''', '+
+		'[Country] = '''', '+
+		'[PostalCode] = '''', '+
+		'[DatePaid] = ''1753-1-1 12:00:00'', '+
+		'[Reference] = '''', '+
+		'[PaymentTypeID] = 0, ';
+	END
+	SET @sql = @sql + 
+		'[Status] = '''+@Status+''' '+
+	'WHERE [OrderID] = '+CAST(@OrderID  AS VARCHAR)+ '	AND [OrderType] = '''+@OrderType+''' ';
+	
+	EXEC(@sql)
+	
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_Orders_CheckIntegrity]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Orders_CheckIntegrity]
+(
+	@OrderID int,
+	@OrderType char(1)
+)
+
+AS
+
+SET NOCOUNT ON
+
+	DECLARE @TotalAmount money;
+	--DECLARE @Quantity money;
+	--DECLARE @Price money;
+	DECLARE @DetailTotalAmount money;
+
+SELECT 
+	@TotalAmount = [TotalAmount]
+FROM [sol_Orders]
+WHERE [OrderID] = @OrderID
+	AND [OrderType] = @OrderType
+	
+SELECT 
+	--@Quantity = [Quantity],
+	--@Price = [Price],
+	@DetailTotalAmount = SUM([Amount])
+FROM [sol_OrdersDetail]
+WHERE [OrderID] = @OrderID
+	AND [OrderType] = @OrderType
+	
+SELECT --@OrderID, @OrderType, 
+ @TotalAmount AS TotalAmount, @DetailTotalAmount AS DetailTotalAmount
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_Orders_UpdateFees]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Orders_UpdateFees]
+(
+	@OrderID int,
+	@OrderType char(1),
+	@FeeID int,
+	@FeeAmount money
+)
+
+AS
+
+SET NOCOUNT ON
+
+UPDATE [sol_Orders] WITH (ROWLOCK)
+SET [FeeID] = @FeeID,
+	[FeeAmount] = @FeeAmount
+WHERE [OrderID] = @OrderID	AND [OrderType] = @OrderType
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_Orders_UpdateTaxes]    Script Date: 12/23/2011 12:29:53 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sol_Orders_UpdateTaxes]
+(
+	@OrderID int,
+	@OrderType char(1),
+	@Tax1Amount money,
+	@Tax2Amount money
+)
+
+AS
+
+SET NOCOUNT ON
+
+UPDATE [sol_Orders] WITH (ROWLOCK)
+SET [Tax1Amount] = @Tax1Amount,
+	[Tax2Amount] = @Tax2Amount
+WHERE [OrderID] = @OrderID	AND [OrderType] = @OrderType
+
+GO
+
+/****************************************************************************/
+ --Sol_SupplyInventory
+/****************************************************************************/
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE dbo.sol_SupplyInventory_ByDate
+(
+   @DateFrom varchar(23),
+   @DateTo varchar(23)
+)
+AS
+
+BEGIN
+   SET NOCOUNT ON
+   IF(@DateFrom IS NULL) SET @DateFrom = '1950-01-01 00:00:00'
+   IF(@DateTo IS NULL) SET @DateTo = '3000-01-01 00:00:00'
+
+CREATE TABLE #tmpInventory(
+      ContainerID int,
+      SignedQuantity int)
+
+INSERT INTO #tmpInventory
+      SELECT      ContainerID, 0 - SUM(Quantity) AS SignedQuantity
+            FROM          dbo.Sol_SupplyInventory
+            WHERE      (SupplyInventoryType = 'S') AND (dbo.Sol_SupplyInventory.Date BETWEEN @DateFrom AND @DateTo)
+            GROUP BY ContainerID
+
+INSERT INTO #tmpInventory
+      SELECT      ContainerID, SUM(Quantity) AS SignedQuantity
+      FROM          dbo.Sol_SupplyInventory
+      WHERE      (SupplyInventoryType = 'A' OR SupplyInventoryType = 'R') 
+            AND (Date BETWEEN @DateFrom AND @DateTo)
+      GROUP BY ContainerID
+
+SELECT      dbo.sol_Containers.ContainerID, dbo.sol_Containers.Description, dbo.sol_Containers.ShortDescription, dbo.sol_Containers.ContainerTypeID, 
+                        SUM(#tmpInventory.SignedQuantity) AS Inventory
+FROM          dbo.sol_Containers INNER JOIN
+                        #tmpInventory ON dbo.sol_Containers.ContainerID = #tmpInventory.ContainerID
+GROUP BY dbo.sol_Containers.ContainerID, dbo.sol_Containers.Description, dbo.sol_Containers.ShortDescription, dbo.sol_Containers.ContainerTypeID
+                              
+END
+
+GO
+
+/****************************************************************************/
+ --Sol_Containers
+/****************************************************************************/
+/****** Object:  StoredProcedure [dbo].[sol_Containers_SelectAllLookup]    Script Date: 03/21/2012 13:02:01 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[sol_Containers_SelectAllLookup]
+
+AS
+
+SET NOCOUNT ON
+
+SELECT [ContainerID],
+	[Description],
+	--[ShortDescription],
+	[ContainerTypeID]
+FROM [sol_Containers]
+
+GO
+/****** Object:  StoredProcedure [dbo].[sol_Containers_SelectAllByTypeLookup]    Script Date: 03/21/2012 12:16:58 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[sol_Containers_SelectAllByTypeLookup]
+(
+	@ContainerTypeId int
+)
+
+AS
+
+SET NOCOUNT ON
+
+SELECT [ContainerID],
+	[Description],
+	--[ShortDescription],
+	[ContainerTypeID]
+FROM [sol_Containers]
+WHERE [ContainerTypeID] = @ContainerTypeId
+
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_Containers_SelectAllByType]    Script Date: 03/21/2012 12:16:58 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[sol_Containers_SelectAllByType]
+(
+	@ContainerTypeId int
+)
+
+AS
+
+SET NOCOUNT ON
+
+SELECT [ContainerID],
+	[Description],
+	[ShortDescription],
+	[ContainerTypeID],
+	[ShippingContainerID],
+	[ShippingContainerTypeID]
+FROM [sol_Containers]
+WHERE [ContainerTypeID] = @ContainerTypeId
+
+GO
+
+/******************************************************************************
+--Sol_Employees
+******************************************************************************/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Sol_Employees_SelectAllLookup]
+
+AS
+
+SET NOCOUNT ON
+
+SELECT [UserId], [FirstName] + ' ' + [MiddleName] + ' ' + [LastName] AS FullName
+FROM [Sol_Employees]
+Order BY FullName
+
+GO
+
+/******************************************************************************
+--Sol_EmployeesLog
+******************************************************************************/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+	CREATE PROCEDURE [dbo].[Sol_EmployeesLog_LastPunch]
+	(
+		@UserId nvarchar(256)
+	)
+
+	AS
+
+	SET NOCOUNT ON
+	
+	SELECT TOP 1 
+		[LogId],
+		[UserId],
+		[PunchInTime],
+		[PunchOutTime],
+		[Comments],
+		[Approved],
+		[Modified]
+	FROM [Sol_EmployeesLog] 
+	--WHERE [UserId] = '+CAST(@UserId  AS VARCHAR)+ ' ';
+	WHERE [UserId] = @UserId
+	AND [PunchInTime]= (SELECT MAX([PunchInTime]) FROM [Sol_EmployeesLog] WHERE [UserId] = @UserId)
+
+GO
+
+
+/******************************************************************************
+--Sol_Customers
+******************************************************************************/
+/****** Object:  StoredProcedure [dbo].[sol_Customers_SelectAllByCustomerActiveType]    Script Date: 20/11/2014 10:58:41 a. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sol_Customers_SelectAllByCustomerActiveType]
+(							--  1 = solum, 2 = quickdrop else = all
+	@CustomerType smallint, -- -1 = all 0 = solum 1 = quickdrop
+	@Name [varchar](50),
+	@ActiveType smallint 	-- -1 = all 0 = inactivos 1 = activos
+
+)
+
+AS
+
+SET NOCOUNT ON
+
+	DECLARE @sql NVARCHAR(3000)
+	SET @sql = 
+	'SELECT * '+
+	', ISNULL( (SELECT Balance FROM dbo.vw_sol_Customers_Balance WHERE (CustomerID = c.[CustomerID]) ), 0) as CustomerBalance '+
+	'FROM [sol_Customers] as c ';
+
+	DECLARE @FlagWhere bit = 0
+
+	IF(@CustomerType = 0)
+	BEGIN
+		SET @FlagWhere = 1
+		SET @sql = @sql + 'WHERE c.[SolumCustomer] = 1 ';
+	END
+	ELSE IF(@CustomerType = 1)
+	BEGIN
+		SET @FlagWhere = 1
+		SET @sql = @sql + 'WHERE c.[QuickDropCustomer] = 1 ';
+	END
+
+	if(@Name != '')
+	BEGIN
+		IF(@FlagWhere = 0)
+		BEGIN
+			SET @sql = @sql + ' WHERE '
+		END
+		ELSE
+			SET @sql = @sql + ' AND '
+
+		SET @sql = @sql + 'c.[Name] LIKE '''+@Name+'%'' ';
+	END
+
+	if(@ActiveType >= 0)
+	BEGIN
+		IF(@FlagWhere = 0)
+		BEGIN
+			SET @sql = @sql + ' WHERE '
+		END
+		ELSE
+			SET @sql = @sql + ' AND '
+
+		SET @sql = @sql + 'c.[IsActive] = '+ CONVERT(char(1), @ActiveType);
+	END
+
+
+	SET @sql = @sql +
+	'ORDER BY c.[Name] ';
+EXEC(@sql)
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[sol_Customers_SelectAllByCustomerType]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure [dbo].[sol_Customers_SelectAllByCustomerType]
+GO
+
+CREATE PROCEDURE [dbo].[sol_Customers_SelectAllByCustomerType]
+(
+	@CustomerType int, -- 1 = solum 2 = quickdrop, else = all
+	@Name [varchar](50)
+
+)
+
+AS
+
+SET NOCOUNT ON
+	--[CustomerID],
+	--[CustomerCode],
+	--[Name],
+	--[Contact],
+	--[Address1],
+	--[Address2],
+	--[City],
+	--[Province],
+	--[Country],
+	--[PostalCode],
+	--[Email],
+	--[LoweredEmail],
+	--[IsActive],
+	--[PhoneNumber],
+	--[Notes],
+	--[Password],
+	--[DepotID],
+	--[CardNumber],
+	--[CardTypeID],
+	--[SolumCustomer],
+	--[QuickDropCustomer]
+
+	DECLARE @sql NVARCHAR(3000)
+	SET @sql = 
+	'SELECT * '+
+	', ISNULL( (SELECT Balance FROM dbo.vw_sol_Customers_Balance WHERE (CustomerID = c.[CustomerID]) ), 0) as CustomerBalance '+
+	'FROM [sol_Customers] as c ';
+
+	IF(@CustomerType = 1)
+		SET @sql = @sql + 'WHERE c.[SolumCustomer] = 1 ';
+	ELSE --IF(@CustomerType = 2)
+		SET @sql = @sql + 'WHERE c.[QuickDropCustomer] = 1 ';
+
+	if(@Name != '')
+		SET @sql = @sql + 'AND c.[Name] LIKE '''+@Name+'%'' ';
+
+	SET @sql = @sql +
+	'ORDER BY c.[Name] ';
+EXEC(@sql)
+GO
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[sol_Customers_SelectByCardNumber]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure [dbo].[sol_Customers_SelectByCardNumber]
+GO
+
+CREATE PROCEDURE [dbo].[sol_Customers_SelectByCardNumber]
+(
+	@CardNumber nvarchar(50)
+)
+
+AS
+
+SET NOCOUNT ON
+
+SELECT [CustomerID],
+	[CustomerCode],
+	[Name],
+	[Contact],
+	[Address1],
+	[Address2],
+	[City],
+	[Province],
+	[Country],
+	[PostalCode],
+	[Email],
+	[LoweredEmail],
+	[IsActive],
+	[PhoneNumber],
+	[Notes],
+	[Password],
+	[DepotID],
+	[CardNumber],
+	[CardTypeID],
+	[SolumCustomer],
+	[QuickDropCustomer]
+FROM [sol_Customers]
+WHERE [CardNumber] = @CardNumber
+GO
+
+
+Comment original sol_Customers_SelectAll and use this one instead
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[sol_Customers_SelectAll]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure [dbo].[sol_Customers_SelectAll]
+GO
+
+CREATE PROCEDURE [dbo].[sol_Customers_SelectAll]
+
+AS
+
+SET NOCOUNT ON
+
+SELECT [Sol_Customers].[CustomerID],
+	[CustomerCode],
+	[Name],
+	[Contact],
+	[Address1],
+	[Address2],
+	[City],
+	[Province],
+	[Country],
+	[PostalCode],
+	[Email],
+	[LoweredEmail],
+	[IsActive],
+	[PhoneNumber],
+	[Notes],
+	[Password],
+	[DepotID],
+	[CardNumber],
+	[CardTypeID],
+    vw_sol_Customers_Balance.Balance
+FROM [sol_Customers] 
+	LEFT OUTER JOIN dbo.vw_sol_Customers_Balance ON sol_Customers.CustomerID = vw_sol_Customers_Balance.CustomerID
+GO
+
+/****** Object:  View [dbo].[vw_sol_Customers_Balance]  ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE VIEW [dbo].[vw_sol_Customers_Balance]
+AS
+      SELECT      CustomerID, SUM(TotalAmount + FeeAmount) AS Balance
+            FROM          dbo.sol_Orders
+            WHERE      (DatePaid = CONVERT(DATETIME, '1753-01-01 12:00:00', 102))
+            GROUP BY CustomerID
+            HAVING       (CustomerID > 0)
+
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sol_Customers_Balance](
+      @CustomerID int,
+      @DateTo varchar(23)	--the date should include 23:59:59 as the time.
+      )
+AS 
+
+BEGIN
+   SET NOCOUNT ON
+
+      IF(@DateTo IS NULL) 
+      BEGIN   
+            SELECT Balance
+            FROM   dbo.vw_sol_Customers_Balance
+            WHERE (CustomerID = @CustomerID)
+      END
+      ELSE
+      BEGIN
+            SELECT CustomerID, SUM(TotalAmount + FeeAmount) AS Balance
+            FROM   dbo.sol_Orders
+            WHERE  (DatePaid = CONVERT(DATETIME, '1753-01-01 12:00:00', 102)
+                  OR DatePaid > @DateTo)
+                  AND DateClosed <= @DateTo 
+            GROUP BY CustomerID
+            HAVING (CustomerID > 0)
+      END
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_Customers_SelectAllByName]    Script Date: 12/02/2011 10:04:44 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Customers_SelectAllByName]
+(
+	@Name [varchar](50)
+)
+
+AS
+
+SET NOCOUNT ON
+
+SELECT [CustomerID],
+	[CustomerCode],
+	[Name],
+	[Contact],
+	[Address1],
+	[Address2],
+	[City],
+	[Province],
+	[Country],
+	[PostalCode],
+	[Email],
+	[LoweredEmail],
+	[IsActive],
+	[PhoneNumber],
+	[Notes],
+	[Password],
+	[DepotID],
+	[CardNumber],
+	[CardTypeID]
+FROM [sol_Customers]
+WHERE [Name] LIKE @Name+'%'
+GO
+
+/*****************************************************************************
+--Sol_Stage
+******************************************************************************/
+/****** Object:  StoredProcedure [dbo].[sol_Stage_SelectByShipMentIdContainerId]    Script Date: 10/25/2012 16:34:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Stage_SelectByShipMentIdContainerId]
+(
+	@ShipmentID int,
+	@ContainerID int
+)
+
+AS
+SET NOCOUNT ON
+	 SELECT [StageID], 
+		[ShipmentID], 
+		[UserID], 
+		[UserName], 
+		[Date], 
+		[TagNumber], 
+		[ContainerID], 
+		[ContainerDescription], 
+		[ProductID], 
+		[ProductName], 
+		[Dozen], 
+		[Quantity], 
+		[Price], 
+		[Remarks], 
+		[Status] 
+	FROM [sol_Stage] 
+	WHERE [ShipmentID] = @ShipmentID 
+	AND [ContainerID] = @ContainerID
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_Stage_SelectAllByAgency]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Stage_SelectAllByAgency]
+(
+	@Status char(1),
+	@Agency int
+
+)
+
+AS
+BEGIN
+	SET NOCOUNT ON
+	DECLARE @sql NVARCHAR(3000)
+	
+	SET @sql = 
+		'SELECT [sol_Stage].[StageID], '+
+		'	[sol_Stage].[ShipmentID], '+
+		'	[sol_Stage].[UserID], '+
+		'	[sol_Stage].[UserName], '+
+		'	[sol_Stage].[Date], '+
+		'	[sol_Stage].[TagNumber], '+
+		'	[sol_Stage].[ContainerID], '+
+		'	[sol_Stage].[ContainerDescription], '+
+		'	[sol_Stage].[ProductID], '+
+		'	[sol_Stage].[ProductName], '+
+		'	[sol_Stage].[Dozen], '+
+		'	[sol_Stage].[Quantity], '+
+		'	[sol_Stage].[Price], '+
+		'	[sol_Stage].[Remarks], '+
+		'	[sol_Stage].[Status], '+
+		'	[sol_Products].AgencyID '+
+		'FROM [sol_Stage] '+
+		'INNER JOIN [sol_Products] ON [sol_Stage].ProductID = [sol_Products].ProductID '+
+		'WHERE [sol_Stage].[Status] = '''+@Status+''' ';
+		
+	if(@Agency > 0)
+	BEGIN
+		SET @sql = @sql + 
+			'AND '+
+			' [sol_Products].AgencyID = '+CAST(@Agency  AS VARCHAR)+'  ';
+
+	END
+	
+	EXEC(@sql)
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sol_Stage_SelectAllByStatus]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Stage_SelectAllByStatus]
+(
+	@Status char(1)
+)
+
+AS
+
+SET NOCOUNT ON
+
+SELECT [StageID],
+	[ShipmentID],
+	[UserID],
+	[UserName],
+	[Date],
+	[TagNumber],
+	[ContainerID],
+	[ContainerDescription],
+	[ProductID],
+	[ProductName],
+	[Dozen],
+	[Quantity],
+	[Price],
+	[Remarks],
+	[Status]
+FROM [sol_Stage]
+WHERE [Status] = @Status
+GO
+/****** Object:  StoredProcedure [dbo].[sol_Stage_SelectByTagNumberStatus]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Stage_SelectByTagNumberStatus]
+(
+	@TagNumber nvarchar(50),
+	@Status char(1)
+)
+
+AS
+SET NOCOUNT ON
+DECLARE @sql NVARCHAR(3000)
+	IF(@Status = '') SET @Status = NULL 
+
+	SET @sql = 
+	' SELECT [StageID], 
+		[ShipmentID], 
+		[UserID], 
+		[UserName], 
+		[Date], 
+		[TagNumber], 
+		[ContainerID], 
+		[ContainerDescription], 
+		[ProductID], 
+		[ProductName], 
+		[Dozen], 
+		[Quantity], 
+		[Price], 
+		[Remarks], 
+		[Status] 
+	FROM [sol_Stage] 
+	WHERE [TagNumber] = '''+@TagNumber+''' ';
+	
+	if(@Status IS NOT NULL)
+	BEGIN
+		SET @sql = @sql +
+		'AND [Status] = '''+@Status+''' ';
+	END
+	EXEC(@sql)
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_Stage_UpdateStatus]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Stage_UpdateStatus]
+(
+	@ShipmentID int,
+	@TagNumber nvarchar(50),
+	@StatusOld char(1),
+	@Status char(1)
+)
+
+AS
+
+SET NOCOUNT ON
+
+UPDATE [sol_Stage] WITH (ROWLOCK)
+SET [ShipmentID] = @ShipmentID, 
+	[Status] = @Status
+WHERE [TagNumber] = @TagNumber
+AND [Status] = @StatusOld
+GO
+/****** Object:  StoredProcedure [dbo].[sol_Stage_UpdateStatusByShipmentId]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Stage_UpdateStatusByShipmentId]
+(
+	@ShipmentID int,
+	@Status char(1)
+)
+
+AS
+
+SET NOCOUNT ON
+
+UPDATE [sol_Stage] WITH (ROWLOCK)
+SET [Status] = @Status
+WHERE [ShipmentID] = @ShipmentID
+GO
+
+/*****************************************************************************
+--Sol_Shipment
+******************************************************************************/
+/****** Object:  StoredProcedure [dbo].[sol_Shipment_Detail]    Script Date: 31/12/2014 12:30:57 p. m. ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+	CREATE PROCEDURE [dbo].[sol_Shipment_Detail]
+	(
+		@DateFrom varchar(23),
+		@DateTo varchar(23),
+		@RBillNumber varchar(50)
+	)
+
+	AS
+
+    DECLARE @sql NVARCHAR(3000)
+    IF(@DateFrom = '') SET @DateFrom = NULL
+    --IF(@DateFrom IS NULL ) SET @DateFrom = '1950-01-01 00:00:00'
+    IF(@DateTo = '') SET @DateTo = NULL 
+    --IF(@DateTo IS NULL) SET @DateTo = '3000-01-01 00:00:00'
+    IF(@RBillNumber = '') SET @RBillNumber = NULL 
+
+    SET @sql = 
+
+	'SELECT '+
+	'	sh.[RBillNumber], sh.[AgencyName], sh.[ShippedDate], sh.[TrailerNumber],  '+
+	'	sh.[ProBillNumber], st.[TagNumber], p.[ProductCode], p.[ProName] as ProductName, st.[Dozen], st.[Quantity] '+
+	'FROM sol_Shipment AS sh '+
+	'INNER JOIN sol_Stage AS st ON sh.[ShipmentID] = st.[ShipmentID] '+
+	'INNER JOIN sol_Products AS p ON p.[ProductID] = st.[ProductID] ';
+
+	IF(@RBillNumber IS NOT NULL)
+	BEGIN
+		SET @sql = @sql +
+		'WHERE sh.[RBillNumber] = '''+@RBillNumber+''' ';
+	END
+	ELSE IF(@DateFrom IS NOT NULL)
+	BEGIN
+		SET @sql = @sql +
+		' AND sh.[Date] between '''+@DateFrom+''' AND '''+@DateTo+''' ';
+	END
+
+	SET @sql = @sql +
+		'ORDER BY st.[ProductName] ';
+	EXEC(@sql)
+GO
+/****** Object:  StoredProcedure [dbo].[sol_Shipment_UpdateERBillTransmitted]    Script Date: 10/26/2012 16:14:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Shipment_UpdateERBillTransmitted]
+(
+	@ShipmentID int,
+	@eRBillTransmitted bit
+)
+
+AS
+
+SET NOCOUNT ON
+
+UPDATE [sol_Shipment] WITH (ROWLOCK)
+SET [eRBillTransmitted] = @eRBillTransmitted
+WHERE [ShipmentID] = @ShipmentID
+GO
+/****** Object:  StoredProcedure [dbo].[sol_Shipment_UpdateERBill]    Script Date: 10/24/2012 16:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Shipment_UpdateERBill]
+(
+	@ShipmentID int,
+	@CarrierID int,
+	@PlantID int,
+	@TrailerNumber nvarchar(50),
+	@ProBillNumber nvarchar(50),
+	@ShippedDate datetime,
+	@SealNumber nvarchar(50),
+	@LoadReference nvarchar(50),
+	@eRBillTransmitted bit
+)
+
+AS
+
+SET NOCOUNT ON
+
+UPDATE [sol_Shipment] WITH (ROWLOCK)
+SET [CarrierID] = @CarrierID,
+	[PlantID] = @PlantID,
+	[TrailerNumber] = @TrailerNumber,
+	[ProBillNumber] = @ProBillNumber,
+	[ShippedDate] = @ShippedDate,
+	[SealNumber] = @SealNumber,
+	[LoadReference] = @LoadReference,
+	[eRBillTransmitted] = @eRBillTransmitted
+
+WHERE [ShipmentID] = @ShipmentID
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_Shipment_UpdateStatus]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Shipment_UpdateStatus]
+(
+	@ShipmentID int,
+	@Status char(1)
+)
+
+AS
+
+SET NOCOUNT ON
+
+IF(@Status = 'S')
+BEGIN
+	UPDATE [sol_Shipment] WITH (ROWLOCK)
+	SET [Status] = @Status,
+	[ShippedDate] = GETDATE()
+	WHERE [ShipmentID] = @ShipmentID
+END
+ELSE
+BEGIN
+	UPDATE [sol_Shipment] WITH (ROWLOCK)
+	SET [Status] = @Status,
+	[ShippedDate] = '1753-1-1 12:00:00'
+	WHERE [ShipmentID] = @ShipmentID
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sol_Shipment_SelectByRBillNumber]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Shipment_SelectByRBillNumber]
+(
+	@RBillNumber nvarchar(50)
+)
+
+AS
+
+SET NOCOUNT ON
+
+SELECT [ShipmentID],
+	[UserID],
+	[UserName],
+	[RBillNumber],
+	[Date],
+	[AgencyID],
+	[AgencyName],
+	[AgencyAddress1],
+	[AgencyAddress2],
+	[AgencyCity],
+	[AgencyProvince],
+	[AgencyCountry],
+	[AgencyPostalCode],
+	[Status],
+	[CarrierID],
+	[PlantID],
+	[TrailerNumber],
+	[ProBillNumber],
+	[ShippedDate],
+	[SealNumber],
+	[LoadReference],
+	[eRBillTransmitted]
+FROM [sol_Shipment]
+WHERE [RBillNumber] = @RBillNumber
+GO
+/****** Object:  StoredProcedure [dbo].[sol_Shipment_SelectAllByStatus]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Shipment_SelectAllByStatus]
+(
+	@Status char(1),
+	@NewestOnTop bit
+)
+
+AS
+BEGIN
+	SET NOCOUNT ON
+    DECLARE @sql NVARCHAR(3000)
+
+    SET @sql = 
+		'SELECT [ShipmentID], '+
+		'	[UserID], '+
+		'	[UserName], '+
+		'	[RBillNumber], '+
+		'	[Date], '+
+		'	[AgencyID], '+
+		'	[AgencyName], '+
+		'	[AgencyAddress1], '+
+		'	[AgencyAddress2], '+
+		'	[AgencyCity], '+
+		'	[AgencyProvince], '+
+		'	[AgencyCountry], '+
+		'	[AgencyPostalCode], '+
+		'	[Status], '+
+		'	[CarrierID], '+
+		'	[PlantID], '+
+		'	[TrailerNumber], '+
+		'	[ProBillNumber], '+
+		'	[ShippedDate], '+
+		'	[SealNumber], '+
+		'	[LoadReference], '+
+		'	[eRBillTransmitted] '+
+		'FROM [sol_Shipment] '+
+		'WHERE [Status] = '''+@Status+''' ';
+		
+	IF (@NewestOnTop = 1)
+		SET @sql = @sql + 'Order By [Date] desc';
+
+	EXEC(@sql)
+
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sol_Shipment_SelectAllBetweenDatesByStatus]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Shipment_SelectAllBetweenDatesByStatus]
+(
+    @DateFrom varchar(23),
+    @DateTo varchar(23),
+	@Status char(1),
+	@NewestOnTop bit
+)
+AS
+BEGIN
+
+	SET NOCOUNT ON
+    DECLARE @sql NVARCHAR(3000)
+
+    IF(@DateFrom = '') SET @DateFrom = NULL 
+    IF(@DateFrom IS NULL ) SET @DateFrom = '1950-01-01 00:00:00'
+    IF(@DateTo = '') SET @DateTo = NULL 
+    IF(@DateTo IS NULL) SET @DateTo = '3000-01-01 00:00:00'
+    
+    SET @sql = 
+		'SELECT * FROM [sol_Shipment] '+
+		--'WHERE [Date] BETWEEN @DateFrom AND @DateTo ';
+        --' ISNULL( CONVERT(varchar(23), sol_Shipment.Date, 120), '''+@DateFrom+''' ) Between '''+@DateFrom+''' AND '''+@DateTo+''' ';
+		' WHERE [Date] between '''+@DateFrom+''' and '''+@DateTo+''' ';
+		
+	if(@Status = '') set @Status = NULL
+	IF(@Status IS NOT NULL)
+		SET @sql = @sql + 'AND [Status] = '''+@Status+''' ';
+
+	IF @NewestOnTop = 1
+		SET @sql = @sql + 'Order By [Date] desc';
+
+	EXEC(@sql)
+	
+END
+GO
+
+/******************************************************************************
+--comment out the original procedure
+******************************************************************************/
+/****** Object:  StoredProcedure [dbo].[sol_Shipment_SelectAll]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Shipment_SelectAll]
+(
+	@NewestOnTop bit
+)
+AS
+BEGIN
+	SET NOCOUNT ON
+    DECLARE @sql NVARCHAR(3000)
+
+    SET @sql = 
+		'SELECT [ShipmentID], '+
+		'	[UserID], '+
+		'	[UserName], '+
+		'	[RBillNumber], '+
+		'	[Date], '+
+		'	[AgencyID], '+
+		'	[AgencyName], '+
+		'	[AgencyAddress1], '+
+		'	[AgencyAddress2], '+
+		'	[AgencyCity], '+
+		'	[AgencyProvince], '+
+		'	[AgencyCountry], '+
+		'	[AgencyPostalCode], '+
+		'	[Status], '+
+		'	[CarrierID], '+
+		'	[PlantID], '+
+		'	[TrailerNumber], '+
+		'	[ProBillNumber], '+
+		'	[ShippedDate], '+
+		'	[SealNumber], '+
+		'	[LoadReference], '+
+		'	[eRBillTransmitted] '+
+		'FROM [sol_Shipment] ';
+
+	IF (@NewestOnTop = 1)
+		SET @sql = @sql + 'Order By [Date] desc';
+
+	EXEC(@sql)
+END
+GO
+
+/******************************************************************************
+--Sol_Products
+******************************************************************************/
+/****** Object:  StoredProcedure [dbo].[sol_Products_SelectAllUnstaged]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Products_SelectAllUnstaged]
+(
+   @DateFrom varchar(23),
+   @DateTo varchar(23),
+   @CurrentUserName nvarchar(256) = NULL
+)
+AS
+
+BEGIN
+   SET NOCOUNT ON
+   IF(@CurrentUserName IS NULL) SET @CurrentUserName = 'nouser'
+   IF(@DateFrom IS NULL) SET @DateFrom = '1950-01-01 00:00:00'
+   IF(@DateTo IS NULL) SET @DateTo = '3000-01-01 00:00:00'
+
+DELETE FROM dbo.sol_QueryDate  WHERE UserName = @CurrentUserName
+
+INSERT INTO dbo.sol_QueryDate(UserName, DateFrom, DateTo)   
+    VALUES      (@CurrentUserName, CONVERT(datetime,@DateFrom,120), CONVERT(datetime,@DateTo,120))
+
+SELECT      dbo.Sol_Categories.CategoryID AS Id, dbo.Sol_Categories.Description, dbo.Sol_Categories.RefundAmount, 
+                        ISNULL(dbo.vw_sol_Products_Unstaged_Part1.TotalQuantity, 0) - ISNULL(dbo.vw_sol_Products_Unstaged_Part2.TotalDozen, 0) * 12 AS Quantity, 
+                        (ISNULL(dbo.vw_sol_Products_Unstaged_Part1.TotalQuantity, 0) - ISNULL(dbo.vw_sol_Products_Unstaged_Part2.TotalDozen, 0) * 12) 
+                        / 12 AS Dozen
+FROM          dbo.Sol_Categories LEFT OUTER JOIN
+                        dbo.vw_sol_Products_Unstaged_Part2 ON dbo.Sol_Categories.CategoryID = dbo.vw_sol_Products_Unstaged_Part2.CategoryID LEFT OUTER JOIN
+                        dbo.vw_sol_Products_Unstaged_Part1 ON dbo.Sol_Categories.CategoryID = dbo.vw_sol_Products_Unstaged_Part1.CategoryID
+WHERE      (dbo.Sol_Categories.CategoryID > 0) AND (dbo.vw_sol_Products_Unstaged_Part1.UserName = @CurrentUserName OR
+                        dbo.vw_sol_Products_Unstaged_Part1.UserName IS NULL) AND (dbo.vw_sol_Products_Unstaged_Part2.UserName = @CurrentUserName OR
+                        dbo.vw_sol_Products_Unstaged_Part2.UserName IS NULL)
+
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sol_Products_SelectAllStaged]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sol_Products_SelectAllStaged]
+(
+      @DateFrom varchar(23),
+      @DateTo varchar(23)
+)
+
+AS
+BEGIN
+      SET NOCOUNT ON
+      DECLARE @sql NVARCHAR(3000)
+      
+      SET @sql = 
+            'SELECT '+
+            ' sol_Products.CategoryID as Id, sol_Products.ProDescription as Description, Sol_Categories.RefundAmount, '+
+            ' (SUM(ISNULL(sol_Stage.Dozen, 0))*12) as Quantity, '+
+            ' SUM(ISNULL(sol_Stage.Dozen, 0)) as Dozen '+
+            'FROM '+
+            ' sol_Products '+
+            ' LEFT OUTER JOIN '+
+            '  Sol_Categories ON sol_Products.CategoryID = Sol_Categories.CategoryID '+
+            ' LEFT OUTER JOIN '+
+            '  sol_Stage ON sol_Products.ProductID = sol_Stage.ProductID '+
+            '  AND sol_Stage.Status = ''I'' ';
+
+      if(@DateFrom = '')
+         SET @DateFrom = null
+      IF(@DateFrom IS NOT NULL)
+      BEGIN
+            SET @sql = @sql + 
+                  'WHERE '+
+                  ' ISNULL( CONVERT(varchar(23), sol_Stage.Date, 120), '''+@DateFrom+''' ) Between '''+@DateFrom+''' AND '''+@DateTo+''' ';
+
+      END
+              
+      SET @sql = @sql + 
+            'GROUP BY '+
+            ' sol_Products.ProDescription, Sol_Categories.RefundAmount, sol_Products.CategoryID ';
+            
+      EXEC(@sql)
+      
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_Products_SelectTypeId]    Script Date: 12/21/2011 08:02:00 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[sol_Products_SelectTypeId]
+(
+	@TypeId tinyint
+)
+
+AS
+
+SET NOCOUNT ON
+	DECLARE @sql NVARCHAR(3000)
+	
+	SET @sql = 
+	'SELECT [ProductID], '+
+	'	[ProName], '+
+	'	[ProDescription], '+
+	'	[ProShortDescription], '+
+	'	[ProImage], '+
+	'	[AgencyID], '+
+	'	[MenuOrder], '+
+	'	[IsActive], '+
+	'	[Price], '+
+	'	[CategoryID], '+
+	'	[RefundAmount], '+
+	'	[HandlingCommissionAmount], '+
+	'	[CommissionUnit], '+
+	'	[VafAmount], '+
+	'	[FeeUnit], '+
+	'	[ContainerID], '+
+	'	[StandardDozenID], '+
+	'	[UPC], '+
+	'	[ProductCode], '+
+	'	[TypeId], '+
+	'	[Tax1Exempt], '+
+	'	[Tax2Exempt] '+
+	'FROM [sol_Products] ';
+	IF(@TypeId IS NOT NULL)
+	BEGIN
+		SET @sql = @sql + 
+		'WHERE [TypeId] = '+CAST(@TypeId  AS VARCHAR)+ ' ';
+	END
+	EXEC(@sql)
+
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_Products_SelectAllLookup]    Script Date: 12/22/2011 09:47:02 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+
+CREATE PROCEDURE [dbo].[sol_Products_SelectAllLookup]
+(
+	@TypeId tinyint
+)
+
+AS
+
+SET NOCOUNT ON
+	DECLARE @sql NVARCHAR(3000)
+	
+	SET @sql = 
+	'SELECT [ProductID], '+
+	'	[ProName] '+
+	'FROM [sol_Products] '+
+	'WHERE (IsActive = 1) ';
+	
+	IF(@TypeId IS NOT NULL)
+	BEGIN
+		SET @sql = @sql + 
+		'AND [TypeId] = '+CAST(@TypeId  AS VARCHAR)+ ' ';
+	END
+
+	SET @sql = @sql + 
+	'ORDER BY ProName ';
+	
+	EXEC(@sql)
+
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_Products_LookupByKey]    Script Date: 12/22/2011 15:23:50 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sol_Products_LookupByKey]
+	@TypeId tinyint,
+	@KeyName [varchar](50),
+	@KeyValue [varchar](128)
+	
+
+AS
+
+SET NOCOUNT ON
+	DECLARE @sql NVARCHAR(3000)
+
+	SET @sql = 
+	'SELECT [ProductID], '+
+	'	[ProName] '+
+	'FROM [sol_Products] '+
+	'WHERE (IsActive = 1) ';
+
+	IF(@TypeId IS NOT NULL)
+	BEGIN
+		SET @sql = @sql + 
+		'AND [TypeId] = '+CAST(@TypeId  AS VARCHAR)+ ' ';
+	END
+
+	IF(@KeyValue = '') set @KeyValue = NULL
+	IF(@KeyValue IS NOT NULL)
+	BEGIN
+		SET @sql = @sql + 
+		'AND ['+@KeyName+'] LIKE '''+@KeyValue+'%'' ';
+	END
+
+	SET @sql = @sql + 
+	'ORDER BY ProName ';
+	
+EXEC(@sql)
+GO
+
+
+/****** Object:  StoredProcedure [dbo].[sol_Products_SelectProductCode]    Script Date: 01/20/2012 15:04:14 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sol_Products_SelectProductCode]
+(
+	@ProductCode varchar(50)
+)
+
+AS
+
+SET NOCOUNT ON
+	
+	SELECT [ProductID], 
+		[ProName], 
+		[ProDescription], 
+		[ProShortDescription], 
+		[ProImage], 
+		[AgencyID], 
+		[MenuOrder], 
+		[IsActive], 
+		[Price], 
+		[CategoryID], 
+		[RefundAmount], 
+		[HandlingCommissionAmount], 
+		[CommissionUnit], 
+		[VafAmount], 
+		[FeeUnit], 
+		[ContainerID], 
+		[StandardDozenID], 
+		[UPC], 
+		[ProductCode], 
+		[TypeId], 
+		[Tax1Exempt], 
+		[Tax2Exempt] 
+	FROM [sol_Products] 
+	WHERE [ProductCode] = ''+@ProductCode+'' 
+GO
+
+/******************************************************************************
+--Sol_Entries
+******************************************************************************/
+/****** Object:  StoredProcedure [dbo].[Sol_Entries_GetLastClosingValue]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Sol_Entries_GetLastClosingValue] 
+      (
+            @CashTrayID int  
+      )
+      
+AS
+BEGIN
+   SET NOCOUNT ON
+
+SELECT   Amount
+    FROM  dbo.sol_Entries
+    WHERE (EntryType = 'C') AND (CashTrayID = @CashTrayID) AND (Date =
+          (SELECT MAX(Date) FROM dbo.sol_Entries
+              WHERE (EntryType = 'C') AND (CashTrayID = @CashTrayID))) 
+END
+GO
+/****** Object:  StoredProcedure [dbo].[Sol_Entries_GetValueOfFloat]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Sol_Entries_GetValueOfFloat] 
+      (
+            @CashTrayID int,  --not required when providing Closing EntryID
+            @ClosingEntryID int = NULL  
+                  --optional if you want to know the calculated value of a previous close
+      )
+      
+AS
+BEGIN
+      DECLARE @DateFrom datetime
+      DECLARE @DateTo datetime
+      DECLARE @TotalOrders money
+      DECLARE @FloatAdjustment money
+      
+      IF (@CashTrayID < 0) SET @CashTrayID = NULL
+      IF (@ClosingEntryID < 0) SET @ClosingEntryID = NULL
+      
+      IF (@CashTrayID IS NULL) SET @CashTrayID = 0
+      IF (@ClosingEntryID IS NULL) 
+        BEGIN
+            -- Get last opening
+            SELECT @DateFrom = MAX(Date) FROM dbo.sol_Entries
+                  WHERE (CashTrayID = @CashTrayID) AND (EntryType = 'O')
+            
+            SET @DateTo = CONVERT(varchar, GETDATE(), 23) + ' 23:59:59'
+        END
+      
+      IF (@ClosingEntryID IS NOT NULL)
+        BEGIN
+            -- Get Closing date
+            SELECT @DateTo = dbo.sol_Entries.Date FROM dbo.sol_Entries WHERE EntryID = @ClosingEntryID
+            -- Get CashTrayID
+            SELECT @CashTrayID = dbo.sol_Entries.CashTrayID FROM dbo.sol_Entries WHERE EntryID = @ClosingEntryID
+            -- Get Opening date
+            SELECT @DateFrom = MAX(Date) FROM dbo.sol_Entries
+                  WHERE (CashTrayID = @CashTrayID) AND (EntryType = 'O') AND (Date < @DateTo)      
+                    
+        END
+      
+      SET NOCOUNT ON;
+      
+SELECT @TotalOrders = SUM(ISNULL(TotalAmount, 0)) 
+      FROM dbo.sol_Orders
+      WHERE (Status = 'P') AND (Date BETWEEN @DateFrom AND @DateTo) AND (CashTrayID = @CashTrayID)
+
+SELECT @FloatAdjustment = SUM(ISNULL(Amount, 0))
+      FROM dbo.sol_Entries
+      WHERE (EntryType <> 'C') AND (Date BETWEEN @DateFrom AND @DateTo) AND (CashTrayID = @CashTrayID)
+
+SELECT ISNULL(@FloatAdjustment,0)- ISNULL(@TotalOrders,0) AS CurrentFloat
+      
+END
+GO
+/****** Object:  StoredProcedure [dbo].[sol_Entries_SelectAllByTypeDateTray]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Entries_SelectAllByTypeDateTray]
+(
+	@EntryType char(1),
+	@Date datetime,
+	@CashTrayID int
+)
+
+AS
+
+SET NOCOUNT ON
+
+SELECT [EntryID],
+	[EntryType],
+	[UserID],
+	[UserName],
+	[Date],
+	[CashTrayID],
+	[ExpenseTypeID],
+	[Amount],
+	[DiscrepancyAmount]
+FROM [sol_Entries]
+WHERE [EntryType] = @EntryType
+	AND [Date] = @Date
+	AND [CashTrayID] = @CashTrayID
+GO
+/****** Object:  StoredProcedure [dbo].[sol_Entries_SelectLastType]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_Entries_SelectLastType]
+(
+	@EntryType char(1),
+	@CashTrayID int
+)
+
+AS
+
+SET NOCOUNT ON
+/*
+SELECT MAX([Date])  AS LatestDate
+FROM [sol_Entries]
+WHERE [EntryType] = @EntryType
+	AND [CashTrayID] = @CashTrayID
+*/
+
+SELECT [EntryID],
+	[EntryType],
+	[UserID],
+	[UserName],
+	[Date],
+	[CashTrayID],
+	[ExpenseTypeID],
+	[Amount],
+	[DiscrepancyAmount]
+FROM [sol_Entries]
+WHERE [EntryType] = @EntryType
+	AND [CashTrayID] = @CashTrayID
+	AND [Date] =(select max([Date]) from [sol_Entries]
+WHERE [EntryType] = @EntryType
+	AND [CashTrayID] = @CashTrayID )
+GO
+/******************************************************************************
+--Sol_EntriesDetails
+******************************************************************************/
+/****** Object:  StoredProcedure [dbo].[sol_EntriesDetail_SelectAllByEntryIDType]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[sol_EntriesDetail_SelectAllByEntryIDType]
+(
+	@EntryID int,
+	@EntryType char(1)
+
+)
+AS
+
+SET NOCOUNT ON
+
+SELECT [DetailID],
+	[EntryID],
+	[EntryType],
+	[CashID],
+	[Count]
+FROM [sol_EntriesDetail]
+WHERE [EntryID] = @EntryID
+	AND [EntryType] = @EntryType
+GO
+
+/******************************************************************************
+--Sol_CashDenominations
+******************************************************************************/
+
+*** REPLACE sol_CashDenominations_SelectAll with this one ***
+
+/****** Object:  StoredProcedure [dbo].[sol_CashDenominations_SelectAll]    Script Date: 12/02/2011 10:04:44 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sol_CashDenominations_SelectAll]
+
+AS
+
+SET NOCOUNT ON
+
+SELECT [CashID],
+	[CashType],
+	[CashValue],
+	[Description],
+	[OrderValue],
+	[CashItemValue],
+	[Quantity],
+	[MoneyID]
+FROM [sol_CashDenominations]
+ORDER BY [OrderValue] Desc
+GO
+
+/****** Object:  StoredProcedure [dbo].[sol_CashDenominations_SelectAllDescription]    Script Date: 12/02/2011 10:04:44 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[sol_CashDenominations_SelectAllDescription]
+AS
+
+SET NOCOUNT ON
+
+SELECT [CashID],
+	[CashType],
+	[CashValue],
+	/*IF( [CashType] = 0, "Coin", "Bill") as typeDescription, */
+	(CASE [CashType]     WHEN 0 THEN 'Coin'  WHEN 1 THEN 'Bill' WHEN 2 THEN 'Roll'  END) as typeDescription,
+	(CASE [CashType]     WHEN 0 THEN 'Coin'  WHEN 1 THEN 'Bill' WHEN 2 THEN 'Roll'  END) + ' - ' + CONVERT(varchar, [CashValue], 23) as strDescription,
+	[Description],
+	[OrderValue],
+	[CashItemValue],
+	[Quantity],
+	[MoneyID]
+FROM [sol_CashDenominations]
+GO
+
+/******************************************************************************
+--Sol_Stored Procedures for Reports
+--Sol_Reports
+******************************************************************************/
+/****** Object:  StoredProcedure [dbo].[Sol_Reports_InventoryStatus]    Script Date: 08/30/2012 17:39:17 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Sol_Reports_InventoryStatus]
+(
+   @DateFrom varchar(23) = NULL,
+   @DateTo varchar(23) = NULL,
+   @CurrentUserName nvarchar(256) = NULL
+)
+AS
+
+BEGIN
+	DECLARE @TotalQuantity Float
+	IF(@DateFrom IS NULL) SET @DateFrom = '1950-01-01 00:00:00'
+    IF(@DateTo IS NULL) SET @DateTo = CONVERT(varchar, GETDATE(), 23) + ' 23:59:59'
+	
+-- Opening Inventory
+    CREATE TABLE #Opening
+    (
+        IndexID int IDENTITY (0, 1) NOT NULL,
+        CategoryId int,
+        Description varchar(100),
+        RefundAmount money,
+        Quantity int,
+        PercentOfTotal float,
+        Dozen int
+    )
+    INSERT INTO #Opening(CategoryId,Description,RefundAmount,Quantity,PercentOfTotal,Dozen)
+        Exec dbo.Sol_Reports_InventoryOnHand_Unstaged @DateFrom, @CurrentUserName 
+
+  
+-- Purchased Inventory
+    CREATE TABLE #Purchased
+    (
+        IndexID int IDENTITY (0, 1) NOT NULL,
+        CategoryId int,
+        Description varchar(100),
+        Quantity int,
+        PercentOfTotal float,
+        Dozen int,
+        Amount money
+    )
+    INSERT INTO #Purchased(CategoryId,Description,Quantity,PercentOfTotal,Dozen,Amount)
+		EXEC Sol_Reports_PurchasedInventory @DateFrom, @DateTo, -1
+
+
+-- Staged Inventory
+    CREATE TABLE #Staged
+    (
+        IndexID int IDENTITY (0, 1) NOT NULL,
+        CategoryId int,
+        Description varchar(100),
+        Quantity int,
+        PercentOfTotal float,
+        Dozen int,
+        Amount money
+    )
+    
+    SELECT      @TotalQuantity = SUM(dbo.sol_Stage.Dozen * 12)
+		FROM          dbo.sol_Stage INNER JOIN
+                        dbo.sol_Products ON dbo.sol_Stage.ProductID = dbo.sol_Products.ProductID LEFT OUTER JOIN
+                        dbo.sol_Shipment ON dbo.sol_Stage.ShipmentID = dbo.sol_Shipment.ShipmentID RIGHT OUTER JOIN
+                        dbo.Sol_Categories ON dbo.sol_Products.CategoryID = dbo.Sol_Categories.CategoryID
+		WHERE      ((dbo.sol_Stage.Status = 'I') AND (dbo.sol_Stage.Date <= @DateTo)) 
+            OR ((dbo.sol_Stage.Status = 'S') AND (dbo.sol_Shipment.ShippedDate > @DateTo) AND (dbo.sol_Stage.Date <= @DateTo))
+
+    INSERT INTO #Staged(CategoryId,Description,Quantity,PercentOfTotal,Dozen,Amount)
+		SELECT      dbo.Sol_Categories.CategoryID, 
+                  dbo.Sol_Categories.Description, 
+                  SUM(dbo.sol_Stage.Dozen * 12) AS SumOfQuantity, 
+                  CASE @TotalQuantity
+                        WHEN 0 THEN 0 --cant divide by zero
+                        ELSE SUM(dbo.sol_Stage.Dozen * 12) / @TotalQuantity * 100 
+                        END
+                  AS PercentOfTotal, 
+                  SUM(dbo.sol_Stage.Dozen) AS SumOfDozen, 
+                  SUM(dbo.sol_Stage.Dozen * 12) * dbo.Sol_Categories.RefundAmount AS Amount
+		FROM          dbo.sol_Stage INNER JOIN
+                        dbo.sol_Products ON dbo.sol_Stage.ProductID = dbo.sol_Products.ProductID LEFT OUTER JOIN
+                        dbo.sol_Shipment ON dbo.sol_Stage.ShipmentID = dbo.sol_Shipment.ShipmentID RIGHT OUTER JOIN
+                        dbo.Sol_Categories ON dbo.sol_Products.CategoryID = dbo.Sol_Categories.CategoryID
+		WHERE      ((dbo.sol_Stage.Status = 'I') AND (dbo.sol_Stage.Date <= @DateTo)) 
+            OR ((dbo.sol_Stage.Status = 'S') AND (dbo.sol_Shipment.ShippedDate > @DateTo) AND (dbo.sol_Stage.Date <= @DateTo))
+		GROUP BY dbo.Sol_Categories.CategoryID, dbo.Sol_Categories.Description, dbo.Sol_Categories.RefundAmount
+	-- Note to Kevin:  sol_Shipment.Date should be changed to DateStarted and DateShipped
+
+
+
+-- OnRBill Inventory
+    CREATE TABLE #OnRBill
+    (
+        IndexID int IDENTITY (0, 1) NOT NULL,
+        CategoryId int,
+        Description varchar(100),
+        Quantity int,
+        PercentOfTotal float,
+        Dozen int,
+        Amount money
+    )
+    
+    SELECT      @TotalQuantity = SUM(dbo.sol_Stage.Dozen * 12)
+		FROM          dbo.sol_Stage INNER JOIN
+                        dbo.sol_Products ON dbo.sol_Stage.ProductID = dbo.sol_Products.ProductID LEFT OUTER JOIN
+                        dbo.sol_Shipment ON dbo.sol_Stage.ShipmentID = dbo.sol_Shipment.ShipmentID RIGHT OUTER JOIN
+                        dbo.Sol_Categories ON dbo.sol_Products.CategoryID = dbo.Sol_Categories.CategoryID
+		WHERE      ((dbo.sol_Stage.Status = 'P') AND (dbo.sol_Stage.Date <= @DateTo)) 
+
+    INSERT INTO #OnRBill(CategoryId,Description,Quantity,PercentOfTotal,Dozen,Amount)
+		SELECT      dbo.Sol_Categories.CategoryID, 
+                  dbo.Sol_Categories.Description, 
+                  SUM(dbo.sol_Stage.Dozen * 12) AS SumOfQuantity, 
+                  CASE @TotalQuantity
+                        WHEN 0 THEN 0 --cant divide by zero
+                        ELSE SUM(dbo.sol_Stage.Dozen * 12) / @TotalQuantity * 100 
+                        END
+                  AS PercentOfTotal, 
+                  SUM(dbo.sol_Stage.Dozen) AS SumOfDozen, 
+                  SUM(dbo.sol_Stage.Dozen * 12) * dbo.Sol_Categories.RefundAmount AS Amount
+		FROM          dbo.sol_Stage INNER JOIN
+                        dbo.sol_Products ON dbo.sol_Stage.ProductID = dbo.sol_Products.ProductID LEFT OUTER JOIN
+                        dbo.sol_Shipment ON dbo.sol_Stage.ShipmentID = dbo.sol_Shipment.ShipmentID RIGHT OUTER JOIN
+                        dbo.Sol_Categories ON dbo.sol_Products.CategoryID = dbo.Sol_Categories.CategoryID
+		WHERE      ((dbo.sol_Stage.Status = 'P') AND (dbo.sol_Stage.Date <= @DateTo)) 
+		GROUP BY dbo.Sol_Categories.CategoryID, dbo.Sol_Categories.Description, dbo.Sol_Categories.RefundAmount
+	-- Note to Kevin:  sol_Shipment.Date should be changed to DateStarted and DateShipped
+
+
+
+-- Shipped Inventory
+    CREATE TABLE #Shipped
+    (
+        IndexID int IDENTITY (0, 1) NOT NULL,
+        CategoryId int,
+        Description varchar(100),
+        Quantity int,
+        PercentOfTotal float,
+        Dozen int,
+        Amount money
+    )
+    
+    SELECT      @TotalQuantity = SUM(dbo.sol_Stage.Dozen * 12)
+		FROM          dbo.sol_Stage INNER JOIN
+                        dbo.sol_Products ON dbo.sol_Stage.ProductID = dbo.sol_Products.ProductID LEFT OUTER JOIN
+                        dbo.sol_Shipment ON dbo.sol_Stage.ShipmentID = dbo.sol_Shipment.ShipmentID RIGHT OUTER JOIN
+                        dbo.Sol_Categories ON dbo.sol_Products.CategoryID = dbo.Sol_Categories.CategoryID
+		WHERE      (dbo.sol_Stage.Status = 'S') AND (dbo.sol_Shipment.ShippedDate BETWEEN @DateFrom AND @DateTo) 
+
+    INSERT INTO #Shipped(CategoryId,Description,Quantity,PercentOfTotal,Dozen,Amount)
+		SELECT      dbo.Sol_Categories.CategoryID, 
+                  dbo.Sol_Categories.Description, 
+                  SUM(dbo.sol_Stage.Dozen * 12) AS SumOfQuantity, 
+                  CASE @TotalQuantity
+                        WHEN 0 THEN 0 --cant divide by zero
+                        ELSE SUM(dbo.sol_Stage.Dozen * 12) / @TotalQuantity * 100 
+                        END
+                  AS PercentOfTotal, 
+                  SUM(dbo.sol_Stage.Dozen) AS SumOfDozen, 
+                  SUM(dbo.sol_Stage.Dozen * 12) * dbo.Sol_Categories.RefundAmount AS Amount
+		FROM          dbo.sol_Stage INNER JOIN
+                        dbo.sol_Products ON dbo.sol_Stage.ProductID = dbo.sol_Products.ProductID LEFT OUTER JOIN
+                        dbo.sol_Shipment ON dbo.sol_Stage.ShipmentID = dbo.sol_Shipment.ShipmentID RIGHT OUTER JOIN
+                        dbo.Sol_Categories ON dbo.sol_Products.CategoryID = dbo.Sol_Categories.CategoryID
+		WHERE      (dbo.sol_Stage.Status = 'S') AND (dbo.sol_Shipment.ShippedDate BETWEEN @DateFrom AND @DateTo)
+		GROUP BY dbo.Sol_Categories.CategoryID, dbo.Sol_Categories.Description, dbo.Sol_Categories.RefundAmount
+	-- Note to Kevin:  sol_Shipment.Date should be changed to DateStarted and DateShipped
+	
+	
+	
+-- Unstaged Inventory
+    CREATE TABLE #Unstaged
+    (
+        IndexID int IDENTITY (0, 1) NOT NULL,
+        CategoryId int,
+        Description varchar(100),
+        RefundAmount money,
+        Quantity int,
+        PercentOfTotal float,
+        Dozen int
+    )
+    -- Insert into our temp table
+    INSERT INTO #Unstaged(CategoryId,Description,RefundAmount,Quantity,PercentOfTotal,Dozen)
+        Exec dbo.Sol_Reports_InventoryOnHand_Unstaged @DateTo, @CurrentUserName
+        
+
+-- Combine Data        
+	SELECT      dbo.Sol_Categories.CategoryID, dbo.Sol_Categories.Description, #Opening.Quantity AS OpeningQuantity, 
+                        #Opening.PercentOfTotal AS OpeningPercent, #Opening.RefundAmount * #Opening.Quantity AS OpeningAmount, 
+                        #Purchased.Quantity AS PurchasedQuantity, #Purchased.PercentOfTotal AS PurchasedPercent, #Purchased.Amount AS PurchasedAmount, 
+                        #Staged.Quantity AS StagedQuantity, #Staged.PercentOfTotal AS StagedPercent, #Staged.Amount AS StagedAmount, 
+                        #OnRBill.Quantity AS OnRBillQuantity, #OnRBill.PercentOfTotal AS OnRBillPercent, #OnRBill.Amount AS OnRBillAmount, 
+                        #Shipped.Quantity AS ShippedQuantity, #Shipped.PercentOfTotal AS ShippedPercent, #Shipped.Amount AS ShippedAmount, 
+                        #Unstaged.Quantity AS UnStagedQuantity, #Unstaged.PercentOfTotal AS UnStagedPercent, 
+                        #Unstaged.RefundAmount * #Unstaged.Quantity AS UnStagedAmount
+	FROM          dbo.Sol_Categories LEFT OUTER JOIN
+                        #Opening ON dbo.Sol_Categories.CategoryID = #Opening.CategoryId LEFT OUTER JOIN
+                        #Purchased ON dbo.Sol_Categories.CategoryID = #Purchased.CategoryId LEFT OUTER JOIN
+                        #Staged ON dbo.Sol_Categories.CategoryID = #Staged.CategoryId LEFT OUTER JOIN
+                        #OnRBill ON dbo.Sol_Categories.CategoryID = #OnRBill.CategoryId LEFT OUTER JOIN
+                        #Shipped ON dbo.Sol_Categories.CategoryID = #Shipped.CategoryId LEFT OUTER JOIN
+                        #Unstaged ON dbo.Sol_Categories.CategoryID = #Unstaged.CategoryId         	
+
+
+
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[Sol_Reports_BOL_Containers]    Script Date: 02/27/2012 22:03:17 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Sol_Reports_BOL_Containers]
+(
+	@ShipmentID int,
+	@ProductCode varchar(50),
+	@ContainerID int
+)
+AS 
+SELECT	COUNT(s.ShipmentID) AS ContainerCount
+FROM    dbo.sol_Stage s
+INNER JOIN Sol_Products p ON s.ProductID = p.ProductID
+AND (p.ProductCode = @ProductCode )
+WHERE	(s.ContainerID = @ContainerID) AND (s.ShipmentID = @ShipmentID)
+
+GO
+
+/****** Object:  StoredProcedure [dbo].[Sol_Reports_BOL]    Script Date: 20/02/2012 15:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+ALTER PROCEDURE [dbo].[Sol_Reports_BOL]
+(
+   @ShipmentID int,
+   @ProductCode varchar(50)
+)
+AS
+
+BEGIN
+   SET NOCOUNT ON
+   
+SELECT  
+sol_Stage.Dozen
+FROM  
+Solum.dbo.sol_Shipment sol_Shipment  
+INNER JOIN sol_Stage sol_Stage ON sol_Shipment.ShipmentID=sol_Stage.ShipmentID  
+INNER JOIN Sol_Products p ON Sol_Stage.ProductID = p.ProductID
+AND (p.ProductCode = @ProductCode )
+WHERE  
+sol_Shipment.ShipmentID = @ShipmentID
+
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[Sol_Reports_DailyTotal_Category]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Sol_Reports_DailyTotal_Category]
+(
+      @DateFrom varchar(23),
+      @DateTo varchar(23),
+      @CashTrayID int
+)
+AS
+
+BEGIN
+	SET NOCOUNT ON
+    if(@CashTrayID IS NULL ) SET @CashTrayID = -1;
+    if(@CashTrayID < 0)
+	BEGIN
+		SELECT  dbo.Sol_Categories.Description, SUM(dbo.sol_OrdersDetail.Quantity) AS SumOfQuantity, SUM(dbo.sol_OrdersDetail.Amount) AS SumOfAmount
+		FROM    dbo.sol_Orders INNER JOIN
+				dbo.sol_OrdersDetail ON dbo.sol_Orders.OrderID = dbo.sol_OrdersDetail.OrderID AND 
+				dbo.sol_Orders.OrderType = dbo.sol_OrdersDetail.OrderType INNER JOIN
+				dbo.Sol_Categories ON dbo.sol_OrdersDetail.CategoryID = dbo.Sol_Categories.CategoryID
+		WHERE   (dbo.sol_Orders.Status <> 'D') AND (dbo.sol_Orders.Date BETWEEN @DateFrom AND @DateTo)
+		GROUP BY dbo.Sol_Categories.Description
+		ORDER BY dbo.Sol_Categories.Description
+    END
+    ELSE
+	BEGIN
+		SELECT  dbo.Sol_Categories.Description, SUM(dbo.sol_OrdersDetail.Quantity) AS SumOfQuantity, SUM(dbo.sol_OrdersDetail.Amount) AS SumOfAmount
+		FROM    dbo.sol_Orders INNER JOIN
+				dbo.sol_OrdersDetail ON dbo.sol_Orders.OrderID = dbo.sol_OrdersDetail.OrderID AND 
+				dbo.sol_Orders.OrderType = dbo.sol_OrdersDetail.OrderType INNER JOIN
+				dbo.Sol_Categories ON dbo.sol_OrdersDetail.CategoryID = dbo.Sol_Categories.CategoryID
+		WHERE   (dbo.sol_Orders.Status <> 'D') AND (dbo.sol_Orders.Date BETWEEN @DateFrom AND @DateTo)
+				AND sol_Orders.CashTrayID = @CashTrayID
+		GROUP BY dbo.Sol_Categories.Description
+		ORDER BY dbo.Sol_Categories.Description
+    END
+    
+
+END
+GO
+/****** Object:  StoredProcedure [dbo].[Sol_Reports_TransactionSearch]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Sol_Reports_TransactionSearch]
+(
+   @OrderID int
+)
+AS
+
+BEGIN
+   SET NOCOUNT ON
+
+SELECT      dbo.sol_Orders.OrderID, dbo.sol_Orders.Date, dbo.aspnet_Users.UserName, DATEDIFF(ss, dbo.sol_Orders.Date, dbo.sol_Orders.DateClosed) 
+                        AS Duration, dbo.sol_OrdersDetail.Description, dbo.sol_OrdersDetail.Quantity, dbo.sol_OrdersDetail.Amount, dbo.sol_Orders.Status, 
+                        dbo.sol_Customers.CustomerCode
+FROM          dbo.aspnet_Users INNER JOIN
+                        dbo.sol_Orders ON dbo.aspnet_Users.UserId = dbo.sol_Orders.UserID INNER JOIN
+                        dbo.sol_OrdersDetail ON dbo.sol_Orders.OrderID = dbo.sol_OrdersDetail.OrderID AND 
+                        dbo.sol_Orders.OrderType = dbo.sol_OrdersDetail.OrderType LEFT OUTER JOIN
+                        dbo.sol_Customers ON dbo.sol_Orders.CustomerID = dbo.sol_Customers.CustomerID
+WHERE      (dbo.sol_Orders.OrderID = @OrderID)
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[Sol_Reports_TransactionReport]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Sol_Reports_TransactionReport]
+(
+      @DateFrom varchar(23),
+      @DateTo varchar(23)
+)
+AS
+
+BEGIN
+   SET NOCOUNT ON
+
+SELECT      dbo.sol_Orders.Date, dbo.sol_Orders.OrderID, dbo.aspnet_Users.UserName, SUM(dbo.sol_OrdersDetail.Quantity) / NULLIF(DATEDIFF(ss, 
+                        dbo.sol_Orders.Date, dbo.sol_Orders.DateClosed), 0) AS TimePerContainer, SUM(dbo.sol_OrdersDetail.Quantity) AS SumOfQuantity, DATEDIFF(ss, 
+                        dbo.sol_Orders.Date, dbo.sol_Orders.DateClosed) AS Duration, dbo.sol_Orders.TotalAmount, dbo.sol_Orders.Status, 
+                        dbo.sol_Customers.CustomerCode
+FROM          dbo.aspnet_Users INNER JOIN
+                        dbo.sol_Orders ON dbo.aspnet_Users.UserId = dbo.sol_Orders.UserID INNER JOIN
+                        dbo.sol_OrdersDetail ON dbo.sol_Orders.OrderID = dbo.sol_OrdersDetail.OrderID AND 
+                        dbo.sol_Orders.OrderType = dbo.sol_OrdersDetail.OrderType LEFT OUTER JOIN
+                        dbo.sol_Customers ON dbo.sol_Orders.CustomerID = dbo.sol_Customers.CustomerID
+WHERE      (dbo.sol_Orders.Status <> 'D')
+GROUP BY dbo.sol_Orders.Date, dbo.sol_Orders.OrderID, dbo.aspnet_Users.UserName, DATEDIFF(ss, dbo.sol_Orders.Date, dbo.sol_Orders.DateClosed), 
+                        dbo.sol_Orders.TotalAmount, dbo.sol_Customers.CustomerCode, dbo.sol_Orders.Status
+HAVING       (dbo.sol_Orders.Date BETWEEN @DateFrom AND @DateTo)
+ORDER BY dbo.sol_Orders.Date
+
+END
+GO
+/****** Object:  StoredProcedure [dbo].[Sol_Reports_TransactionDuration]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Sol_Reports_TransactionDuration]
+(
+      @DateFrom varchar(23),
+      @DateTo varchar(23)
+)
+AS
+
+BEGIN
+   SET NOCOUNT ON
+
+SELECT      dbo.sol_Orders.Date, 
+                  dbo.sol_Orders.OrderID, 
+                  dbo.aspnet_Users.UserName, 
+                  DATEDIFF(ss,dbo.sol_Orders.Date, dbo.sol_Orders.DateClosed)/CAST(SUM(dbo.sol_OrdersDetail.Quantity) AS Float) AS TimePerContainer,
+                  CONVERT(VARCHAR(10), DATEDIFF(ss, dbo.sol_Orders.Date, dbo.sol_Orders.DateClosed) / 60) 
+                        + ':' + RIGHT('00' + CONVERT(VARCHAR(4), DATEDIFF(ss, dbo.sol_Orders.Date, dbo.sol_Orders.DateClosed) 
+                        - DATEDIFF(ss, dbo.sol_Orders.Date, dbo.sol_Orders.DateClosed) / 60 * 60),2) AS Duration, 
+                  SUM(dbo.sol_OrdersDetail.Quantity) AS SumOfQuantity, 
+            dbo.sol_Orders.TotalAmount
+FROM        dbo.aspnet_Users INNER JOIN
+            dbo.sol_Orders ON dbo.aspnet_Users.UserId = dbo.sol_Orders.UserID INNER JOIN
+            dbo.sol_OrdersDetail ON dbo.sol_Orders.OrderID = dbo.sol_OrdersDetail.OrderID AND 
+            dbo.sol_Orders.OrderType = dbo.sol_OrdersDetail.OrderType
+WHERE      (dbo.sol_Orders.Status <> 'D')
+GROUP BY    dbo.sol_Orders.Date, 
+                  dbo.sol_Orders.OrderID, 
+                  dbo.aspnet_Users.UserName, 
+                  dbo.sol_Orders.TotalAmount, 
+                  DATEDIFF(ss, dbo.sol_Orders.Date, dbo.sol_Orders.DateClosed)
+HAVING       (dbo.sol_Orders.Date BETWEEN @DateFrom AND @DateTo)
+ORDER BY DATEDIFF(ss,dbo.sol_Orders.Date, dbo.sol_Orders.DateClosed)/CAST(SUM(dbo.sol_OrdersDetail.Quantity) AS Float)
+
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[Sol_Reports_PurchasedInventory]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Sol_Reports_PurchasedInventory]
+(
+      @DateFrom varchar(23),
+      @DateTo varchar(23),
+      @CustomerID int
+)
+AS
+
+BEGIN
+   DECLARE @TotalQuantity Float
+   SET NOCOUNT ON
+   IF(@DateFrom IS NULL) SET @DateFrom = '1950-01-01 00:00:00'
+   IF(@DateTo IS NULL) SET @DateTo = '3000-01-01 00:00:00'
+   if(@CustomerID <0) SET @CustomerID = Null
+
+IF(@CustomerID IS Null)
+BEGIN
+  SELECT      @TotalQuantity = SUM(Quantity)
+    FROM          dbo.sol_OrdersDetail
+    WHERE      (Status <> 'D') AND (Date BETWEEN @DateFrom AND @DateTo)
+
+  SELECT      dbo.Sol_Categories.CategoryID, dbo.Sol_Categories.Description, SUM(dbo.sol_OrdersDetail.Quantity) AS SumOfQuantity, SUM(dbo.sol_OrdersDetail.Quantity) 
+                        / @TotalQuantity * 100 AS PercentOfTotal, SUM(dbo.sol_OrdersDetail.Quantity) / 12 AS Dozen, SUM(dbo.sol_OrdersDetail.Amount) 
+                        AS SumOfAmount
+    FROM          dbo.sol_OrdersDetail INNER JOIN
+                        dbo.sol_Orders ON dbo.sol_OrdersDetail.OrderID = dbo.sol_Orders.OrderID AND 
+                        dbo.sol_OrdersDetail.OrderType = dbo.sol_Orders.OrderType INNER JOIN
+                        dbo.Sol_Categories ON dbo.sol_OrdersDetail.CategoryID = dbo.Sol_Categories.CategoryID
+    WHERE      (dbo.sol_Orders.Status <> 'D') AND (dbo.sol_Orders.Date BETWEEN @DateFrom AND @DateTo)
+    GROUP BY dbo.Sol_Categories.CategoryID, dbo.Sol_Categories.Description
+END
+
+-- Else
+IF(@CustomerID IS NOT NULL)
+BEGIN
+  SELECT      @TotalQuantity = SUM(dbo.sol_OrdersDetail.Quantity)
+    FROM          dbo.sol_OrdersDetail INNER JOIN
+                        dbo.sol_Orders ON dbo.sol_OrdersDetail.OrderID = dbo.sol_Orders.OrderID AND dbo.sol_OrdersDetail.OrderType = dbo.sol_Orders.OrderType
+    WHERE      (dbo.sol_Orders.Status <> 'D') AND (dbo.sol_Orders.Date BETWEEN @DateFrom AND @DateTo) AND (dbo.sol_Orders.CustomerID = @CustomerID)
+
+  SELECT      dbo.sol_Customers.Name AS CustomerName, dbo.Sol_Categories.Description, SUM(dbo.sol_OrdersDetail.Quantity) AS SumOfQuantity, 
+                        SUM(dbo.sol_OrdersDetail.Quantity) / @TotalQuantity * 100 AS PercentOfTotal, SUM(dbo.sol_OrdersDetail.Quantity) / 12 AS Dozen, 
+                        SUM(dbo.sol_OrdersDetail.Amount) AS SumOfAmount
+    FROM          dbo.sol_OrdersDetail INNER JOIN
+                        dbo.sol_Orders ON dbo.sol_OrdersDetail.OrderID = dbo.sol_Orders.OrderID AND 
+                        dbo.sol_OrdersDetail.OrderType = dbo.sol_Orders.OrderType INNER JOIN
+                        dbo.Sol_Categories ON dbo.sol_OrdersDetail.CategoryID = dbo.Sol_Categories.CategoryID INNER JOIN
+                        dbo.sol_Customers ON dbo.sol_Orders.CustomerID = dbo.sol_Customers.CustomerID
+    WHERE      (dbo.sol_Orders.Status <> 'D') AND (dbo.sol_Orders.Date BETWEEN @DateFrom AND @DateTo) AND (dbo.sol_Orders.CustomerID = @CustomerID)
+    GROUP BY dbo.Sol_Categories.Description, dbo.sol_Customers.Name
+
+END
+
+
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[Sol_Reports_InventoryOnHand_Unstaged]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Sol_Reports_InventoryOnHand_Unstaged]
+(
+   @DateTo varchar(23),
+   @CurrentUserName nvarchar(256) = NULL
+)
+AS
+
+BEGIN
+   DECLARE @DateFrom varchar(23)
+   DECLARE @TotalQuantity Float
+   SET NOCOUNT ON
+   IF(@CurrentUserName IS NULL) SET @CurrentUserName = 'nouser'
+   IF(@DateFrom IS NULL) SET @DateFrom = '1950-01-01 00:00:00'
+   IF(@DateTo IS NULL) SET @DateTo = CONVERT(varchar, GETDATE(), 23) + ' 23:59:59'
+   
+DELETE FROM dbo.sol_QueryDate  WHERE UserName = @CurrentUserName
+
+INSERT INTO dbo.sol_QueryDate(UserName, DateFrom, DateTo)   
+    VALUES      (@CurrentUserName, CONVERT(datetime,@DateFrom,120), CONVERT(datetime,@DateTo,120))
+
+
+SELECT      @TotalQuantity = SUM(ISNULL(dbo.vw_sol_Products_Unstaged_Part1.TotalQuantity, 0) - ISNULL(dbo.vw_sol_Products_Unstaged_Part2.TotalDozen, 0) * 12)
+FROM          dbo.Sol_Categories LEFT OUTER JOIN
+                        dbo.vw_sol_Products_Unstaged_Part2 ON dbo.Sol_Categories.CategoryID = dbo.vw_sol_Products_Unstaged_Part2.CategoryID LEFT OUTER JOIN
+                        dbo.vw_sol_Products_Unstaged_Part1 ON dbo.Sol_Categories.CategoryID = dbo.vw_sol_Products_Unstaged_Part1.CategoryID
+WHERE      (dbo.Sol_Categories.CategoryID > 0) AND (dbo.vw_sol_Products_Unstaged_Part1.UserName = @CurrentUserName OR
+                        dbo.vw_sol_Products_Unstaged_Part1.UserName IS NULL) AND (dbo.vw_sol_Products_Unstaged_Part2.UserName = @CurrentUserName OR
+                        dbo.vw_sol_Products_Unstaged_Part2.UserName IS NULL)
+
+IF(@TotalQuantity = 0) SET @TotalQuantity = 1  --can't divide by zero
+
+SELECT      dbo.Sol_Categories.CategoryID AS Id, dbo.Sol_Categories.Description, dbo.Sol_Categories.RefundAmount, 
+                        ISNULL(dbo.vw_sol_Products_Unstaged_Part1.TotalQuantity, 0) - ISNULL(dbo.vw_sol_Products_Unstaged_Part2.TotalDozen, 0) * 12 AS Quantity, 
+                        (ISNULL(dbo.vw_sol_Products_Unstaged_Part1.TotalQuantity, 0) - ISNULL(dbo.vw_sol_Products_Unstaged_Part2.TotalDozen, 0) * 12) 
+                        / @TotalQuantity * 100 AS PercentOfTotal, (ISNULL(dbo.vw_sol_Products_Unstaged_Part1.TotalQuantity, 0) 
+                        - ISNULL(dbo.vw_sol_Products_Unstaged_Part2.TotalDozen, 0) * 12) / 12 AS Dozen
+FROM          dbo.Sol_Categories LEFT OUTER JOIN
+                        dbo.vw_sol_Products_Unstaged_Part2 ON dbo.Sol_Categories.CategoryID = dbo.vw_sol_Products_Unstaged_Part2.CategoryID LEFT OUTER JOIN
+                        dbo.vw_sol_Products_Unstaged_Part1 ON dbo.Sol_Categories.CategoryID = dbo.vw_sol_Products_Unstaged_Part1.CategoryID
+WHERE      (dbo.Sol_Categories.CategoryID > 0) AND (dbo.vw_sol_Products_Unstaged_Part1.UserName = @CurrentUserName OR
+                        dbo.vw_sol_Products_Unstaged_Part1.UserName IS NULL) AND (dbo.vw_sol_Products_Unstaged_Part2.UserName = @CurrentUserName OR
+                        dbo.vw_sol_Products_Unstaged_Part2.UserName IS NULL)
+
+
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[Sol_Reports_CorporateAccountStatement]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Sol_Reports_CorporateAccountStatement]
+(
+   @DateFrom varchar(23),
+   @DateTo varchar(23),
+   @CustomerId int
+)
+AS
+
+BEGIN
+   SET NOCOUNT ON
+   DECLARE @sql NVARCHAR(3000)
+
+   IF(@DateFrom IS NULL) SET @DateFrom = '1950-01-01 00:00:00'
+   IF(@DateTo IS NULL) SET @DateTo = '2200-01-01 00:00:00'
+   IF(@CustomerId <0 ) SET @CustomerId = NULL
+
+	SET @sql = 
+		'SELECT '''+@DateFrom+''' AS DateFrom, '''+@DateTo+''' AS DateTo, dbo.sol_Customers.CustomerID, dbo.sol_Customers.CustomerCode, dbo.sol_Customers.Name, dbo.sol_Customers.Contact, dbo.sol_Customers.Address1, '+
+        '                dbo.sol_Customers.Address2, dbo.sol_Customers.City, dbo.sol_Customers.Province, dbo.sol_Customers.PostalCode, dbo.sol_Customers.PhoneNumber, dbo.sol_Customers.Email,   '+
+        '                dbo.sol_Orders.Date, dbo.sol_Orders.OrderID, SUM(dbo.sol_OrdersDetail.Quantity) AS SumOfQuantity, SUM(dbo.sol_OrdersDetail.Amount)-dbo.sol_orders.FeeAmount AS SumOfAmount,  '+
+        '                dbo.sol_Orders.Reference, '+
+        '                CASE dbo.sol_Orders.DatePaid '+
+        '                                  WHEN CONVERT(datetime, ''1753-01-01 12:00:00'', 120) THEN Null  '+
+        '                                  ELSE dbo.sol_Orders.DatePaid  '+
+        '                END  '+
+        '                AS DateOfPayment, '+
+        '                CASE dbo.sol_Orders.DatePaid '+
+        '                                  WHEN CONVERT(datetime, ''1753-01-01 12:00:00'', 120) THEN SUM(dbo.sol_OrdersDetail.Amount)-dbo.sol_orders.FeeAmount  '+
+        '                                  ELSE 0 '+
+        '                END  '+
+        '                AS Outstanding '+
+		'FROM          dbo.sol_Orders INNER JOIN '+
+        '                dbo.sol_OrdersDetail ON dbo.sol_Orders.OrderID = dbo.sol_OrdersDetail.OrderID AND  '+
+        '                dbo.sol_Orders.OrderType = dbo.sol_OrdersDetail.OrderType INNER JOIN '+
+        '                dbo.sol_Customers ON dbo.sol_Orders.CustomerID = dbo.sol_Customers.CustomerID '+
+		'WHERE      (dbo.sol_Orders.Status = ''O'') AND (dbo.sol_OrdersDetail.Date >= CONVERT(datetime, '''+@DateFrom+''', 120)) AND  '+
+        '                (dbo.sol_OrdersDetail.Date <= CONVERT(datetime, '''+@DateTo+''', 120) ) ';
+		IF(@CustomerId IS NOT NULL)
+		BEGIN
+			SET @sql = @sql +
+			'AND dbo.sol_Orders.CustomerId = '+CAST(@CustomerId as nvarchar(100))+ ' ';
+		END
+
+		SET @sql = @sql +
+		'GROUP BY dbo.sol_Customers.CustomerID, dbo.sol_Customers.CustomerCode, dbo.sol_Customers.Name, dbo.sol_Customers.Contact, dbo.sol_Customers.Address1, dbo.sol_Customers.Address2, dbo.sol_Customers.City, '+
+        '                dbo.sol_Customers.Province, dbo.sol_Customers.PostalCode, dbo.sol_Customers.PhoneNumber, dbo.sol_Customers.Email, dbo.sol_Orders.OrderID, dbo.sol_Orders.Date, dbo.sol_Orders.FeeAmount,  '+
+        '                dbo.sol_Orders.DatePaid, dbo.sol_Orders.Reference ';
+		EXEC(@sql)
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[Sol_Reports_DailyTotal_Expenses]    Script Date: 28/06/2012 12:04:45 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Sol_Reports_DailyTotal_Expenses]
+(
+      @DateFrom varchar(23),
+      @DateTo varchar(23),
+      @CashTrayID int
+)
+AS
+BEGIN
+
+    if(@CashTrayID IS NULL ) SET @CashTrayID = -1;
+    if(@CashTrayID < 0)
+      BEGIN
+            SELECT dbo.sol_ExpenseTypes.Description, SUM(dbo.sol_Entries.Amount) AS ExpenseAmount
+                  FROM dbo.sol_Entries LEFT OUTER JOIN dbo.sol_ExpenseTypes ON dbo.sol_Entries.ExpenseTypeID = dbo.sol_ExpenseTypes.ExpenseTypeID
+                  WHERE (Date BETWEEN @DateFrom AND @DateTo) AND (EntryType = 'E')
+                  GROUP BY dbo.sol_ExpenseTypes.Description
+      END            
+      ELSE
+      BEGIN
+      SELECT dbo.sol_ExpenseTypes.Description, SUM(dbo.sol_Entries.Amount) AS ExpenseAmount
+                  FROM dbo.sol_Entries LEFT OUTER JOIN dbo.sol_ExpenseTypes ON dbo.sol_Entries.ExpenseTypeID = dbo.sol_ExpenseTypes.ExpenseTypeID
+                  WHERE (Date BETWEEN @DateFrom AND @DateTo) AND (EntryType = 'E') 
+                        AND sol_Entries.CashTrayID = @CashTrayID
+                  GROUP BY dbo.sol_ExpenseTypes.Description
+      END
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[Sol_Reports_DailyTotal_Breakdown]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Sol_Reports_DailyTotal_Breakdown]
+(
+      @DateFrom varchar(23),
+      @DateTo varchar(23),
+      @CashTrayID int
+)
+AS
+BEGIN
+
+    DECLARE @CashRefundQTY int
+    DECLARE @CashRefund money
+    DECLARE @OnAccountQTY int
+    DECLARE @OnAccount money
+    DECLARE @TotalRefundQTY int
+    DECLARE @TotalRefund money
+    DECLARE @CashFee money
+    DECLARE @OnAccountFee money
+    DECLARE @TotalExpense money
+    DECLARE @CashFloat money
+    DECLARE @CashBalance money 
+    DECLARE @CashCounted money
+    DECLARE @Discrepancy money 
+    DECLARE @VoidTransactionsQTY int
+    DECLARE @VoidTransactions money
+   
+    if(@CashTrayID IS NULL ) SET @CashTrayID = -1;
+    if(@CashTrayID < 0)
+      BEGIN
+      SELECT @CashRefundQTY = ISNULL(COUNT(OrderID),0), @CashRefund = ISNULL(SUM(TotalAmount),0), @CashFee = ISNULL(SUM(FeeAmount),0)
+            FROM dbo.sol_Orders WHERE (Status = 'P') AND (DateClosed BETWEEN @DateFrom AND @DateTo) AND (OrderType != 'A')
+      SELECT @OnAccountQTY = ISNULL(COUNT(OrderID),0), @OnAccount = ISNULL(SUM(TotalAmount),0), @OnAccountFee = ISNULL(SUM(FeeAmount),0)
+            FROM dbo.sol_Orders WHERE (Status = 'O') AND (DateClosed BETWEEN @DateFrom AND @DateTo)
+      SELECT @VoidTransactionsQTY = ISNULL(COUNT(OrderID),0), @VoidTransactions = ISNULL(SUM(TotalAmount),0)
+            FROM dbo.sol_Orders WHERE (Status = 'D') AND (DateClosed BETWEEN @DateFrom AND @DateTo)
+      SELECT @TotalExpense = ISNULL(SUM(Amount),0) FROM dbo.sol_Entries
+            WHERE (Date BETWEEN @DateFrom AND @DateTo) AND (EntryType = 'E')
+      SELECT @CashFloat = ISNULL(SUM(Amount),0) FROM dbo.sol_Entries
+            WHERE (Date BETWEEN @DateFrom AND @DateTo) AND (EntryType = 'O' OR  EntryType = 'F')
+      SELECT @CashCounted = ISNULL(SUM(Amount),0) FROM dbo.sol_Entries
+            WHERE (Date BETWEEN @DateFrom AND @DateTo) AND (EntryType = 'C')
+      END            
+      ELSE
+      BEGIN
+      SELECT @CashRefundQTY = ISNULL(COUNT(OrderID),0), @CashRefund = ISNULL(SUM(TotalAmount),0), @CashFee = ISNULL(SUM(FeeAmount),0)
+            FROM dbo.sol_Orders WHERE (Status = 'P') AND (DateClosed BETWEEN @DateFrom AND @DateTo) AND (OrderType != 'A')
+            AND sol_Orders.CashTrayID = @CashTrayID
+      SELECT @OnAccountQTY = ISNULL(COUNT(OrderID),0), @OnAccount = ISNULL(SUM(TotalAmount),0), @OnAccountFee = ISNULL(SUM(FeeAmount),0)
+            FROM dbo.sol_Orders WHERE (Status = 'O') AND (DateClosed BETWEEN @DateFrom AND @DateTo)
+            AND sol_Orders.CashTrayID = @CashTrayID
+      SELECT @VoidTransactionsQTY = ISNULL(COUNT(OrderID),0), @VoidTransactions = ISNULL(SUM(TotalAmount),0)
+            FROM dbo.sol_Orders WHERE (Status = 'D') AND (DateClosed BETWEEN @DateFrom AND @DateTo)
+            AND sol_Orders.CashTrayID = @CashTrayID
+      SELECT @TotalExpense = ISNULL(SUM(Amount),0) FROM dbo.sol_Entries
+            WHERE (Date BETWEEN @DateFrom AND @DateTo) AND (EntryType = 'E')
+            AND sol_Entries.CashTrayID = @CashTrayID
+      SELECT @CashFloat = ISNULL(SUM(Amount),0) FROM dbo.sol_Entries
+            WHERE (Date BETWEEN @DateFrom AND @DateTo) AND (EntryType = 'O' OR  EntryType = 'F')
+            AND sol_Entries.CashTrayID = @CashTrayID
+      SELECT @CashCounted = ISNULL(SUM(Amount),0) FROM dbo.sol_Entries
+            WHERE (Date BETWEEN @DateFrom AND @DateTo) AND (EntryType = 'C')
+            AND sol_Entries.CashTrayID = @CashTrayID
+      END
+            
+      SET @TotalRefundQTY = @CashRefundQTY + @OnAccountQTY
+      SET @TotalRefund = @CashRefund + @OnAccount
+      SET @CashBalance = @CashFloat - @CashRefund + @CashFee + @TotalExpense
+      SET @Discrepancy = @CashBalance - @CashCounted
+      
+      SELECT @CashRefundQTY AS CashRefundQTY, 
+                  @CashRefund AS CashRefund,
+                  @OnAccountQTY AS OnAccountQTY,
+                  @OnAccount AS OnAccount,
+                  @TotalRefundQTY AS TotalRefundQTY,
+                  @TotalRefund AS TotalRefund,
+                  @CashFee AS CashFee,
+                  @OnAccountFee AS OnAccountFee,
+                  (@CashFee + @OnAccountFee) AS TotalFee,
+                  @TotalExpense AS TotalExpense,
+                  @CashFloat AS CashFloat,
+                  @CashBalance AS CashBalance,
+                  @CashCounted AS CashCounted,
+                  @Discrepancy AS Discrepency,
+                  @VoidTransactionsQTY AS VoidTransactionsQTY,
+                  @VoidTransactions AS VoidTransactions
+      
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[Sol_Reports_InventoryOnHand_Staged]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Sol_Reports_InventoryOnHand_Staged]
+(
+      @DateTo varchar(23)
+)
+AS
+
+BEGIN
+   DECLARE @TotalQuantity Float
+   SET NOCOUNT ON
+   IF(@DateTo IS NULL) SET @DateTo = CONVERT(varchar, GETDATE(), 23) + ' 23:59:59'
+
+SELECT      @TotalQuantity = SUM(dbo.sol_Stage.Dozen * 12)
+FROM          dbo.sol_Stage INNER JOIN
+                        dbo.sol_Products ON dbo.sol_Stage.ProductID = dbo.sol_Products.ProductID LEFT OUTER JOIN
+                        dbo.sol_Shipment ON dbo.sol_Stage.ShipmentID = dbo.sol_Shipment.ShipmentID RIGHT OUTER JOIN
+                        dbo.Sol_Categories ON dbo.sol_Products.CategoryID = dbo.Sol_Categories.CategoryID
+WHERE      ((dbo.sol_Stage.Status = 'P' OR dbo.sol_Stage.Status = 'I') AND (dbo.sol_Stage.Date <= @DateTo)) 
+            OR ((dbo.sol_Stage.Status = 'S') AND (dbo.sol_Shipment.ShippedDate > @DateTo) AND (dbo.sol_Stage.Date <= @DateTo))
+
+SELECT      dbo.Sol_Categories.CategoryID, 
+                  dbo.Sol_Categories.Description, 
+                  SUM(dbo.sol_Stage.Dozen * 12) AS SumOfQuantity, 
+                  CASE @TotalQuantity
+                        WHEN 0 THEN 0 --can't divide by zero
+                        ELSE SUM(dbo.sol_Stage.Dozen * 12) / @TotalQuantity * 100 
+                        END
+                  AS PercentOfTotal, 
+                  SUM(dbo.sol_Stage.Dozen) AS SumOfDozen, 
+                  SUM(dbo.sol_Stage.Dozen * 12) * dbo.Sol_Categories.RefundAmount AS Amount,
+                  COUNT(sol_Stage.StageID) AS StagedContainers, dbo.Sol_Categories.RefundAmount
+FROM          dbo.sol_Stage INNER JOIN
+                        dbo.sol_Products ON dbo.sol_Stage.ProductID = dbo.sol_Products.ProductID LEFT OUTER JOIN
+                        dbo.sol_Shipment ON dbo.sol_Stage.ShipmentID = dbo.sol_Shipment.ShipmentID RIGHT OUTER JOIN
+                        dbo.Sol_Categories ON dbo.sol_Products.CategoryID = dbo.Sol_Categories.CategoryID
+WHERE      ((dbo.sol_Stage.Status = 'P' OR dbo.sol_Stage.Status = 'I') AND (dbo.sol_Stage.Date <= @DateTo)) 
+            OR ((dbo.sol_Stage.Status = 'S') AND (dbo.sol_Shipment.ShippedDate > @DateTo) AND (dbo.sol_Stage.Date <= @DateTo))
+GROUP BY dbo.Sol_Categories.CategoryID, dbo.Sol_Categories.Description, dbo.Sol_Categories.RefundAmount
+
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[Sol_Reports_InventoryOnHand_Shipped]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Sol_Reports_InventoryOnHand_Shipped]
+(
+      @DateTo varchar(23)
+)
+AS
+
+BEGIN
+   DECLARE @TotalQuantity Float
+   DECLARE @DateFrom varchar(23)
+   SET NOCOUNT ON
+   IF(@DateTo IS NULL) SET @DateTo = CONVERT(varchar, GETDATE(), 23) + ' 23:59:59'
+   SET @DateFrom = LEFT(@DateTO,10) + ' 00:00:00'
+
+SELECT      @TotalQuantity = SUM(dbo.sol_Stage.Dozen * 12) 
+FROM          dbo.sol_Stage INNER JOIN
+                        dbo.sol_Products ON dbo.sol_Stage.ProductID = dbo.sol_Products.ProductID LEFT OUTER JOIN
+                        dbo.sol_Shipment ON dbo.sol_Stage.ShipmentID = dbo.sol_Shipment.ShipmentID RIGHT OUTER JOIN
+                        dbo.Sol_Categories ON dbo.sol_Products.CategoryID = dbo.Sol_Categories.CategoryID
+WHERE      (dbo.sol_Stage.Status = 'S') AND (dbo.sol_Shipment.ShippedDate BETWEEN @DateFrom AND @DateTo)
+
+IF(@TotalQuantity = 0) SET @TotalQuantity = 1  --can't divide by zero
+
+SELECT      dbo.Sol_Categories.CategoryID, dbo.Sol_Categories.Description, SUM(dbo.sol_Stage.Dozen * 12) AS SumOfQuantity, SUM(dbo.sol_Stage.Dozen * 12) 
+                        / @TotalQuantity * 100 AS PercentOfTotal, SUM(dbo.sol_Stage.Dozen) AS SumOfDozen, SUM(dbo.sol_Stage.Dozen * 12) 
+                        * dbo.Sol_Categories.RefundAmount AS Amount
+FROM          dbo.sol_Stage INNER JOIN
+                        dbo.sol_Products ON dbo.sol_Stage.ProductID = dbo.sol_Products.ProductID LEFT OUTER JOIN
+                        dbo.sol_Shipment ON dbo.sol_Stage.ShipmentID = dbo.sol_Shipment.ShipmentID RIGHT OUTER JOIN
+                        dbo.Sol_Categories ON dbo.sol_Products.CategoryID = dbo.Sol_Categories.CategoryID
+WHERE      (dbo.sol_Stage.Status = 'S') AND (dbo.sol_Shipment.ShippedDate BETWEEN @DateFrom AND @DateTo)
+GROUP BY dbo.Sol_Categories.CategoryID, dbo.Sol_Categories.Description, dbo.Sol_Categories.RefundAmount
+
+
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[Sol_Reports_InventoryOnHand_Shipped]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Sol_Reports_InventoryOnHand_Shipped]
+(
+      @DateTo varchar(23)
+)
+AS
+
+BEGIN
+   DECLARE @TotalQuantity Float
+   DECLARE @DateFrom varchar(23)
+   SET NOCOUNT ON
+   IF(@DateTo IS NULL) SET @DateTo = CONVERT(varchar, GETDATE(), 23) + ' 23:59:59'
+   SET @DateFrom = LEFT(@DateTO,10) + ' 00:00:00'
+
+SELECT      @TotalQuantity = SUM(dbo.sol_Stage.Dozen * 12) 
+FROM          dbo.sol_Stage INNER JOIN
+                        dbo.sol_Products ON dbo.sol_Stage.ProductID = dbo.sol_Products.ProductID LEFT OUTER JOIN
+                        dbo.sol_Shipment ON dbo.sol_Stage.ShipmentID = dbo.sol_Shipment.ShipmentID RIGHT OUTER JOIN
+                        dbo.Sol_Categories ON dbo.sol_Products.CategoryID = dbo.Sol_Categories.CategoryID
+WHERE      (dbo.sol_Stage.Status = 'S') AND (dbo.sol_Shipment.ShippedDate BETWEEN @DateFrom AND @DateTo)
+
+IF(@TotalQuantity = 0) SET @TotalQuantity = 1  --can't divide by zero
+
+SELECT      dbo.Sol_Categories.CategoryID, dbo.Sol_Categories.Description, SUM(dbo.sol_Stage.Dozen * 12) AS SumOfQuantity, SUM(dbo.sol_Stage.Dozen * 12) 
+                        / @TotalQuantity * 100 AS PercentOfTotal, SUM(dbo.sol_Stage.Dozen) AS SumOfDozen, SUM(dbo.sol_Stage.Dozen * 12) 
+                        * dbo.Sol_Categories.RefundAmount AS Amount
+FROM          dbo.sol_Stage INNER JOIN
+                        dbo.sol_Products ON dbo.sol_Stage.ProductID = dbo.sol_Products.ProductID LEFT OUTER JOIN
+                        dbo.sol_Shipment ON dbo.sol_Stage.ShipmentID = dbo.sol_Shipment.ShipmentID RIGHT OUTER JOIN
+                        dbo.Sol_Categories ON dbo.sol_Products.CategoryID = dbo.Sol_Categories.CategoryID
+WHERE      (dbo.sol_Stage.Status = 'S') AND (dbo.sol_Shipment.ShippedDate BETWEEN @DateFrom AND @DateTo)
+GROUP BY dbo.Sol_Categories.CategoryID, dbo.Sol_Categories.Description, dbo.Sol_Categories.RefundAmount
+
+
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[Sol_Reports_ClerkReport]    Script Date: 12/02/2011 10:04:45 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE [dbo].[Sol_Reports_ClerkReport]
+(
+      @DateFrom varchar(23),
+      @DateTo varchar(23),
+      @UserID varchar(38)  = NULL  
+)
+AS
+
+BEGIN
+   SET NOCOUNT ON
+   DECLARE @sql NVARCHAR(3000)
+   IF(@DateFrom IS NULL) SET @DateFrom = '1950-01-01 00:00:00'
+   IF(@DateTo IS NULL) SET @DateTo = '3000-01-01 00:00:00'
+   if(@UserID = '') set @UserID = NULL
+   SET @sql = 'SELECT dbo.aspnet_Users.UserName, dbo.sol_Orders.Date, dbo.sol_Orders.OrderID, SUM(dbo.sol_OrdersDetail.Quantity) AS SumOfQuantity, '
+                        + 'dbo.sol_Orders.TotalAmount, DATEDIFF(ss, dbo.sol_Orders.Date, dbo.sol_Orders.DateClosed) AS Duration, SUM(dbo.sol_OrdersDetail.Quantity) '
+                        + '/ DATEDIFF(ss, dbo.sol_Orders.Date, dbo.sol_Orders.DateClosed) AS TimePerContainer '
+                + 'FROM    dbo.aspnet_Users INNER JOIN '
+                        + 'dbo.sol_Orders ON dbo.aspnet_Users.UserId = dbo.sol_Orders.UserID INNER JOIN '
+                        + 'dbo.sol_OrdersDetail ON dbo.sol_Orders.OrderID = dbo.sol_OrdersDetail.OrderID AND '
+                        + 'dbo.sol_Orders.OrderType = dbo.sol_OrdersDetail.OrderType '
+                + 'WHERE  (dbo.sol_Orders.Status <> ''D'') ';
+                
+  IF(@UserID IS NOT NULL) SET @sql = @sql + 'AND dbo.sol_Orders.UserId =''' + @UserID + ''' ';
+
+  SET @sql = @sql + 'GROUP BY dbo.sol_Orders.Date, dbo.sol_Orders.OrderID, dbo.aspnet_Users.UserName, DATEDIFF(ss, dbo.sol_Orders.Date, dbo.sol_Orders.DateClosed), dbo.sol_Orders.TotalAmount '
+                  + 'HAVING  dbo.sol_Orders.Date BETWEEN ''' + @DateFrom + ''' AND ''' + @DateTo + ''' '
+                  + 'ORDER BY dbo.sol_Orders.Date ';
+
+EXEC(@sql)
+
+END
+GO
+
+/****** Object:  StoredProcedure [dbo].[Sol_Reports_TimeClock]    Script Date: 12/19/2011 09:24:49 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[Sol_Reports_TimeClock]
+(
+      @DateFrom varchar(23),
+      @DateTo varchar(23),
+      @UserID varchar(40)	--uniqueidentifier 
+)
+AS
+BEGIN
+    SET NOCOUNT ON
+      IF(@DateFrom IS NULL) SET @DateFrom = '1950-01-01 00:00:00'
+      IF(@DateTo IS NULL) SET @DateTo = '3000-01-01 23:59:59'
+       -- Date should be given in String format as above
+      
+      IF(@UserID IS NOT NULL)  --If UserID was provided
+        BEGIN
+            SELECT dbo.Sol_Employees.FirstName + ' ' + dbo.Sol_Employees.LastName AS EmployeeName, 
+                     dbo.Sol_EmployeesLog.PunchInTime,
+                     CASE WHEN (dbo.Sol_EmployeesLog.PunchInTime > dbo.Sol_EmployeesLog.PunchOutTime) THEN null ELSE dbo.Sol_EmployeesLog.PunchOutTime END AS PunchOutTime, 
+                     dbo.fn_MinZero(ROUND((CAST(dbo.Sol_EmployeesLog.PunchOutTime AS Float) - CAST(dbo.Sol_EmployeesLog.PunchInTime AS FLOAT)) * 24, 1)) AS TotalHours, 
+                     dbo.Sol_EmployeesLog.Comments
+            FROM dbo.Sol_Employees INNER JOIN dbo.Sol_EmployeesLog ON dbo.Sol_Employees.UserId = dbo.Sol_EmployeesLog.UserId
+            WHERE (dbo.Sol_EmployeesLog.PunchInTime BETWEEN CONVERT(DATETIME, @DateFrom, 102) AND CONVERT(DATETIME, @DateTo, 102)) 
+              AND (dbo.Sol_EmployeesLog.UserId = @UserID)
+        END
+      
+      ELSE    ---UserID wasn't provided 
+        BEGIN
+            SELECT dbo.Sol_Employees.FirstName + ' ' + dbo.Sol_Employees.LastName AS EmployeeName, 
+                     dbo.Sol_EmployeesLog.PunchInTime,
+                     CASE WHEN (dbo.Sol_EmployeesLog.PunchInTime > dbo.Sol_EmployeesLog.PunchOutTime) THEN null ELSE dbo.Sol_EmployeesLog.PunchOutTime END AS PunchOutTime, 
+                     dbo.fn_MinZero(ROUND((CAST(dbo.Sol_EmployeesLog.PunchOutTime AS Float) - CAST(dbo.Sol_EmployeesLog.PunchInTime AS FLOAT)) * 24, 1)) AS TotalHours, 
+                     dbo.Sol_EmployeesLog.Comments
+            FROM dbo.Sol_Employees INNER JOIN dbo.Sol_EmployeesLog ON dbo.Sol_Employees.UserId = dbo.Sol_EmployeesLog.UserId
+            WHERE (dbo.Sol_EmployeesLog.PunchInTime BETWEEN CONVERT(DATETIME, @DateFrom, 102) AND CONVERT(DATETIME, @DateTo, 102)) 
+        END
+END
+GO
+
+/***************/
+/***TRIGGERS***/
+/**************/
+/******************************************************************************
+--Sol_Order
+******************************************************************************/
+--dont need it anymore
+--/****** Object:  Trigger [Sol_Orders_UpdateDatePaid]    Script Date: 12/02/2011 09:07:28 ******/
+--SET ANSI_NULLS ON
+--GO
+--SET QUOTED_IDENTIFIER ON
+--GO
+--IF NOT EXISTS (SELECT * FROM sys.triggers WHERE object_id = OBJECT_ID(N'[dbo].[Sol_Orders_UpdateDatePaid]'))
+--EXEC dbo.sp_executesql @statement = N'-- =============================================
+---- Author:		<Ruben Carreon>
+---- Create date: <29/06/2011>
+---- Description:	<Update Order''s DatePaid on Update
+---- =============================================
+--CREATE TRIGGER [dbo].[Sol_Orders_UpdateDatePaid]
+--   ON  [dbo].[sol_Orders]
+--   AFTER UPDATE
+--AS 
+--BEGIN
+--	-- SET NOCOUNT ON added to prevent extra result sets from
+--	-- interfering with SELECT statements.
+--	SET NOCOUNT ON;
+
+--    -- Insert statements for trigger here
+    
+--   	DECLARE @OrderID int;
+--   	DECLARE @OrderType char(1);
+--   	DECLARE @DatePaid datetime;
+--   	DECLARE @Status char(1);
+
+--	--set @OrderID = 2;   	
+--	--print @OrderID;
+
+
+--	--
+--	-- Table INSERTED is common to both the INSERT, UPDATE trigger
+--	--
+--	SELECT @OrderID = [OrderID],
+--		@OrderType = [OrderType],
+--		@Status = [Status] 
+--	FROM INSERTED;
+		
+--   	--print @OrderID;
+--   	--print @OrderType;
+--   	--print @TotalAmount;
+   	
+--   	SET @DatePaid = ''1753-1-1 12:00:00'';
+--   	if(@Status = ''P'')
+--   		SET @DatePaid = GetDate();
+	
+	
+--	UPDATE [sol_Orders] WITH (ROWLOCK)
+--	SET [DatePaid] = @DatePaid
+--	WHERE [OrderID] = @OrderID	
+--	AND [OrderType] = @OrderType;
+
+--	--PRINT ''AFTER TRIGGER EXECUTED SUCESSFULLY'';
+	
+
+--END
+--'
+--GO
+
+/******************************************************************************
+--Sol_OrderDetails
+******************************************************************************/
+/****** Object:  Trigger [Sol_OrdersDetail_UpdateTotalAmount]    Script Date: 12/02/2011 09:07:28 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+IF NOT EXISTS (SELECT * FROM sys.triggers WHERE object_id = OBJECT_ID(N'[dbo].[Sol_OrdersDetail_UpdateTotalAmount]'))
+EXEC dbo.sp_executesql @statement = N'-- =============================================
+-- Author:		<Ruben Carreon>
+-- Create date: <29/06/2011>
+-- Description:	<Update Order''s TotalAmount on Insert, Delete>
+-- =============================================
+
+CREATE TRIGGER [dbo].[Sol_OrdersDetail_UpdateTotalAmount]
+   ON  [dbo].[sol_OrdersDetail]
+   AFTER INSERT, DELETE
+AS 
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+    -- Insert statements for trigger here
+    
+   	DECLARE @OrderID int;
+   	DECLARE @OrderType char(1);
+   	DECLARE @TotalAmount money;
+
+	--set @OrderID = 2;   	
+	--print @OrderID;
+
+
+	DECLARE @Action as char(1)
+	DECLARE @Count as int
+	SET @Action = ''I'' -- Set Action to ''I''nsert by default.
+	SELECT @Count = COUNT(*) FROM DELETED
+
+			--print @Action;
+			--print @Count;
+	
+
+	if @Count > 0    
+		BEGIN        
+			SET @Action = ''D'' -- Set Action to ''D''eleted.
+	        SELECT @Count = COUNT(*) FROM INSERTED
+	        IF @Count > 0
+				SET @Action = ''U''; -- Set Action to ''U''pdated.    
+		END   	
+   	
+	if @Action = ''D''    
+		-- This is a DELETE Record Action
+		--
+   		BEGIN
+   			SELECT @OrderID = [OrderID],
+   				@OrderType = [OrderType] 
+   			FROM DELETED;
+   			
+   			
+   			--print @OrderID;
+   			--print @OrderType;
+   			
+		END
+	ELSE
+		--
+		-- Table INSERTED is common to both the INSERT, UPDATE trigger
+		--
+		BEGIN
+   			SELECT @OrderID = [OrderID],
+   				@OrderType = [OrderType] 
+   			FROM INSERTED;
+		END
+		
+	SELECT @TotalAmount = SUM(ISNULL([Amount],0)) from [sol_OrdersDetail]
+	WHERE [OrderID] = @OrderID
+	AND [OrderType] = @OrderType;
+	--AND Status != ''D'';
+	
+   	--print @OrderID;
+   	--print @OrderType;
+   	--print @TotalAmount;
+	
+	
+	UPDATE [sol_Orders] WITH (ROWLOCK)
+	SET [TotalAmount] = @TotalAmount
+	WHERE [OrderID] = @OrderID	
+	AND [OrderType] = @OrderType;
+
+	--PRINT ''AFTER TRIGGER EXECUTED SUCESSFULLY'';
+	
+
+END
+'
+GO
+
+/***************/
+/***FUNCTIONS**/
+/**************/
+/****** Object:  UserDefinedFunction [dbo].[fn_MinZero]    Script Date: 12/19/2011 09:23:43 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE FUNCTION [dbo].[fn_MinZero]
+      (@Amount Float)
+RETURNS Float
+AS
+      BEGIN
+            IF @Amount < 0 SET @Amount = 0
+      RETURN @Amount
+      END
+
+
+GO
+
+/******************************************************************************
+Various
+******************************************************************************/
+/****** Object:  StoredProcedure [dbo].[PV_Personal_SelectAllBy]    Script Date: 07/24/2011 12:41:44 ******/
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[GE_ObtenerSiguienteID]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure [dbo].[GE_ObtenerSiguienteID]
+GO
+
+CREATE PROCEDURE [dbo].[GE_ObtenerSiguienteID]
+	-- Add the parameters for the stored procedure here
+	@Tabla varchar(50),
+	@CampoId varchar(50),
+	@CampoKey varchar(50),
+	@Key varchar(50)
+AS
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+	if(@CampoKey ='' )
+		SET @CampoKey = NULL;
+		
+	
+	DECLARE @sql NVARCHAR(3000)
+	SET @sql = 
+	'SELECT ISNULL((MAX('+@CampoId+')),0)+1 as sid FROM '+@Tabla+' ';
+
+	IF(@CampoKey IS NOT NULL)
+	BEGIN
+		SET @sql = @sql +
+		'WHERE ['+@CampoKey+'] = '''+@Key+''' ';
+	END
+
+	EXEC(@sql)
+	
+GO
+

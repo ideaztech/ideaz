@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "j3ifaCQsi93hAJ9nNrV3xsMsQm0LeycNyTBiIsw8fnnHSYOgbAACFROhPDFf6qNXIBMOBjxQwpUGX3JF7vRv2Q==",
+  "success": true,
+  "projectFilePath": "D:\\Dropbox\\Work\\ideaz\\Source code\\Working\\Solum\\Solum.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\tyler\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
+    "C:\\Users\\tyler\\.nuget\\packages\\microsoft.sqlserver.sqlmanagementobjects\\140.17283.0\\microsoft.sqlserver.sqlmanagementobjects.140.17283.0.nupkg.sha512",
+    "C:\\Users\\tyler\\.nuget\\packages\\newtonsoft.json\\6.0.4\\newtonsoft.json.6.0.4.nupkg.sha512",
+    "C:\\Users\\tyler\\.nuget\\packages\\system.data.sqllocaldb\\1.15.0\\system.data.sqllocaldb.1.15.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://abcrcerbill.com/WcfAbcrcService/WsHttpsAbcrcService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/AbcrcContract" />
+  <xs:element name="SubmitErBill">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/AbcrcContract" minOccurs="0" name="eRBill" nillable="true" type="q1:AbcrcERBill" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SubmitErBillResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/AbcrcContract" minOccurs="0" name="SubmitErBillResult" nillable="true" type="q2:AbcrcSubmitResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateErBill">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/AbcrcContract" minOccurs="0" name="eRBill" nillable="true" type="q3:AbcrcERBill" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ValidateErBillResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/AbcrcContract" minOccurs="0" name="ValidateErBillResult" nillable="true" type="q4:AbcrcValidationResponse" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

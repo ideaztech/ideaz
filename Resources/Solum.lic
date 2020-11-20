@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-16"?>
+<License Version="1.0">
+		<ValidationKey>otXsHPSShaqcZmBB5w3SIZ5wtSwXPJi3visMZngVr3WFNEB9qW+1BkTpVsdx9rp9E+MkrTSK962HYk6wicNsZA==</ValidationKey>
+		<CreationDate>Sunday, December 19, 2010 6:42:12 PM</CreationDate>
+		<FirstUseDate>Sunday, December 19, 2010 6:42:12 PM</FirstUseDate>
+		<ModificationDate>Sunday, December 19, 2010 6:42:12 PM</ModificationDate><Statistics>
+		<DateTimeLastAccessed>1/1/0001 12:00:00 AM</DateTimeLastAccessed>
+		<AccessCount>0</AccessCount>
+		<HitCount>0</HitCount>
+		<DaysCount>0</DaysCount>
+		<UsageCount>0</UsageCount>
+</Statistics><Issuer>
+		<FullName />
+		<Email />
+		<Url />
+</Issuer><Product>
+		<Assembly>Solum, Version=1.0.0.5, Culture=neutral, PublicKeyToken=null</Assembly>
+		<IsInGac>False</IsInGac>
+		<FilePath>
+		</FilePath>
+		<ShortName>Solum</ShortName>
+		<FullName>Solum, Version=1.0.0.5, Culture=neutral, PublicKeyToken=null</FullName>
+		<Version>1.0.0.5</Version>
+		<Developer>
+		</Developer>
+		<Description>
+		</Description>
+		<IsLicensed>False</IsLicensed>
+</Product><Constraints><Constraint>
+		<Name>Usage Constraint</Name>
+		<Type>OpenLicense.LicenseFile.Constraints.UsageConstraint</Type>
+		<Description>This UsageConstraint constrains the user to a usage limit. It supports a Maximum Usage, Hit and Days count. Once the maximum number is reached the license expires.</Description>
+		<MaxUsageCount>-1</MaxUsageCount>
+		<CurrentUsageCount>0</CurrentUsageCount>
+		<MaxHitCount>-1</MaxHitCount>
+		<CurrentHitCount>0</CurrentHitCount>
+		<MaxDaysCount>30</MaxDaysCount>
+		<CurrentDaysCount>1</CurrentDaysCount>
+		<DateLastAccessed>12/19/2010 6:40:15 PM</DateLastAccessed>
+</Constraint></Constraints><User>
+		<Name />
+		<Email />
+		<Organization />
+</User></License>

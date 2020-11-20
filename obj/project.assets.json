@@ -1,0 +1,713 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.5.1": {
+      "Microsoft.AspNet.WebApi.Client/5.2.7": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.SqlServer.SqlManagementObjects/140.17283.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.SqlServer.AzureStorageEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.BatchParserClient.dll": {},
+          "lib/net40/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/net40/Microsoft.SqlServer.ConnectionInfoExtended.dll": {},
+          "lib/net40/Microsoft.SqlServer.Diagnostics.Strace.dll": {},
+          "lib/net40/Microsoft.SqlServer.Dmf.Common.dll": {},
+          "lib/net40/Microsoft.SqlServer.Dmf.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Collector.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.CollectorEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.RegisteredServers.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.SqlParser.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Utility.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.UtilityEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEvent.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventDbScoped.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.PolicyEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.RegSvrEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.SString.dll": {},
+          "lib/net40/Microsoft.SqlServer.ServiceBrokerEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Smo.dll": {},
+          "lib/net40/Microsoft.SqlServer.SmoExtended.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlClrProvider.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlTDiagm.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlWmiManagement.dll": {},
+          "lib/net40/Microsoft.SqlServer.Types.dll": {},
+          "lib/net40/Microsoft.SqlServer.WmiEnum.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.SqlServer.AzureStorageEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.BatchParserClient.dll": {},
+          "lib/net40/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/net40/Microsoft.SqlServer.ConnectionInfoExtended.dll": {},
+          "lib/net40/Microsoft.SqlServer.Diagnostics.Strace.dll": {},
+          "lib/net40/Microsoft.SqlServer.Dmf.Common.dll": {},
+          "lib/net40/Microsoft.SqlServer.Dmf.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Collector.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.CollectorEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.RegisteredServers.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.SqlParser.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Utility.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.UtilityEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEvent.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventDbScoped.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.PolicyEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.RegSvrEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.SString.dll": {},
+          "lib/net40/Microsoft.SqlServer.ServiceBrokerEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Smo.dll": {},
+          "lib/net40/Microsoft.SqlServer.SmoExtended.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlClrProvider.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlTDiagm.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlWmiManagement.dll": {},
+          "lib/net40/Microsoft.SqlServer.Types.dll": {},
+          "lib/net40/Microsoft.SqlServer.WmiEnum.dll": {}
+        },
+        "build": {
+          "build/net40/Microsoft.SqlServer.SqlManagementObjects.targets": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/Microsoft.SqlServer.BatchParser.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/Microsoft.SqlServer.XEvent.Linq.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/Microsoft.SqlServer.Xe.Core.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/Microsoft.SqlServer.BatchParser.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/Microsoft.SqlServer.XEvent.Linq.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/Microsoft.SqlServer.Xe.Core.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
+        }
+      },
+      "Newtonsoft.Json/6.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.Data.SqlLocalDb/1.15.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data"
+        ],
+        "compile": {
+          "lib/net40/System.Data.SqlLocalDb.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.Data.SqlLocalDb.dll": {}
+        },
+        "resource": {
+          "lib/net40/en-GB/System.Data.SqlLocalDb.resources.dll": {
+            "locale": "en-GB"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.1/win": {
+      "Microsoft.AspNet.WebApi.Client/5.2.7": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.SqlServer.SqlManagementObjects/140.17283.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.SqlServer.AzureStorageEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.BatchParserClient.dll": {},
+          "lib/net40/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/net40/Microsoft.SqlServer.ConnectionInfoExtended.dll": {},
+          "lib/net40/Microsoft.SqlServer.Diagnostics.Strace.dll": {},
+          "lib/net40/Microsoft.SqlServer.Dmf.Common.dll": {},
+          "lib/net40/Microsoft.SqlServer.Dmf.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Collector.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.CollectorEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.RegisteredServers.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.SqlParser.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Utility.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.UtilityEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEvent.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventDbScoped.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.PolicyEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.RegSvrEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.SString.dll": {},
+          "lib/net40/Microsoft.SqlServer.ServiceBrokerEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Smo.dll": {},
+          "lib/net40/Microsoft.SqlServer.SmoExtended.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlClrProvider.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlTDiagm.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlWmiManagement.dll": {},
+          "lib/net40/Microsoft.SqlServer.Types.dll": {},
+          "lib/net40/Microsoft.SqlServer.WmiEnum.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.SqlServer.AzureStorageEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.BatchParserClient.dll": {},
+          "lib/net40/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/net40/Microsoft.SqlServer.ConnectionInfoExtended.dll": {},
+          "lib/net40/Microsoft.SqlServer.Diagnostics.Strace.dll": {},
+          "lib/net40/Microsoft.SqlServer.Dmf.Common.dll": {},
+          "lib/net40/Microsoft.SqlServer.Dmf.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Collector.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.CollectorEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.RegisteredServers.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.SqlParser.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Utility.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.UtilityEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEvent.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventDbScoped.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.PolicyEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.RegSvrEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.SString.dll": {},
+          "lib/net40/Microsoft.SqlServer.ServiceBrokerEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Smo.dll": {},
+          "lib/net40/Microsoft.SqlServer.SmoExtended.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlClrProvider.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlTDiagm.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlWmiManagement.dll": {},
+          "lib/net40/Microsoft.SqlServer.Types.dll": {},
+          "lib/net40/Microsoft.SqlServer.WmiEnum.dll": {}
+        },
+        "build": {
+          "build/net40/Microsoft.SqlServer.SqlManagementObjects.targets": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.Data.SqlLocalDb/1.15.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data"
+        ],
+        "compile": {
+          "lib/net40/System.Data.SqlLocalDb.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.Data.SqlLocalDb.dll": {}
+        },
+        "resource": {
+          "lib/net40/en-GB/System.Data.SqlLocalDb.resources.dll": {
+            "locale": "en-GB"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.1/win-x64": {
+      "Microsoft.AspNet.WebApi.Client/5.2.7": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.SqlServer.SqlManagementObjects/140.17283.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.SqlServer.AzureStorageEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.BatchParserClient.dll": {},
+          "lib/net40/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/net40/Microsoft.SqlServer.ConnectionInfoExtended.dll": {},
+          "lib/net40/Microsoft.SqlServer.Diagnostics.Strace.dll": {},
+          "lib/net40/Microsoft.SqlServer.Dmf.Common.dll": {},
+          "lib/net40/Microsoft.SqlServer.Dmf.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Collector.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.CollectorEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.RegisteredServers.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.SqlParser.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Utility.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.UtilityEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEvent.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventDbScoped.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.PolicyEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.RegSvrEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.SString.dll": {},
+          "lib/net40/Microsoft.SqlServer.ServiceBrokerEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Smo.dll": {},
+          "lib/net40/Microsoft.SqlServer.SmoExtended.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlClrProvider.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlTDiagm.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlWmiManagement.dll": {},
+          "lib/net40/Microsoft.SqlServer.Types.dll": {},
+          "lib/net40/Microsoft.SqlServer.WmiEnum.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.SqlServer.AzureStorageEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.BatchParserClient.dll": {},
+          "lib/net40/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/net40/Microsoft.SqlServer.ConnectionInfoExtended.dll": {},
+          "lib/net40/Microsoft.SqlServer.Diagnostics.Strace.dll": {},
+          "lib/net40/Microsoft.SqlServer.Dmf.Common.dll": {},
+          "lib/net40/Microsoft.SqlServer.Dmf.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Collector.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.CollectorEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.RegisteredServers.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.SqlParser.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Utility.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.UtilityEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEvent.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventDbScoped.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.PolicyEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.RegSvrEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.SString.dll": {},
+          "lib/net40/Microsoft.SqlServer.ServiceBrokerEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Smo.dll": {},
+          "lib/net40/Microsoft.SqlServer.SmoExtended.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlClrProvider.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlTDiagm.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlWmiManagement.dll": {},
+          "lib/net40/Microsoft.SqlServer.Types.dll": {},
+          "lib/net40/Microsoft.SqlServer.WmiEnum.dll": {}
+        },
+        "native": {
+          "runtimes/win-x64/native/Microsoft.SqlServer.BatchParser.dll": {},
+          "runtimes/win-x64/native/Microsoft.SqlServer.XEvent.Linq.dll": {},
+          "runtimes/win-x64/native/Microsoft.SqlServer.Xe.Core.dll": {}
+        },
+        "build": {
+          "build/net40/Microsoft.SqlServer.SqlManagementObjects.targets": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.Data.SqlLocalDb/1.15.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data"
+        ],
+        "compile": {
+          "lib/net40/System.Data.SqlLocalDb.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.Data.SqlLocalDb.dll": {}
+        },
+        "resource": {
+          "lib/net40/en-GB/System.Data.SqlLocalDb.resources.dll": {
+            "locale": "en-GB"
+          }
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.1/win-x86": {
+      "Microsoft.AspNet.WebApi.Client/5.2.7": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "6.0.4"
+        },
+        "frameworkAssemblies": [
+          "System.Net.Http"
+        ],
+        "compile": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        },
+        "runtime": {
+          "lib/net45/System.Net.Http.Formatting.dll": {}
+        }
+      },
+      "Microsoft.SqlServer.SqlManagementObjects/140.17283.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Microsoft.SqlServer.AzureStorageEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.BatchParserClient.dll": {},
+          "lib/net40/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/net40/Microsoft.SqlServer.ConnectionInfoExtended.dll": {},
+          "lib/net40/Microsoft.SqlServer.Diagnostics.Strace.dll": {},
+          "lib/net40/Microsoft.SqlServer.Dmf.Common.dll": {},
+          "lib/net40/Microsoft.SqlServer.Dmf.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Collector.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.CollectorEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.RegisteredServers.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.SqlParser.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Utility.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.UtilityEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEvent.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventDbScoped.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.PolicyEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.RegSvrEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.SString.dll": {},
+          "lib/net40/Microsoft.SqlServer.ServiceBrokerEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Smo.dll": {},
+          "lib/net40/Microsoft.SqlServer.SmoExtended.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlClrProvider.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlTDiagm.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlWmiManagement.dll": {},
+          "lib/net40/Microsoft.SqlServer.Types.dll": {},
+          "lib/net40/Microsoft.SqlServer.WmiEnum.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Microsoft.SqlServer.AzureStorageEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.BatchParserClient.dll": {},
+          "lib/net40/Microsoft.SqlServer.ConnectionInfo.dll": {},
+          "lib/net40/Microsoft.SqlServer.ConnectionInfoExtended.dll": {},
+          "lib/net40/Microsoft.SqlServer.Diagnostics.Strace.dll": {},
+          "lib/net40/Microsoft.SqlServer.Dmf.Common.dll": {},
+          "lib/net40/Microsoft.SqlServer.Dmf.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Collector.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.CollectorEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.RegisteredServers.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Sdk.Sfc.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.SqlParser.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.Utility.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.UtilityEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEvent.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventDbScoped.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Management.XEventEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.PolicyEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.RegSvrEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.SString.dll": {},
+          "lib/net40/Microsoft.SqlServer.ServiceBrokerEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.Smo.dll": {},
+          "lib/net40/Microsoft.SqlServer.SmoExtended.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlClrProvider.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlEnum.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlTDiagm.dll": {},
+          "lib/net40/Microsoft.SqlServer.SqlWmiManagement.dll": {},
+          "lib/net40/Microsoft.SqlServer.Types.dll": {},
+          "lib/net40/Microsoft.SqlServer.WmiEnum.dll": {}
+        },
+        "native": {
+          "runtimes/win-x86/native/Microsoft.SqlServer.BatchParser.dll": {},
+          "runtimes/win-x86/native/Microsoft.SqlServer.XEvent.Linq.dll": {},
+          "runtimes/win-x86/native/Microsoft.SqlServer.Xe.Core.dll": {}
+        },
+        "build": {
+          "build/net40/Microsoft.SqlServer.SqlManagementObjects.targets": {}
+        }
+      },
+      "Newtonsoft.Json/6.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Newtonsoft.Json.dll": {}
+        }
+      },
+      "System.Data.SqlLocalDb/1.15.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data"
+        ],
+        "compile": {
+          "lib/net40/System.Data.SqlLocalDb.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.Data.SqlLocalDb.dll": {}
+        },
+        "resource": {
+          "lib/net40/en-GB/System.Data.SqlLocalDb.resources.dll": {
+            "locale": "en-GB"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Microsoft.AspNet.WebApi.Client/5.2.7": {
+      "sha512": "/76fAHknzvFqbznS6Uj2sOyE9rJB3PltY+f53TH8dX9RiGhk02EhuFCWljSj5nnqKaTsmma8DFR50OGyQ4yJ1g==",
+      "type": "package",
+      "path": "microsoft.aspnet.webapi.client/5.2.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/System.Net.Http.Formatting.dll",
+        "lib/net45/System.Net.Http.Formatting.xml",
+        "lib/netstandard2.0/System.Net.Http.Formatting.dll",
+        "lib/netstandard2.0/System.Net.Http.Formatting.xml",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.dll",
+        "lib/portable-wp8+netcore45+net45+wp81+wpa81/System.Net.Http.Formatting.xml",
+        "microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
+        "microsoft.aspnet.webapi.client.nuspec"
+      ]
+    },
+    "Microsoft.SqlServer.SqlManagementObjects/140.17283.0": {
+      "sha512": "cL23jwuLPH29RAsNOjInr5FAdgKdTzYLc/aTuX33XsWw02o5aXnsPQ5W9UPzz0AnUZGYxV54TUBCUGx2BfsiEw==",
+      "type": "package",
+      "path": "microsoft.sqlserver.sqlmanagementobjects/140.17283.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License_SMO.rtf",
+        "README.md",
+        "build/net40/Microsoft.SqlServer.SqlManagementObjects.targets",
+        "lib/net40/Microsoft.SqlServer.AzureStorageEnum.dll",
+        "lib/net40/Microsoft.SqlServer.AzureStorageEnum.xml",
+        "lib/net40/Microsoft.SqlServer.BatchParserClient.dll",
+        "lib/net40/Microsoft.SqlServer.ConnectionInfo.dll",
+        "lib/net40/Microsoft.SqlServer.ConnectionInfo.xml",
+        "lib/net40/Microsoft.SqlServer.ConnectionInfoExtended.dll",
+        "lib/net40/Microsoft.SqlServer.ConnectionInfoExtended.xml",
+        "lib/net40/Microsoft.SqlServer.Diagnostics.Strace.dll",
+        "lib/net40/Microsoft.SqlServer.Dmf.Common.dll",
+        "lib/net40/Microsoft.SqlServer.Dmf.Common.xml",
+        "lib/net40/Microsoft.SqlServer.Dmf.dll",
+        "lib/net40/Microsoft.SqlServer.Dmf.xml",
+        "lib/net40/Microsoft.SqlServer.Management.Collector.dll",
+        "lib/net40/Microsoft.SqlServer.Management.Collector.xml",
+        "lib/net40/Microsoft.SqlServer.Management.CollectorEnum.dll",
+        "lib/net40/Microsoft.SqlServer.Management.CollectorEnum.xml",
+        "lib/net40/Microsoft.SqlServer.Management.RegisteredServers.dll",
+        "lib/net40/Microsoft.SqlServer.Management.RegisteredServers.xml",
+        "lib/net40/Microsoft.SqlServer.Management.Sdk.Sfc.dll",
+        "lib/net40/Microsoft.SqlServer.Management.Sdk.Sfc.xml",
+        "lib/net40/Microsoft.SqlServer.Management.SqlParser.dll",
+        "lib/net40/Microsoft.SqlServer.Management.Utility.dll",
+        "lib/net40/Microsoft.SqlServer.Management.Utility.xml",
+        "lib/net40/Microsoft.SqlServer.Management.UtilityEnum.dll",
+        "lib/net40/Microsoft.SqlServer.Management.UtilityEnum.xml",
+        "lib/net40/Microsoft.SqlServer.Management.XEvent.dll",
+        "lib/net40/Microsoft.SqlServer.Management.XEvent.xml",
+        "lib/net40/Microsoft.SqlServer.Management.XEventDbScoped.dll",
+        "lib/net40/Microsoft.SqlServer.Management.XEventDbScoped.xml",
+        "lib/net40/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll",
+        "lib/net40/Microsoft.SqlServer.Management.XEventDbScopedEnum.xml",
+        "lib/net40/Microsoft.SqlServer.Management.XEventEnum.dll",
+        "lib/net40/Microsoft.SqlServer.Management.XEventEnum.xml",
+        "lib/net40/Microsoft.SqlServer.PolicyEnum.dll",
+        "lib/net40/Microsoft.SqlServer.PolicyEnum.xml",
+        "lib/net40/Microsoft.SqlServer.RegSvrEnum.dll",
+        "lib/net40/Microsoft.SqlServer.RegSvrEnum.xml",
+        "lib/net40/Microsoft.SqlServer.SString.dll",
+        "lib/net40/Microsoft.SqlServer.ServiceBrokerEnum.dll",
+        "lib/net40/Microsoft.SqlServer.ServiceBrokerEnum.xml",
+        "lib/net40/Microsoft.SqlServer.Smo.dll",
+        "lib/net40/Microsoft.SqlServer.Smo.xml",
+        "lib/net40/Microsoft.SqlServer.SmoExtended.dll",
+        "lib/net40/Microsoft.SqlServer.SmoExtended.xml",
+        "lib/net40/Microsoft.SqlServer.SqlClrProvider.dll",
+        "lib/net40/Microsoft.SqlServer.SqlEnum.dll",
+        "lib/net40/Microsoft.SqlServer.SqlEnum.xml",
+        "lib/net40/Microsoft.SqlServer.SqlTDiagm.dll",
+        "lib/net40/Microsoft.SqlServer.SqlWmiManagement.dll",
+        "lib/net40/Microsoft.SqlServer.SqlWmiManagement.xml",
+        "lib/net40/Microsoft.SqlServer.Types.dll",
+        "lib/net40/Microsoft.SqlServer.Types.xml",
+        "lib/net40/Microsoft.SqlServer.WmiEnum.dll",
+        "lib/net40/Microsoft.SqlServer.WmiEnum.xml",
+        "lib/netstandard2.0/Microsoft.Data.Tools.Sql.BatchParser.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.ConnectionInfo.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.Dmf.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.Sdk.Sfc.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.SmoMetadataProvider.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.SqlScriptPublishModel.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.XEvent.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.XEventDbScoped.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.XEventDbScopedEnum.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Management.XEventEnum.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.NetCoreGlobalization.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.Smo.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.SmoExtended.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.SqlEnum.dll",
+        "lib/netstandard2.0/Microsoft.SqlServer.SqlParser.dll",
+        "microsoft.sqlserver.sqlmanagementobjects.140.17283.0.nupkg.sha512",
+        "microsoft.sqlserver.sqlmanagementobjects.nuspec",
+        "runtimes/win-x64/native/Microsoft.SqlServer.BatchParser.dll",
+        "runtimes/win-x64/native/Microsoft.SqlServer.XEvent.Linq.dll",
+        "runtimes/win-x64/native/Microsoft.SqlServer.Xe.Core.dll",
+        "runtimes/win-x86/native/Microsoft.SqlServer.BatchParser.dll",
+        "runtimes/win-x86/native/Microsoft.SqlServer.XEvent.Linq.dll",
+        "runtimes/win-x86/native/Microsoft.SqlServer.Xe.Core.dll"
+      ]
+    },
+    "Newtonsoft.Json/6.0.4": {
+      "sha512": "FyQLmEpjsCrEP+znauLDGAi+h6i9YnaMkITlfIoiM4RYyX3nki306bTHsr/0okiIvIc7BJhQTbOAIZVocccFUw==",
+      "type": "package",
+      "path": "newtonsoft.json/6.0.4",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netcore45/Newtonsoft.Json.dll",
+        "lib/netcore45/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.6.0.4.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "System.Data.SqlLocalDb/1.15.0": {
+      "sha512": "V8gjZ+0Iax3fu8GvkBgZ90LXStWJ/wd9gJHUlzjWayJ5KNWQ0C1xo+ObYSJUC4UZe3NjGA4GgNZkTjpSVMdnkg==",
+      "type": "package",
+      "path": "system.data.sqllocaldb/1.15.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net40/System.Data.SqlLocalDb.dll",
+        "lib/net40/System.Data.SqlLocalDb.xml",
+        "lib/net40/en-GB/System.Data.SqlLocalDb.resources.dll",
+        "system.data.sqllocaldb.1.15.0.nupkg.sha512",
+        "system.data.sqllocaldb.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.5.1": [
+      "Microsoft.AspNet.WebApi.Client >= 5.2.7",
+      "Microsoft.SqlServer.SqlManagementObjects >= 140.17283.0",
+      "System.Data.SqlLocalDb >= 1.15.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\tyler\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Dropbox\\Work\\ideaz\\Source code\\Working\\Solum\\Solum.csproj",
+      "projectName": "Solum",
+      "projectPath": "D:\\Dropbox\\Work\\ideaz\\Source code\\Working\\Solum\\Solum.csproj",
+      "packagesPath": "C:\\Users\\tyler\\.nuget\\packages\\",
+      "outputPath": "D:\\Dropbox\\Work\\ideaz\\Source code\\Working\\Solum\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\tyler\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net451"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net451": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net451": {
+        "dependencies": {
+          "Microsoft.AspNet.WebApi.Client": {
+            "target": "Package",
+            "version": "[5.2.7, )"
+          },
+          "Microsoft.SqlServer.SqlManagementObjects": {
+            "target": "Package",
+            "version": "[140.17283.0, )"
+          },
+          "System.Data.SqlLocalDb": {
+            "target": "Package",
+            "version": "[1.15.0, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

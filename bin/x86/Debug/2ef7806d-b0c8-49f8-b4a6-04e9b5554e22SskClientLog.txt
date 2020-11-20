@@ -1,0 +1,337 @@
+
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.
+  Usage: 1
+  Usage Page: ff00
+  Input Report Byte Length: 338
+  Output Report Byte Length: 0
+  Feature Report Byte Length: 25
+  Number of Link Collection Nodes: 1
+  Number of Input Button Caps: 0
+  Number of Input Value Caps: 10
+  Number of Input Data Indices: 10
+  Number of Output Button Caps: 0
+  Number of Output Value Caps: 0
+  Number of Output Data Indices: 0
+  Number of Feature Button Caps: 0
+  Number of Feature Value Caps: 1
+  Number of Feature Data Indices: 1
+The OS is more recent than Windows 98 Gold.

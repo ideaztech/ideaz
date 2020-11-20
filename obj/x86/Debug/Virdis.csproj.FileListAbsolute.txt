@@ -1,0 +1,6 @@
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\bin\x86\Debug\Solum.exe.config
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Interop.COINUSBLib.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\AxInterop.COINUSBLib.dll
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Virdis.csproj.ResolveComReference.cache
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.exe
+D:\Mis Proyectos\Visual Studio 2015\Visual C#\Kevin\SolumVirdis\Solum\obj\x86\Debug\Solum.pdb

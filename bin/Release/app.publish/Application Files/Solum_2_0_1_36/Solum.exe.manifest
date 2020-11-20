@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Solum.exe" version="2.0.1.36" publicKeyToken="3b921397b8bc9d2d" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Solum" version="2.0.0.35" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Solum.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" ID="Custom" SameSite="site" Unrestricted="true" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="FlashControlV71" version="1.0.3187.32366" publicKeyToken="692FBEA5521E1304" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="ShockwaveFlashObjects" version="1.0.0.0" publicKeyToken="692FBEA5521E1304" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.COINUSBLib.dll" size="12288">
+      <assemblyIdentity name="AxInterop.COINUSBLib" version="4.63.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Xo6wF10eszF5XjxylVfsmHk30C8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChilkatDotNet2.dll" size="8049152">
+      <assemblyIdentity name="ChilkatDotNet2" version="9.0.7.0" publicKeyToken="EB5FC1FC52EF09BD" language="neutral" processorArchitecture="amd64" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>GK5sVqR+4/2wnxQ0mIOeUap+/eU=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.COINUSBLib.dll" size="11264">
+      <assemblyIdentity name="Interop.COINUSBLib" version="4.63.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>4QVhMvbJcci8e9aCn82oHCyM6pE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SirLib.dll" size="5382144">
+      <assemblyIdentity name="SirLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>YIdS3TjDtl5hA05QQS89qHwe8G8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en\SirLib.resources.dll" size="277504">
+      <assemblyIdentity name="SirLib.resources" version="1.0.0.0" language="en" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>T9H5IpjTvU6FSQzMk4xPnGPw25g=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\SirLib.resources.dll" size="58368">
+      <assemblyIdentity name="SirLib.resources" version="1.0.0.0" language="es" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>5V0XHInDn0zz8VaPh5T7t69J9Ng=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SirLibCore.Client.dll" size="76288">
+      <assemblyIdentity name="SirLibCore.Client" version="1.0.4771.19546" publicKeyToken="47A847C6E448D54B" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>8nmBbUlmprUVExeueS/TEcbx9ds=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SirLibCore.ClientForms.dll" size="8062976">
+      <assemblyIdentity name="SirLibCore.ClientForms" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>JPaIoenlFqkG4ll/2ZySi4xsS4o=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en\SirLibCore.ClientForms.resources.dll" size="8704">
+      <assemblyIdentity name="SirLibCore.ClientForms.resources" version="1.0.0.0" language="en" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>Hg+RU8or/C+ts0VJ1gN2N7GiYF8=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="es\SirLibCore.ClientForms.resources.dll" size="6656">
+      <assemblyIdentity name="SirLibCore.ClientForms.resources" version="1.0.0.0" language="es" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>cofUWQixkXJ4puVqurhML1OzVV0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SirLibCore.Data.dll" size="12800">
+      <assemblyIdentity name="SirLibCore.Data" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>YCq1psFO6aTcf52zGSSghXMEBys=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SirLibCore.Utilities.dll" size="8192">
+      <assemblyIdentity name="SirLibCore.Utilities" version="2.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>cvRGBPHUwlre/0fJMvDk9HreCqM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Solum.exe" size="28091904">
+      <assemblyIdentity name="Solum" version="2.0.0.35" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>kmNvErCbVQgz09YZp1KXBtohJ10=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Resources\ABCRC_Logo_Blk.tif" size="3526548">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>HV0yQ5I/8GC689aCEsgeUOhj2Io=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\Big_clock.png" size="20761">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>bcEc4Wl9KMiGIYxlh9/MB1lQ8K8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\Big_Green_Button.png" size="28929">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>vmpR+kVjZxLW9XaocszAQ5WvzGs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\Big_Red_Button.png" size="13635">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>PH0Vtk8IAYz3u5YbQfMiAAan5m0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\click.wav" size="512">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>oCheqQNPNx9iuNq7uGgu+/1DKLQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\Close2.png" size="15580">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>Sx997EjXUQtqa7RdSQiaMV8duAI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\listrow.png" size="523">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>hDN65R0HlNqh0k7AiNiZinw5aD4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\logosolum_t_01_02.png" size="7579">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>FaJinV5Kaykpd3uJqGnyoccrQCo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\logosolum_t_01_03.png" size="7025">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>bt4qPOOIPrvGZXHH/kj9emBqNIk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\logosolum_t_01_04.png" size="6933">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>fTSia1H1MznrrWGb4Vq7AuXhhQY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\logosolum01_02.jpg" size="7325">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>7cKX75OOC/ky1EF5K6S/1Jb/xjg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\NumericKeyPad.jpg" size="79137">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>axKjS5M/Sp8EqBG74AteC/xGsGk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\NumericKeyPad1.jpg" size="33801">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>eanI2xKyx6y8MnvZLgXINq/nUgE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\PunchIn.png" size="6203">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>v2nfJXISYvq0vXXXs0DBoJ/dXRc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\PunchOut.png" size="5969">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>oaVrZHEr2xlm1hTd3sVSoYnDj1w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Resources\Sales.png" size="57151">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>9vXgx4JZTMj6+lwPXbqPHxNYlzg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Solum.exe.config" size="11357">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>gckU17fiQRIas3JXhhhmmxlD9oc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Varios\Solum 2.0 POR User Manual.pdf" size="5805583">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>xQ8Aldoa6jwVBM4nSgCa9WnmmLk=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=RUBITO-PC\Ruben" issuerKeyHash="6dabc02475e6a921fee024b974b47235d19a817c" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>T5/Cl6WhYr+aZ1qhkDw4PVZIk3s=</DigestValue></Reference></SignedInfo><SignatureValue>KF14KIOayJCE7skLrhnBKZ9U3hTq2Tx+c+iT604INEXV3GMwbpl+ZCnEi7iy/e6Fr6mDm8oerOdvdw8Oe20kf8/Hs5uKMDjE/DSKyGZtC53N19iBjQ8/EX+h4DMH1KutjFTqmQDu4/egCY1GNwF20tnc56UBz42rmTvnDFeSW9E=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>vjuWWVYU/GLgf1MshNcLxNa81jda2uBS9PAvHhAZUYyyQKBjyWCplP20GsNzObCIs47HJG8SmozBT1ZQMa2YGoW8HVhyQUFotmWrr61Bwp0WGjd2fAeWewdC2Bt4Iw1lcfAyOJFCXsVhoWQNiPqKFeAEHixetDVT+oIINP205qk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="7b9348563d383c90a15a679abf62a1a597c29f4f" Description="" Url=""><as:assemblyIdentity name="Solum.exe" version="2.0.1.36" publicKeyToken="3b921397b8bc9d2d" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=RUBITO-PC\Ruben</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>Es+4K16Da21cZlTetCbDkMVAV+w=</DigestValue></Reference></SignedInfo><SignatureValue>fbrPK1bieQB8vEMfk7sgL6eS4RlSHKq4ElUU4mnGUebBCpCLm4VxIRw20rEyHkx8idKd91pM3nROcpcZD0zuoYrUcfR21E/K6owEDgnzdg0M6nzGVSwi2PXteo3yHHge0yvSNsumQIlk/vnLC8dI+k/gVnf+g51wRTDo//ye+X0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>vjuWWVYU/GLgf1MshNcLxNa81jda2uBS9PAvHhAZUYyyQKBjyWCplP20GsNzObCIs47HJG8SmozBT1ZQMa2YGoW8HVhyQUFotmWrr61Bwp0WGjd2fAeWewdC2Bt4Iw1lcfAyOJFCXsVhoWQNiPqKFeAEHixetDVT+oIINP205qk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB1TCCAT6gAwIBAgIQJ9hkERAWw7VNB0z0YdS15zANBgkqhkiG9w0BAQUFADApMScwJQYDVQQDHh4AUgBVAEIASQBUAE8ALQBQAEMAXABSAHUAYgBlAG4wHhcNMTIxMTA5MjE1MzAyWhcNMTMxMTEwMDM1MzAyWjApMScwJQYDVQQDHh4AUgBVAEIASQBUAE8ALQBQAEMAXABSAHUAYgBlAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAL47lllWFPxi4H9TLITXC8TWvNY3WtrgUvTwLx4QGVGMskCgY8lgqZT9tBrDczmwiLOOxyRvEpqMwU9WUDGtmBqFvB1YckFBaLZlq6+tQcKdFho3dnwHlnsHQtgbeCMNZXHwMjiRQl7FYaFkDYj6ihXgBB4sXrQ1U/qCCDT9tOapAgMBAAEwDQYJKoZIhvcNAQEFBQADgYEATH2Pp62hyW/UIj3M6fKeBze5G4HPmwnm0XUceJRincl1nD/FDmfblW0hSLoew7xYqoPu6V2Aj4yLJkncGwXHvorqaVUxuGtviUSKCIoBk7sz2Kp5lWm8yfNhBP2kyryDSBAb2cL6yLOhNQAoSMLwb0pVNaA1kG/4dYBB9MXukvc=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

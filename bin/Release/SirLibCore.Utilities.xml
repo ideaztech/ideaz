@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SirLibCore.Utilities</name>
+    </assembly>
+    <members>
+        <member name="T:SirLibCore.Utilities.ValidationUtility">
+            <summary>
+            Provides validation functionality for method arguments or property assignments.
+            </summary>
+        </member>
+        <member name="M:SirLibCore.Utilities.ValidationUtility.ValidateArgument(System.String,System.String)">
+            <summary>
+            Validates that the <see cref="T:System.String"/> value is not <code>null</code> or empty.
+            </summary>
+            <param name="name">The name of the argument.</param>
+            <param name="value">The value of the argument.</param>
+        </member>
+        <member name="M:SirLibCore.Utilities.ValidationUtility.ValidateArgument(System.String,System.String,System.Boolean)">
+            <summary>
+            Validates that the <see cref="T:System.String"/> value is not <code>null</code> or empty.
+            </summary>
+            <param name="name">The name of the argument.</param>
+            <param name="value">The value of the argument.</param>
+            <param name="checkLength">Indicates if the value's length should be validated.</param>
+        </member>
+        <member name="M:SirLibCore.Utilities.ValidationUtility.ValidateArgument(System.String,System.Object)">
+            <summary>
+            Validates that the <see cref="T:System.Object"/> value is not <code>null</code>.
+            </summary>
+            <param name="name">The name of the argument.</param>
+            <param name="value">The value of the argument.</param>
+        </member>
+        <member name="T:SirLibCore.Utilities.EncryptionUtility">
+            <summary>
+            Provides functionality for encrypting and decrypting data.
+            </summary>
+        </member>
+        <member name="M:SirLibCore.Utilities.EncryptionUtility.#cctor">
+            <summary>
+            Initializes the static members of the EncryptionUtility class.
+            </summary>
+        </member>
+        <member name="M:SirLibCore.Utilities.EncryptionUtility.Encrypt(System.String)">
+            <summary>
+            Encrypts the specified value.
+            </summary>
+            <param name="value">The value to be encrypted.</param>
+            <returns>The encrypted representation of the specified value, in Base64.</returns>
+        </member>
+        <member name="M:SirLibCore.Utilities.EncryptionUtility.Decrypt(System.String)">
+            <summary>
+            Decrypts the specified value.
+            </summary>
+            <param name="value">The value, in Base64, to be decrypted.</param>
+            <returns>The decrypted representation of the specified value.</returns>
+        </member>
+        <member name="T:SirLibCore.Utilities.EncryptionUtilitySectionHandler">
+            <summary>
+            Provides encryption configuration information from a configuration section.
+            </summary>
+        </member>
+        <member name="M:SirLibCore.Utilities.EncryptionUtilitySectionHandler.Create(System.Object,System.Object,System.Xml.XmlNode)">
+            <summary>
+            Parses the XML of the configuration section.
+            </summary>
+            <param name="parent">The configuration settings in a corresponding parent configuration section.</param>
+            <param name="configContext">An HttpConfigurationContext when Create is called from the ASP.NET configuration system. Otherwise, this parameter is reserved and is a null reference.</param>
+            <param name="section">The XmlNode that contains the configuration information from the configuration file. Provides direct access to the XML contents of the configuration section.</param>
+            <returns>A configuration object.</returns>
+        </member>
+        <member name="P:SirLibCore.Utilities.EncryptionUtilitySectionHandler.Key">
+            <summary>
+            Returns the currently configured encryption/decryption key.
+            </summary>
+        </member>
+        <member name="P:SirLibCore.Utilities.EncryptionUtilitySectionHandler.InitializationVector">
+            <summary>
+            Returns the currently configured encryption/decryption initialization vector.
+            </summary>
+        </member>
+        <member name="P:SirLibCore.Utilities.EncryptionUtilitySectionHandler.SymmetricAlgorithm">
+            <summary>
+            Returns the currently configured symmetric algorithm used for encryption/decryption.
+            </summary>
+        </member>
+        <member name="P:SirLibCore.Utilities.EncryptionUtilitySectionHandler.Encoding">
+            <summary>
+            Returns the currently configured encoding used for encryption/decryption.
+            </summary>
+        </member>
+    </members>
+</doc>

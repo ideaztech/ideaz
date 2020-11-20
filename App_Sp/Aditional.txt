@@ -1,0 +1,11 @@
+﻿        //*************
+        //--sol_Stage
+        //*************
+
+		/// <summary>
+		/// Initializes a new instance of the Sol_Stage class.
+		/// </summary>
+		public Sol_Stage()
+		{
+            DateTime.TryParse("1753-01-01 12:00:00.000", out this.dateClosed);
+        }

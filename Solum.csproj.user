@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>I:\publicacion\winsir\Solum2\|I:\publicacion\winsir\rc.solum\|I:\publicacion\winsir\Solum.Rc\|I:\publicacion\winsir\Solum\|a\</PublishUrlHistory>
+    <InstallUrlHistory>http://solum2.winsir.net/|http://ccbeta.solum2.winsir.net/|http://debug.solum2.winsir.net/|http://http://debug.solum2.winsir.net/|http://degubg.solum2.winsir.net/</InstallUrlHistory>
+    <SupportUrlHistory>http://forum.solum.winsir.net/|http://forum.solum.net|http://www.controlc.com.mx</SupportUrlHistory>
+    <UpdateUrlHistory>
+    </UpdateUrlHistory>
+    <BootstrapperUrlHistory>http://downloads.businessobjects.com/akdlm/cr4vs2010/CRforVS_redist_install_64bit_13_0_1.zip</BootstrapperUrlHistory>
+    <ErrorReportUrlHistory>
+    </ErrorReportUrlHistory>
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>false</VerifyUploadedFiles>
+    <ReferencePath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\</ReferencePath>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
+</Project>
