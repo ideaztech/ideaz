@@ -106,7 +106,7 @@ namespace Solum
         
         //http://stackoverflow.com/questions/6310908/installer-wont-overwrite-existing-app
 
-        public const string versionNumber="2.4.0";
+        public const string versionNumber="2.4.001";
 
         //also change file version in AssemblyInfo
         //and in properties of SolumSetup
